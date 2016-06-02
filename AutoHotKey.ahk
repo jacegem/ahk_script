@@ -34,9 +34,6 @@ ComObjError(false)
 #include .\util\Absolutely_Kor_Eng.ahk
 #include .\util\Accelerated Scrolling 1.3.ahk
 
-;;;#include .\util\20141018 key macro.ahk
-;;;#include .\util\FavoriteFolders.ahk
-
 ; For Applications
 #include .\application\visual_studio.ahk
 #include .\application\visual_basic.ahk
@@ -66,16 +63,15 @@ ComObjError(false)
 #include .\application\haroopad.ahk
 #include .\application\visual_studio_code.ahk
 
+;  한글에서 정상적으로 작동하지 않으므로, 아래 내용은 제외하도록 처리합니다. 
 #ifWinNotActive ahk_class HwpApp : 8.0
-
-; HotString
-#include .\hotstring\english_hotstring.ahk
-#include .\hotstring\english_dictionary.ahk
-#include .\hotstring\korean_hotstring.ahk
-#include .\hotstring\symbol_hotstring.ahk
-#include .\hotstring\auto_correct.ahk
-#include .\hotstring\eng_to_kor.ahk
-
+    ; HotString
+    #include .\hotstring\english_hotstring.ahk
+    #include .\hotstring\english_dictionary.ahk
+    #include .\hotstring\korean_hotstring.ahk
+    #include .\hotstring\symbol_hotstring.ahk
+    #include .\hotstring\auto_correct.ahk
+    #include .\hotstring\eng_to_kor.ahk
 #ifWinActive
 
 ; Change Key
