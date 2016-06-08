@@ -1,4 +1,7 @@
-#ifWinActive , Microsoft Visual Studio
+#ifWinActive ahk_exe devenv.exe
+
+
+
 ;<<Hot String>>
 :*:re;::return;
 :*:br;::break;
