@@ -24,6 +24,7 @@ F7::Send {Volume_Down 5}  ; Raise the master volume by 1 interval (typically 5%)
 
 
 
+
 ;^b::Send !b
 
 /*#ifWinActive, Project
