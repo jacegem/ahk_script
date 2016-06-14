@@ -192,6 +192,9 @@ return
 :?*:rptlf::		;게실 → 계실
 	HS_K("rPtlf", 2)
 	return
+:?*:rpwhk::		;게좌 → 계좌
+	HS_K("rPwhk", 2)		
+	return	
 :?*:rptr::		;겟ㄱ → 겠ㄱ
 	HS_K("rpTr", 2)		
 	return	
