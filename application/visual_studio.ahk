@@ -1,6 +1,11 @@
 #ifWinActive ahk_exe devenv.exe
 
 
+^/::Send ^k^c
+^+/::Send ^k^u
+F1::Send ^.
+F2::Send ^r^r
+
 
 ;<<Hot String>>
 :*:re;::return;
@@ -27,18 +32,18 @@
 
 ;<<Short Cut>>
 +Space::send, ^{space}
-F1::
-	Send, ^km
-	Sleep 1000
-	Send, {F12}
-	return
+;  F1::
+;  	Send, ^km
+;  	Sleep 1000
+;  	Send, {F12}
+;  	return
 F8::Send, ^{F5}
 ;`;::send, {END};
 
 +^C::Send, +!C
 +^R::Send, +!R
 
-;;;;;;;;;;;; ÀÌÅ¬¸³½º ´ÜÃàÅ° »ç¿ë
+;;;;;;;;;;;; ï¿½ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Å° ï¿½ï¿½ï¿½ï¿½
 ^d::
 		Send ^+l
 	return
