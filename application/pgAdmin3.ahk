@@ -30,11 +30,18 @@ CapsLock & Enter::Send ^{ENTER}
 ;::"::""
 
 ;;;;;;;;;;;; CHANGE TO TABLE NAME
+:*:/cip::CAMERA_INFO_PS
+:*:/cc::COMMON_CODE
+:*:/ui::USER_INFO
+:*:/afi::ATTACH_FILE_INFO
+:*:/evci::EVENT_VIDEO_CHASE_INFO
+:*:/evcr::EVENT_VIDEO_CHASE_RESULT_INFO
 :*:/req::AMRM_EXPORT_REQUEST
 :*:/log::ACOM_CONN_LOG
 :*:/stat::ACOM_CONN_STAT
 :*:/ognz::ACOM_CONN_OGNZ
 :*:/sys::ACOM_CONN_SYS
+
 
 
 #HotString B

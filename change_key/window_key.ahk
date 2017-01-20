@@ -1,6 +1,8 @@
 ;^#m::Run, http://localhost/mt
 ^#d::Run, http://localhost/
 
++#Up::WinMaximize, A  ; Assign a hotkey to maximize the active window.
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; AutoHotKey 'ܳd ԜàŰ
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -8,6 +10,27 @@
 Msgbox,4,, Do you really want to reload this script?
 ifMsgBox, Yes, Reload
 return
+
+
+#c::
+	path = "C:\Program Files (x86)\Microsoft VS Code\Code.exe"
+	RunActivateOrSwitch(path)
+	return
+
+; run EverNote
+#n::
+	;  path = "%ENV_PROGRAMFILES_X86%\Evernote\Evernote\Evernote.exe"
+
+	;  if (isHome){
+	;  	path = "C:\Users\Administrator\AppData\Local\Apps\Evernote\Evernote\Evernote.exe"
+	;  }
+	
+	;  RunActivateOrSwitch(path)	
+	;TrayTip, ahk hotkey, run Evernote
+	path = "C:\Program Files (x86)\Evernote\Evernote\Evernote.exe"
+	RunActivateOrSwitch(path)
+	return
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Favorite folders.
@@ -17,9 +40,21 @@ return
 	EnvGet, dropbox, dropbox
 	Run %dropbox%\Script\AutoHotKey
 	return
-#1::Run F:\1.Project\2014_WAVUS\2014.06_부동산_일원화
-#2::Run \\192.168.200.220 				;; ōӝ؁ и/ƺԵ
-#3::Run \\10.47.4.201				;; Шd ¼Э
+#1::
+	;  path = C:\Program Files\Internet Explorer\Iexplore.exe
+	;  RunActivateOrSwitch(path)
+	;  Send ^l
+	;  Send http://localhost:9898/web/stat/statView.do
+	;  Send {Enter}
+	;  Send admin{Tab}
+	;  Send 1234{Enter}
+	URL = http://localhost:9898/web/stat/statView.do
+	WB := ComObjCreate("InternetExplorer.Application")
+	WB.Visible := True
+	WB.Navigate(URL)	
+	return
+;#2::Run \\192.168.200.220 				;; ōӝ؁ и/ƺԵ
+;#3::Run \\10.47.4.201				;; Шd ¼Э
 ;#0::Run F:\5.Cloud\Dropbox\Script\AutoHotKey
 
 
@@ -68,17 +103,7 @@ return
 }
 Return
 
-; run EverNote
-#n::
-	path = "%ENV_PROGRAMFILES_X86%\Evernote\Evernote\Evernote.exe"
 
-	if (isHome){
-		path = "C:\Users\Administrator\AppData\Local\Apps\Evernote\Evernote\Evernote.exe"
-	}
-	
-	RunActivateOrSwitch(path)	
-	;TrayTip, ahk hotkey, run Evernote
-return
 
 ; run wunderlist
 #w::

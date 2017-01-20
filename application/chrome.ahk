@@ -1,6 +1,20 @@
 #ifWinActive ahk_exe chrome.exe
 ;<<Hot String>>
 
+
+CapsLock & r::	
+	clipSaved := Clipboard
+	text := "http://121.160.17.170/redmine/projects/istd_issue"
+	Clipboard := text
+	ClipWait 2
+	Send ^l
+	Send ^v		
+	Sleep, 100
+	Send {Enter}
+	clipboard := clipSaved
+	clipSaved = 
+	return
+
 ;<<Short Cut>>
 ;CapsLock & Space::Send ^{Space}
 CapsLock & [::Send +^{tab}
@@ -12,8 +26,11 @@ CapsLock & F4::Send {F4}
 CapsLock & F5::Send {F5}
 CapsLock & F11::Send {F11}
 
-F1::Send ^+{TAB}		; Prev Tab
-F2::Send ^{TAB}			; Next Tab
+CapsLock & t::Send, +!t
+
+;; not use cause I use chrome extension Vimium
+;;F1::Send ^+{TAB}		; Prev Tab
+F2::Send {F2}			; 
 F4::Send ^!{PgUp}		; Full Screen
 F5::Send ^{F5}			; Refresh		; 
 ;F11::Send +{F11}		; Toggel Hacker Vision

@@ -3,7 +3,85 @@
 ;;;;;;;  
 
 #Hotstring, B0 C
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\
+:*:orm::      ;     
+        E(3, "ORM") 
+        return
+:*:json::      ;     
+        E(3, "JSON") 
+        return
+:*:xd::      ;     
+        E(2, "XD") 
+        return
+:*:cybos::      ;     
+        E(4, "CYBOS") 
+        return
+:*:.py::      ;     ㄴㅅㄱ
+        E() 
+        return
+:*:str::      ;     ㄴㅅㄱ
+        E() 
+        return
+:*:gc::      ;     ㄴㅅㄱ
+        E(2, "GC") 
+        return
+:*:python::      ;     
+        E() 
+        return
+:*:admin::      ;     
+        E() 
+        return
+:*:osd::      ;     
+        E(3, "OSD") 
+        return
+:*:activex::      ;     
+        E(7, "ActiveX") 
+        return
+:*:dmz::      ;    
+        E(1, "DMZ") 
+        return
+:*:ppt::      ;    
+        E(3, "PPT") 
+        return
+:*:qgis::      ;    
+        E(2, "QGIS") 
+        return
+:*:erd::      ;    
+        E(3, "ERD") 
+        return
+:*:erp::      ;    
+        E(3, "ERP") 
+        return
+:*:pk::      ;    
+        E(2, "PK") 
+        return
+:*:gtx::      ;    
+        E(3, "GTX") 
+        return
+:*:svn::      ;    
+        E(3, "SVN") 
+        return
+:*:rss::      ;    
+        E(3, "RSS") 
+        return
+:*:jai::      ;    
+        E(2, "JAI") 
+        return
+:*:mvc::      ;  
+        E(3, "MVC") 
+        return
+:*:Config::      ;  
+        E(4) 
+        return
+:*:config::      ;  
+        E(4) 
+        return
+:*:dc::      ;  
+        E(2, "DC") 
+        return
+:*:gdi::      ;  
+        E(2, "GDI") 
+        return
 :*:todo::      ;  
         E(2, "todo") 
         return
@@ -40,7 +118,7 @@
 :*:usn::      ; 
         E(3, "USN")
         return
-:*:rfid::      ; ㄱ량
+:*:rfid::      ; ?��?��
         E(2, "RFID")
         return
 :*:vworld::      ; 
@@ -106,10 +184,10 @@
 ::gps::       ;   
         E(1, "GPS")
         return
-:*:a-gnss::       ;     ㅁ-훈ㄴ 
+:*:a-gnss::       ;     ?��-?��?�� 
         E(4, "A-GNSS")
         return
-:*:gnss::       ;     훈ㄴ 
+:*:gnss::       ;     ?��?�� 
         E(2, "GNSS")
         return
 :*:dgps::       ;     
@@ -154,11 +232,8 @@
 :*:hts::       ;     2016.03.04
         E(3, "HTS")
         return
-:*:js::       ;     
-        E(2, "js")
-        return
-:*:py::       ;     
-        E(2, "py")
+:*:.js::       ;     
+        E(3, ".js")
         return
 :*:hwww::       ;     
         E(4, "http://www.")
@@ -344,16 +419,16 @@
 :*:DOM::       ; 
         E(2)  
         return
-:*:yahoo::       ;  ㅛ뫠ㅐ
+:*:yahoo::       ;  ?��뫠ㅐ
         E(5, "Yahoo")  
         return
-:*:Yahoo::       ;  ㅛ뫠ㅐ
+:*:Yahoo::       ;  ?��뫠ㅐ
         E(5)  
         return
-:*:yui::       ;  ㅛㅕㅑ
+:*:yui::       ;  ?��?��?��
         E(3, "YUI")  
         return
-:*:YUI::       ;  ㅛㅕㅑ
+:*:YUI::       ;  ?��?��?��
         E(3)  
         return
 :*:jquery::       ;  
@@ -978,7 +1053,7 @@
 :*:ev::        ;   Earned Value
         E(2, "EV")  
         return
-:*:ac::        ;   Actual Cost
+:*:ac::        ;   Actual Cost  AC
         E(2, "AC")  
         return
 :*:bac::       ;  Budget At Completion  
@@ -1395,7 +1470,7 @@
 ::3d::	
 	E(2, "3D")
 	return
-:*:3g::	
+:*:3G::	
 	E(2, "3G")
 	return
 :*:api::
@@ -1466,7 +1541,7 @@
 	E(4, "DFSS")
 	return
 ::rnd::
-	E(3, "R&D")
+	E(1, "R&D")
 	return
 :*:ctq::
     E(3, "CTQ")
@@ -1667,34 +1742,33 @@ K()
 	return
 }
 
+#if, !(WinActive("ahk_exe iexplore.exe") or WinActive("ahk_exe Hwp.exe") or WinActive("ahk_exe ApplicationFrameHost.exe"))
 
-#IfWinNotActive, ahk_class HwpApp : 7.0
-
-:?:dms::     ;; ?? ?€
-:?:fksms::        ;; ?? ?”
-:?:sms::        ;; ?? ?”
+:?:dms::     ;; ?? ??��
+:?:fksms::        ;; ?? ????
+:?:sms::        ;; ?? ????
 :?:fmf::        ;; ?? ë¥?
-:?:dmf::        ;; ?? ?„
+:?:dmf::        ;; ?? ????
 :?:dl::     ;; ??  ??
-:?:dhk::        ;; ?? ?€
+:?:dhk::        ;; ?? ??��
 :?:rhk::        ;; ?? ê³?
-:?:dml::        ;; ?? ?˜
+:?:dml::        ;; ?? ???
 :?:dp::     ;; ?? ?
 :?:dmfh::   ;; ???? ?¼ë?
 :?:dprp::   ;; ???? ?ê²Œ
 :?:dptj::       ;; ???? ??œ
 :?:fh::     ;; ?? ë¡œ
-:?:qnxj::     ;; 부터
+:?:qnxj::     ;; ��??��
 :?:qhek::     ;; 보다
 :?:ckarh::     ;; 참고
-:?:emfdml::     ;; 들의
-:?:emd::     ;; 등
+:?:emfdml::     ;; ?��?��
+:?:emd::     ;; ?��
         K()
         return
-;; 겹치는 영문이 있어서, 제외 fork
-;;:?:rk::     ;; ??  ê°€
+;; 겹치?�� ?��문이 ?��?��?��, ?��?�� fork
+;;:?:rk::     ;; ??  ê°?��
 
-#IfWinNotActive
+#if
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

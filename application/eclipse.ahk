@@ -1,8 +1,11 @@
-SetTitleMatchMode, RegEx
-#ifWinActive ahk_exe eclipse.exe
+;SetTitleMatchMode, RegEx
+;#ifWinActive ahk_exe LiClipse.exe
+#if, WinActive("ahk_exe LiClipse.exe") || WinActive("ahk_exe eclipse.exe")
 ;<<Hot String>>
 
 ;<<Short Cut>>
+^/:: Send ^+/
+^+/:: Send ^+|
 ~LButton & F1:: Send {F11}
 ~LButton & F2:: Send ^{F11}
 
@@ -22,7 +25,7 @@ CapsLock & 1::Send ^1
 
 +Space::Send ^{Space}
 
-^y::Send +^y ; Eclipse Comment ShortKey
+;^y::Send +^y ; Eclipse Comment ShortKey
 ^j::Send +!{j} ; Eclipse Comment ShortKey
 !j::Send +!j ; Eclipse Comment ShortKey
 
@@ -33,6 +36,7 @@ CapsLock & 1::Send ^1
 :*:br;::break;
 :?: e:: =
 :?: ee:: ==
+:?: eee:: ===
 :?: een:: == null
 ::ne::!= 
 ;:?: m:: -
@@ -163,5 +167,5 @@ F11::Send ^+y
 $F12::Send ^{F11}
 
 
-#ifWinActive
+#if
 

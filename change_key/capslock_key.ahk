@@ -6,7 +6,8 @@ SetCapslockState, Alwaysoff
 
 CapsLock::SetCapslockState, AlwaysOff
 CapsLock & Space::send, {vk15sc138}
-
+CapsLock & LButton::Send !#{LEFT}
+CapsLock & RButton::Send !#{RIGHT}
 
 global xDiff := 0
 global yDiff := 0 
@@ -98,7 +99,7 @@ capslock & m::
 capslock & .::
 	if (moveMouse(1,1)) {	     
 	}else
-		MouseClick, right
+		;MouseClick, right
 	return
 
 
@@ -142,7 +143,7 @@ capslock & s::Send ^s
 capslock & d::Send ^d
 capslock & f::Send ^f
 capslock & g::Send ^g
-capslock & w::Send ^w
+capslock & w::Send #{TAB}
 capslock & e::Send {Blind}{delete}
 capslock & r::Send {Blind}{Enter}
 capslock & p::Send {AppsKey}

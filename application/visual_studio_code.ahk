@@ -9,8 +9,8 @@ $F4::Send {F12}
 ;;; 기존 코드들 
 
 ;<<Short Cut>>
-^+f::Send !+f
-!+f::Send ^+f
+;^+f::Send !+f
+;!+f::Send ^+f
 
 
 ;CapsLock & Space::Send ^{Space}

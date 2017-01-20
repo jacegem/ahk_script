@@ -51,7 +51,7 @@ ComObjError(false)
 #include .\application\notepad++.ahk
 #include .\application\evernote.ahk
 #include .\application\chrome.ahk
-#include .\application\ahk_class SWT_Window0.ahk
+;#include .\application\ahk_class SWT_Window0.ahk
 #include .\application\power_point.ahk
 #include .\application\word.ahk
 #include .\application\firefox.ahk
@@ -62,9 +62,11 @@ ComObjError(false)
 #include .\application\mono_develop.ahk
 #include .\application\haroopad.ahk
 #include .\application\visual_studio_code.ahk
+#include .\application\pycharm.ahk
+#include .\application\typora.ahk
 
 ;  한글에서 정상적으로 작동하지 않으므로, 아래 내용은 제외하도록 처리합니다. 
-#ifWinNotActive ahk_class HwpApp : 8.0
+#ifWinNotActive ahk_exe Hwp.exe
     ; HotString
     #include .\hotstring\english_hotstring.ahk
     #include .\hotstring\english_dictionary.ahk
@@ -84,6 +86,7 @@ ComObjError(false)
 #include .\change_key\mouse_button.ahk
 #include .\change_key\hanja_key.ahk
 #include .\change_key\AppsKeys.ahk
+#include .\change_key\function_key.ahk
 
 
 

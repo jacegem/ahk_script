@@ -16,7 +16,7 @@ $F4::
 	Run, %P_SUBLIME% %file%
 return
 */
-
+F2::Send {F2}
 $+F4::F4
 $F4::
 	file := Explorer_GetSelected()

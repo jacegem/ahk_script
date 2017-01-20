@@ -96,5 +96,6 @@ EndScipt:
 	bEnd = true
 return
 
+F5::Send ^{F5}
 
 #ifWinActive

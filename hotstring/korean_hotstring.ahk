@@ -109,7 +109,8 @@ return
 	return	
 :?*:rk/::		; 가/ → 까?
 	HS_K("Rk?", 2)		
-	return	
+	return
+	
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;; ㄱ
@@ -123,6 +124,9 @@ return
 ;:?:rkwl::		;가지 → 까지
 ;	HS_K("Rkwl ", 3)		
 ;	return	
+:*?:rkfrma::		; 갈금 → 깔끔
+	HS_K("RkfRma", 2)		
+	return	
 :*?:rktt::		;갓ㅅ → 갔ㅅ
 	HS_K("rkTt", 2)		
 	return	
@@ -300,6 +304,9 @@ return
 :*:skfwk::		;날자 → 날짜
 	HS_K("skfWk",2)		
 	return
+:*:skftl::		;날시 → 날씨
+	HS_K("skfTl",2)		
+	return
 :*:sktt::		; 낫ㅅ → 났ㅅ
 	HS_K("skTt",2)		
 	return
@@ -464,14 +471,17 @@ return
 :?*:fktt::		; 랏ㅅ → 랐ㅅ
 	HS_K("fkTt",2)		
 	return	
-:?*:fote::		;랫ㄷ → 랬ㄷ
-	HS_K("foTe",2)		
-	return	
+;:?*:fote::		;랫ㄷ → 랬ㄷ
+;	HS_K("foTe",2)		
+;	return	
 :?*:fotw::		;랫ㅈ → 랬ㅈ
 	HS_K("foTw", 2)		
 	return	
 :?*:fjte::		; 럿ㄷ → 렀ㄷ
 	HS_K("fjTe", 2)		
+	return	
+:?*:fute::		; 렷ㄷ → 렸ㄷ
+	HS_K("fuTe", 2)		
 	return	
 :?*:futt::		; 렷ㅅ → 렷ㅅ
 	HS_K("fuTt",2)		
@@ -558,6 +568,9 @@ return
 	return
 :?*:qjfut::      	; 버렷 → 버렸
 	HS_K("qjfuT",2)	
+	return
+:?*:qjafp::      	; 범레 → 범례
+	HS_K("qjafP",2)	
 	return
 :?*:queo::      	; 벼대 → 뼈대
 	HS_K("Queo",2)	
@@ -1030,6 +1043,9 @@ return
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;  ㅍ
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+:?*:vkdltjs::		; 파이선 → 파이썬
+	HS_K("vkdlTjs", 3)		
+	return	
 :*:vprl::		;페기 → 폐기
 	HS_K("vPrl",2)		
 	return
@@ -1138,10 +1154,10 @@ HS_K(transform, korWordCount := 1)
     if %ret% != 0                ; 0 means IME is in English mode now.    
     {
     	;;Send {Left}{Right}
-	Send {vk15sc138 2}   
-	Send {BS %korWordCount%}
-	;Sleep 100
-         	Send %transform%
+		Send {vk15sc138 2}   
+		Send {BS %korWordCount%}
+		;Sleep 100
+		Send %transform%
     }
 }
 

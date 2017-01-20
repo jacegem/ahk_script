@@ -1,8 +1,7 @@
 #ifWinActive ahk_exe devenv.exe
 
-
-^/::Send ^k^c
-^+/::Send ^k^u
+^/::Send ^k^c	 	; 주석 달기
+^+/::Send ^k^u		; 주석 해지
 F1::Send ^.
 F2::Send ^r^r
 
@@ -44,9 +43,9 @@ F8::Send, ^{F5}
 +^R::Send, +!R
 
 ;;;;;;;;;;;; ��Ŭ���� ����Ű ����
-^d::
-		Send ^+l
-	return
+;  ^d::
+;  		Send ^+l
+;  	return
 
 	^!up::
 		Save := Clipboard
