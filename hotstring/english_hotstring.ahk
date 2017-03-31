@@ -4,14 +4,50 @@
 
 #Hotstring, B0 C
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\
+:*:apache::      ;     
+        E(2, "apache") 
+        return
+:*:iot::      ;     
+        E(3, "IoT") 
+        return
+:*:debugger::      ;     
+        E(8, "debugger") 
+        return
+:*:seq::      ;     
+        E(3, "SEQ") 
+        return
+:*:nvr::      ;     
+        E(3, "NVR") 
+        return
+:*:pnu::      ;     
+        E(3, "PNU") 
+        return
+:*:proj::      ;     
+        E(3, "proj") 
+        return
+:*:epsg::      ;     
+        E(1, "EPSG") 
+        return
+:*:/kg::      ;     
+        E(3, "kg") 
+        return
+:*:/cm::      ;     
+        E(2, "cm") 
+        return
+:*:pdf::      ;     
+        E(3, "PDF") 
+        return
+:*:ptz::      ;     
+        E(3, "PTZ") 
+        return
+:*:mdt::      ;     
+        E(3, "MDT") 
+        return
 :*:orm::      ;     
         E(3, "ORM") 
         return
 :*:json::      ;     
         E(3, "JSON") 
-        return
-:*:xd::      ;     
-        E(2, "XD") 
         return
 :*:cybos::      ;     
         E(4, "CYBOS") 

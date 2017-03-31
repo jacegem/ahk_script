@@ -40,6 +40,9 @@ vmax := 1
 ;#ifWinNotActive ahk_class IEFrame
 ;#ifWinNotActive ahk_class F13FrameWindow
 
+useScroll := false
+
+
 WheelUp::    Goto Scroll
 WheelDown::  Goto Scroll
 +#WheelUp::   Suspend
@@ -48,7 +51,17 @@ WheelDown::  Goto Scroll
 ;#ifWinActive
 ;#ifWinActive
 
+
+Capslock & ScrollLock::
+	useScroll := !useScroll	
+	return
+
 Scroll:
+	if (useScroll){
+		MouseClick %A_ThisHotkey%
+		return
+	}
+	
 	/*
 	IfWinActive, ahk_class IEFrame
 	{			
@@ -65,7 +78,7 @@ Scroll:
 	*/
 
 	t := A_TimeSincePriorHotkey
-	if (A_PriorHotkey = A_ThisHotkey && t < wheelTimeOut)
+	if (A_PriorHotkey = A_ThisHotkey && t < wheelTimeOut)	
 	{
 		; Remember how many times we've scrolled in the current direction
 		distance++

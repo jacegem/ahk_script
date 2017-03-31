@@ -118,6 +118,9 @@ return
 :*:rkrk::		;가가 → 가까
 	HS_K("rkRk", 2)		
 	return	
+:*:rkrp::		;가게 → 가계
+	HS_K("rkrP", 2)		
+	return	
 ;::rkwl::		;가지
 ;	HS_K("rkwl ", 3)		
 ;	return		
@@ -159,6 +162,9 @@ return
 	return	
 :*:rmx::		;긑 → 끝
 	HS_K("Rmx")		
+	return	
+:?*:rprmq::		; 게급 → 계급
+	HS_K("rPrmq", 2)		
 	return	
 :?*:rpfid::		;게량 → 계량
 	HS_K("rPfid", 2)		
@@ -767,10 +773,13 @@ return
 	return		
 :?*:dprk::   		; 에가 → 예가
 	HS_K("dPrk",2)
+	return	
+:?*:dprma::   		; 에금 → 예금
+	HS_K("dPrma",2)
 	return		
-:*:dpsms::   		; 에는 → 예는
-	HS_K("dPsms", 2)
-	return		
+;  :*:dpsms::   		; 에는 → 예는
+;  	HS_K("dPsms", 2)
+;  	return		
 :*:dpdhk::   		; 에와 → 예와
 	HS_K("dPdhk", 2)
 	return		

@@ -66,7 +66,7 @@ ComObjError(false)
 #include .\application\typora.ahk
 
 ;  한글에서 정상적으로 작동하지 않으므로, 아래 내용은 제외하도록 처리합니다. 
-#ifWinNotActive ahk_exe Hwp.exe
+;#ifWinNotActive ahk_exe Hwp.exe
     ; HotString
     #include .\hotstring\english_hotstring.ahk
     #include .\hotstring\english_dictionary.ahk
@@ -74,7 +74,7 @@ ComObjError(false)
     #include .\hotstring\symbol_hotstring.ahk
     #include .\hotstring\auto_correct.ahk
     #include .\hotstring\eng_to_kor.ahk
-#ifWinActive
+;#ifWinActive
 
 ; Change Key
 #Include .\change_key\shift_key.ahk

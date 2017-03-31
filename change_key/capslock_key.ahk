@@ -192,3 +192,13 @@ Capslock & y::SetCapsLockState, AlwaysOn
 ; Window Lock
 ;+^CapsLock::Run, rundll32.exe user32.dll`, LockWorkStation ,,,
 ;#CapsLock::Run, rundll32.exe user32.dll`, LockWorkStation ,,,
+
+
+
+Capslock & F10::
+	MouseClick, Left
+	Send {HOME}
+	Send +{END}
+	Send {DELETE}
+	Send {Enter}
+	return
