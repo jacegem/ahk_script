@@ -1,7 +1,8 @@
 #ifWinActive ahk_exe pycharm.exe
 ;<<Hot String>>
 
-F5::Send ^+{F10}
+; run debug
+F5::Send +{F9}
 
 
 #Hotstring R B

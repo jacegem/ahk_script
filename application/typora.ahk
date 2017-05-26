@@ -15,23 +15,32 @@
     return
 :*:``js::       ;		
 	deleteLine()	
-	Set_Absolutely_English("``````javascript")			
-	sendEnter()	
+	Set_Absolutely_English("``````javascript")	
+	Send {ENTER}			
+	;sendEnter()	
+    return
+:*:``ja::       ;		
+	deleteLine()	
+	Set_Absolutely_English("``````java")	
+	Send {ENTER}			
+    return
+:*:``sq::       ;		
+	deleteLine()	
+	Set_Absolutely_English("``````sql")	
+	Send {ENTER}			
     return
 :*:``ht::       ;	
 	deleteLine()
 	Set_Absolutely_English("``````html")		
-	sendEnter()	
+	Send {ENTER}		
     return
 :*:``sh::       ;	
 	deleteLine()
 	Set_Absolutely_English("``````sh")		
-	sendEnter()	
+	Send {ENTER}		
     return
 
 sendEnter(){
-	Sleep, 100
-	Send {BS 2}
 	Sleep, 100
 	Send {BS}{ENTER}	
 }

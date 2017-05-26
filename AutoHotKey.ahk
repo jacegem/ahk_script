@@ -64,6 +64,7 @@ ComObjError(false)
 #include .\application\visual_studio_code.ahk
 #include .\application\pycharm.ahk
 #include .\application\typora.ahk
+#include .\application\xmind.ahk
 
 ;  한글에서 정상적으로 작동하지 않으므로, 아래 내용은 제외하도록 처리합니다. 
 ;#ifWinNotActive ahk_exe Hwp.exe

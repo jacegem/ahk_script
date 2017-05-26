@@ -1,5 +1,5 @@
 ;SetTitleMatchMode, RegEx
-#ifWinActive Xshell
+#ifWinActive ahk_exe Xshell.exe
 
 ;<<Short Cut>>
 CapsLock & c::Send ^{INSERT}	;; copy

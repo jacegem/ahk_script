@@ -41,18 +41,20 @@ return
 	Run %dropbox%\Script\AutoHotKey
 	return
 #1::
-	;  path = C:\Program Files\Internet Explorer\Iexplore.exe
-	;  RunActivateOrSwitch(path)
-	;  Send ^l
-	;  Send http://localhost:9898/web/stat/statView.do
-	;  Send {Enter}
-	;  Send admin{Tab}
-	;  Send 1234{Enter}
 	URL = http://localhost:9898/web/stat/statView.do
 	WB := ComObjCreate("InternetExplorer.Application")
 	WB.Visible := True
 	WB.Navigate(URL)	
 	return
+#2::
+	URL = http://localhost:9898/mobile/login/LoginView.do
+	WB := ComObjCreate("InternetExplorer.Application")
+	WB.Visible := True
+	WB.Navigate(URL)	
+	return
+
+
+
 ;#2::Run \\192.168.200.220 				;; ōӝ؁ и/ƺԵ
 ;#3::Run \\10.47.4.201				;; Шd ¼Э
 ;#0::Run F:\5.Cloud\Dropbox\Script\AutoHotKey
