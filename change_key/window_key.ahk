@@ -41,17 +41,24 @@ return
 	Run %dropbox%\Script\AutoHotKey
 	return
 #1::
-	URL = http://localhost:9898/web/stat/statView.do
-	WB := ComObjCreate("InternetExplorer.Application")
-	WB.Visible := True
-	WB.Navigate(URL)	
+	url = http://localhost:9898/web/stat/statView.do
+	runExplorer(url)
 	return
 #2::
-	URL = http://localhost:9898/mobile/login/LoginView.do
+	url = http://localhost:9898/mobile/login/LoginView.do
+	runExplorer(url)
+	return
+#3::
+	url = http://localhost:10002/
+	runExplorer(url)
+	return
+
+runExplorer(url){
 	WB := ComObjCreate("InternetExplorer.Application")
 	WB.Visible := True
-	WB.Navigate(URL)	
+	WB.Navigate(url)	
 	return
+}
 
 
 

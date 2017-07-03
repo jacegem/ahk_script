@@ -15,9 +15,8 @@
     return
 :*:``js::       ;		
 	deleteLine()	
-	Set_Absolutely_English("``````javascript")	
-	Send {ENTER}			
-	;sendEnter()	
+	Set_Absolutely_English("``````javascript")
+	Send {ENTER}				
     return
 :*:``ja::       ;		
 	deleteLine()	
@@ -39,10 +38,21 @@
 	Set_Absolutely_English("``````sh")		
 	Send {ENTER}		
     return
+:*:``xm::       ;	
+	deleteLine()
+	Set_Absolutely_English("``````xml")		
+	Send {ENTER}		
+    return
+:*:``cs::       ;	
+	deleteLine()
+	Set_Absolutely_English("``````css")		
+	Send {ENTER}		
+    return
 
 sendEnter(){
 	Sleep, 100
-	Send {BS}{ENTER}	
+	Send {BS 5}
+	Send {ENTER}	
 }
 
 #Hotstring, b r

@@ -3,7 +3,10 @@
 
 ; run debug
 F5::Send +{F9}
-
+F9::Send +{F9}
++F9::Send {F9}
+F10::Send ^+{F10}
++F10::Send {F10}
 
 #Hotstring R B
 :*:re;::return;
