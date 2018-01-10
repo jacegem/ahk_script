@@ -12,7 +12,7 @@
 
 
 ;; readFile
-Loop, read, .\dynamic_hotstring.ini
+Loop, read, .\hotstring\dynamic_hotstring.ini
 {
     if (SubStr(Trim(A_LoopReadLine), 1, 1) = "#"){
         Continue
@@ -35,3 +35,10 @@ Loop, read, .\dynamic_hotstring.ini
     x4 = 
 }
 
+
+Hotstrings("([A-O])(\d)(\d)([012])\s","expand",3)
+Return
+
+Expand:
+Send % ($.value(4) = "0" ? "PLOCK_LOW." : "PLOCK.") $.value(1) "." $.value(2) $.value(3) "." $.value(4)
+Return

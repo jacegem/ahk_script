@@ -26,13 +26,37 @@ ComObjError(false)
 ; Util
 #include .\util\util_vars.ahk
 
+;; 2018.01.10 Dynamic HotString 사용 안함
 ; Dynamic HotString
-#include .\hotstring\dynamic_hotstring.ahk
-#include .\util\Hotstring.ahk
+;#include .\hotstring\dynamic_hotstring.ahk
+;#include .\util\Hotstring.ahk
 
 ; Scrolling
 #include .\util\Absolutely_Kor_Eng.ahk
 #include .\util\Accelerated Scrolling 1.3.ahk
+
+;  한글에서 정상적으로 작동하지 않으므로, 아래 내용은 제외하도록 처리합니다. 
+;#ifWinNotActive ahk_exe Hwp.exe
+    ; HotString
+    #include .\hotstring\english_hotstring.ahk
+    #include .\hotstring\english_dictionary.ahk
+    #include .\hotstring\korean_hotstring.ahk
+    #include .\hotstring\symbol_hotstring.ahk
+    #include .\hotstring\auto_correct.ahk
+    #include .\hotstring\eng_to_kor.ahk
+;#ifWinActive
+
+; Change Key
+#Include .\change_key\shift_key.ahk
+#Include .\change_key\control_key.ahk
+#include .\change_key\capslock_key.ahk
+#include .\change_key\alternate_mode.ahk
+#include .\change_key\window_key.ahk
+#include .\change_key\alt_key.ahk
+#include .\change_key\mouse_button.ahk
+#include .\change_key\hanja_key.ahk
+#include .\change_key\AppsKeys.ahk
+#include .\change_key\function_key.ahk
 
 ; For Applications
 #include .\application\visual_studio.ahk
@@ -64,32 +88,11 @@ ComObjError(false)
 #include .\application\visual_studio_code.ahk
 #include .\application\pycharm.ahk
 #include .\application\typora.ahk
-#include .\application\xmind.ahk
-
-;  한글에서 정상적으로 작동하지 않으므로, 아래 내용은 제외하도록 처리합니다. 
-;#ifWinNotActive ahk_exe Hwp.exe
-    ; HotString
-    #include .\hotstring\english_hotstring.ahk
-    #include .\hotstring\english_dictionary.ahk
-    #include .\hotstring\korean_hotstring.ahk
-    #include .\hotstring\symbol_hotstring.ahk
-    #include .\hotstring\auto_correct.ahk
-    #include .\hotstring\eng_to_kor.ahk
-;#ifWinActive
-
-; Change Key
-#Include .\change_key\shift_key.ahk
-#Include .\change_key\control_key.ahk
-#include .\change_key\capslock_key.ahk
-#include .\change_key\alternate_mode.ahk
-#include .\change_key\window_key.ahk
-#include .\change_key\alt_key.ahk
-#include .\change_key\mouse_button.ahk
-#include .\change_key\hanja_key.ahk
-#include .\change_key\AppsKeys.ahk
-#include .\change_key\function_key.ahk
-
-
+;#include .\application\xmind.ahk
+#include .\application\boostnote.ahk
+#include .\application\cmd.ahk
+#include .\application\conemu.ahk
+#include .\application\atom.ahk
 
 
 
@@ -99,7 +102,6 @@ ComObjError(false)
 
 ; make the scroll lock key (ScrLk) toggle all hotkeys.
 $ScrollLock::Suspend
-
 
 
 
@@ -124,3 +126,4 @@ $ScrollLock::Suspend
    . "`nAHK Path: " . A_AhkPath
 ExitApp
 */
+

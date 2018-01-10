@@ -3,7 +3,55 @@
 ;;;;;;;  
 
 #Hotstring, B0 C
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+:*:ar::      ;   
+        E(2, "AR") 
+        return
+:*:vr::      ;   
+        E(2, "VR") 
+        return
+:*:mr::      ;   
+        E(2, "MR") 
+        return
+:*:toc::      ;   
+        E(1, "TOC") 
+        return
+:*:sip::      ;   
+        E(3, "SIP") 
+        return
+:*:lstm::      ;   
+        E(3, "LSTM") 
+        return
+:*:gru::      ;     
+        E(2, "GRU") 
+        return
+:*:nlp::      ;     
+        E(2, "NLP") 
+        return
+:*:cnn::      ;
+        E(2, "CNN") 
+        return
+:*:rnn::      ;    
+        E(2, "RNN") 
+        return
+:*:www::      ;     
+        E(3, "www") 
+        return
+:*:foreach::      ;     
+        E(6, "foreach") 
+        return
+:*:param::      ;     
+        E(4, "param") 
+        return
+:*:rx::      ;     
+        E(2, "Rx") 
+        return
+:*:vue::      ;    
+        E(1, "VUE") 
+        return
+:*:am::      ;    
+        E(1, "AM") 
+        return
 :*:cnn::      ;    
         E(2, "CNN") 
         return

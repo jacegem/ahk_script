@@ -6,8 +6,8 @@ SetCapslockState, Alwaysoff
 
 CapsLock::SetCapslockState, AlwaysOff
 CapsLock & Space::send, {vk15sc138}
-CapsLock & LButton::Send !#{LEFT}
-CapsLock & RButton::Send !#{RIGHT}
+CapsLock & LButton::Send !^{LEFT}
+CapsLock & RButton::Send !^{RIGHT}
 
 global xDiff := 0
 global yDiff := 0 

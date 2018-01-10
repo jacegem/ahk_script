@@ -4,7 +4,7 @@ SetTitleMatchMode, RegEx
 
 ^d::Send ^+k
 $F4::Send {F12}
-
+^+f::Send !F
 
 ;;; 기존 코드들 
 

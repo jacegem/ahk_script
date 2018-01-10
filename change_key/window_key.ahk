@@ -18,18 +18,18 @@ return
 	return
 
 ; run EverNote
-#n::
-	;  path = "%ENV_PROGRAMFILES_X86%\Evernote\Evernote\Evernote.exe"
+; #n::
+; 	;  path = "%ENV_PROGRAMFILES_X86%\Evernote\Evernote\Evernote.exe"
 
-	;  if (isHome){
-	;  	path = "C:\Users\Administrator\AppData\Local\Apps\Evernote\Evernote\Evernote.exe"
-	;  }
+; 	;  if (isHome){
+; 	;  	path = "C:\Users\Administrator\AppData\Local\Apps\Evernote\Evernote\Evernote.exe"
+; 	;  }
 	
-	;  RunActivateOrSwitch(path)	
-	;TrayTip, ahk hotkey, run Evernote
-	path = "C:\Program Files (x86)\Evernote\Evernote\Evernote.exe"
-	RunActivateOrSwitch(path)
-	return
+; 	;  RunActivateOrSwitch(path)	
+; 	;TrayTip, ahk hotkey, run Evernote
+; 	path = "C:\Program Files (x86)\Evernote\Evernote\Evernote.exe"
+; 	RunActivateOrSwitch(path)
+; 	return
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -73,8 +73,8 @@ runExplorer(url){
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ; run sublime text
-#b::	
-	path = %P_SUBLIME%
+#b::
+	path = "C:\Users\d\AppData\Local\boost\app-0.8.11\Boostnote.exe"
 	RunActivateOrSwitch(path)	
 return
 

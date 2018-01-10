@@ -1,7 +1,6 @@
 #ifWinActive ahk_exe chrome.exe
 ;<<Hot String>>
 
-
 CapsLock & r::	
 	clipSaved := Clipboard
 	text := "http://121.160.17.170/redmine/projects/istd_issue"
@@ -35,99 +34,115 @@ F4::Send ^!{PgUp}		; Full Screen
 F5::Send ^{F5}			; Refresh		; 
 ;F11::Send +{F11}		; Toggel Hacker Vision
 
-F6::Send {Volume_Mute}  ; Mute/unmute the master volume.
-F7::Send {Volume_Down 5}  ; Raise the master volume by 1 interval (typically 5%).
+;F6::Send {Volume_Mute}  ; Mute/unmute the master volume.
+F6::Send ^c
+F7::MsgBox, 'F7'
+;F7::Send {Volume_Down 5}  ; Raise the master volume by 1 interval (typically 5%).
 ;F8::Send {Volume_Up 5}  ; Lower the master volume by 3 intervals.
+F8::      ;	
+	ClipSaved := ClipboardAll   ; Save the entire clipboard to a variable of your choice.
+	; ... here make temporary use of the clipboard, such as for pasting Unicode text via Transform Unicode ...
+	clipboard = ; Empty the clipboard
+	Send, ^c
+	ClipWait, 2
+	if (!ErrorLevel || clipboard)
+	{	
+		state := isKorean()
+		if state 
+		{
+			Send {vk15sc138}  
+		}
 
-
-
-
-;^b::Send !b
-
-/*#ifWinActive, Project
-^s::Send !s
-#ifWinActive*/
-
-/*
-::h:: 		; dokuwiki header
-	Send {^}{Space 2}
-return
-::s::		; dokuwiki row span
-	Send |{: 3}|{Space}	
-	return
-::c::|		; dokuwiki column
-::n::\\		; dokuwiki newline
-*/
-
-/*
-$[::
-; 복사대상이 있는지 확인한다. 
-	bak = %clipboard%
-	Clipboard =
-	SetKeyDelay, 40 ; could be set at the top of the script instead.
-	Send, {ctrl down}{c down}{c up}{ctrl up}
-	ClipWait, 0.1
-	if ErrorLevel
-	{
-	    SendInput {[}
-	    SendInput {]}
-	    SendInput {LEFT}
-	}
-	else{
-	    Send {DELETE}
-	    ;Send  {[ 2}
-	    Send  {[}
-	    Send ^v
-                 Sleep 50
-	    ;Send {] 2}		
-	    Send {]}		
-	}		
-	Clipboard := bak
-	SetKeyDelay, 0
-return 
-*/
-
-/*$8::
-; 복사대상이 있는지 확인한다. 
-	bak = %clipboard%
-	Clipboard =
-	SetKeyDelay, 40 ; could be set at the top of the script instead.
-	Send, {ctrl down}{c down}{c up}{ctrl up}
-	ClipWait, 0.1
-	if ErrorLevel
-	{   
-	    SendInput {8}
+		Send {* 2}		
+		Send %clipboard% 		
+		Send {* 2}
+		;len := StrLen(clipboard)
+		;MsgBox, clipboard = %clipboard%, %len%		
+		if state 
+		{
+			Send {vk15sc138}  
+		}
 	}else{
-	    Send {DELETE}
-	    Send  {* 2}             
-        Send ^v
-        Sleep 50
-	    Send {* 2}	
+		Send *
 	}
-	Clipboard := bak
-	SetKeyDelay, 0	
-return */
-
-$`::
-; 복사대상이 있는지 확인한다. 
-	bak = %clipboard%
-	Clipboard =
-	SetKeyDelay, 40 ; could be set at the top of the script instead.
-	Send, {ctrl down}{c down}{c up}{ctrl up}
-	ClipWait, 0.1
-	if ErrorLevel
-	{   
-	    SendInput {``}
-	}else{
-	    Send {DELETE}
-	    Send  {``}             
-        Send ^v
-        Sleep 50
-	    Send {``}	
-	}
-	Clipboard := bak
-	SetKeyDelay, 0	
+	
+	Clipboard := ClipSaved   ; Restore the original clipboard. Note the use of Clipboard (not ClipboardAll).
+	ClipSaved =   ; Free the memory in case the clipboard was very large.
 	return
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; REVEAL JS 사용을 위한 HOTSTRING
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+:*:--::
+	Send ---->
+	Send {ENTER}
+	return
+:*:/bg::
+	Set_Absolutely_English("bg-zoom slide slow ----")		
+	return
+:*:/nw::
+	Set_Absolutely_English("<nowiki></nowiki>")	
+	Send {LEFT 9}
+	return
+:*:/wf::
+	Set_Absolutely_English("<WRAP footer></WRAP>")	
+	Send {LEFT 7}
+	return
+:*:/wl::
+	Set_Absolutely_English("<WRAP lo></WRAP>")		
+	Send {LEFT 7}
+	return
+:*:/ff::
+	Set_Absolutely_English("<fragment></fragment>")	
+	Send {LEFT 11}
+	return
+:*:/fl::
+	Set_Absolutely_English("<fragment-list></fragment-list>")	
+	Send {LEFT 16}
+	return
+:*:/fu::
+	Set_Absolutely_English("<fragment-block fade-up></fragment-block>")	
+	Send {LEFT 17}
+	return
+:*:/fd::
+	Set_Absolutely_English("<fragment-block fade-down></fragment-block>")	
+	Send {LEFT 17}
+	return
+:*:/fg::
+	Set_Absolutely_English("<fragment-block grow></fragment-block>")	
+	Send {LEFT 17}
+	return
+:*:/fs::
+	Set_Absolutely_English("<fragment-block shrink></fragment-block>")	
+	Send {LEFT 17}
+	return
+:*:/fr::
+	Set_Absolutely_English("<fragment highlight-red></fragment>")	
+	Send {LEFT 11}
+	return
+:*:/fg::
+	Set_Absolutely_English("<fragment highlight-green></fragment>")	
+	Send {LEFT 11}
+	return
+:*:/fb::
+	Set_Absolutely_English("<fragment highlight-blue></fragment>")	
+	Send {LEFT 11}
+	return
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+^F10::
+	Send |
+	Send {END}
+	Send |
+	Send ^{Left}
+	Send |
+	Send {HOME}
+	Send {Down}
+	return
+
+
 
 #ifWinActive
 

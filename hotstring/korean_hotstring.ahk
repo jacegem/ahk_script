@@ -840,6 +840,9 @@ return
 :?*:dhkte::      	; 왓ㄷ → 왔ㄷ
 	HS_K("dhkTe", 2)	
 	return
+:?*:dhktt::      	; 왓ㅅ → 왔ㅅ
+	HS_K("dhkTt", 2)	
+	return
 :?*:dhlswhr::      	; 왼족 → 왼쪽
 	HS_K("dhlsWhr",2)	
 	return	
@@ -888,6 +891,9 @@ return
 	return
 :?*:dutd::		; 엿ㅇ → 였ㅇ
 	HS_K("duTd",2)	
+	return
+:?*:dutw::		; 엿ㅈ → 였ㅈ
+	HS_K("duTw",2)	
 	return
 :*:dydfp::		; 용레 → 용례
 	HS_K("dydfP",2)	

@@ -1,10 +1,13 @@
-#ifWinActive ahk_exe pycharm.exe
+SetTitleMatchMode, RegEx
+#ifWinActive PyCharm
 ;<<Hot String>>
 
 ; run debug
-F5::Send +{F9}
-F9::Send +{F9}
-+F9::Send {F9}
+Capslock & 2::Send +{F6}
+F4::Send +{F9}
+F5::Send ^+{F10}
+;F9::Send +{F9}
+;+F9::Send {F9}
 F10::Send ^+{F10}
 +F10::Send {F10}
 
