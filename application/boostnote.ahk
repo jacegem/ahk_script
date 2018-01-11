@@ -4,8 +4,9 @@
 F1::	
 	Send ^n
 	Send {Enter}
-	Sleep 100
-	Send {#} TITLE
+	Sleep 200
+	Send {#}
+	SendEnglish(" TITLE")
 	Send +^{LEFT}
 	return
 ;; 노트 휴지통으로 이동

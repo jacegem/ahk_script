@@ -1207,3 +1207,34 @@ Set_To_Korean(transform, korWordCount := 1)
 	}
 }
 
+SendEnglish(content)
+{
+    ret := IME_CHECK("A")
+    if %ret% != 0                ; 0 means IME is in English mode now.
+    {
+		Send, {vk15sc138}   
+    }
+    
+	Send %content%
+
+	if %ret% != 0                ; 0 means IME is in English mode now.
+    {
+		Send, {vk15sc138}   
+    }    
+}
+
+SendKorean(content)
+{
+    ret := IME_CHECK("A")
+    if %ret% = 0                ; 0 means IME is in English mode now.
+    {
+		Send, {vk15sc138}   
+    }
+    
+	Send %content%
+
+	if %ret% = 0                ; 0 means IME is in English mode now.
+    {
+		Send, {vk15sc138}   
+    }    
+}

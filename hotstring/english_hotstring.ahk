@@ -4,110 +4,143 @@
 
 #Hotstring, B0 C
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-:*:ar::      ;   
-        E(2, "AR") 
+:*:udg::      ;  
+        HS_A("UDG", 3)
         return
-:*:vr::      ;   
-        E(2, "VR") 
+:*:dg::      ;  
+        HS_A("DG", 2)
         return
-:*:mr::      ;   
-        E(2, "MR") 
+:*:wp::      ;  
+        HS_A("WP", 1)
         return
-:*:toc::      ;   
-        E(1, "TOC") 
+:*:korea::      ;  
+        HS_A("Korea", 5)
         return
-:*:sip::      ;   
-        E(3, "SIP") 
+:*:eu::      ;   
+        HS_A("EU", 1)
         return
-:*:lstm::      ;   
-        E(3, "LSTM") 
+:*:ai::      ;   
+        HS_A("AI", 2)
         return
-:*:gru::      ;     
-        E(2, "GRU") 
+:*:aims::      ;     
+        HS_A("AIMS", 4)
         return
-:*:nlp::      ;     
-        E(2, "NLP") 
+:*:lora::      ;   
+        HS_A("LoRA", 4)
+        return
+:*:wifi::      ;   
+        HS_A("WiFi", 3)
+        return
+:*:lte::      ;   
+        HS_A("LTE", 3)
+        return
+:*:iot::      ;   
+        HS_A("IoT", 3)
         return
 :*:cnn::      ;
-        E(2, "CNN") 
+        HS_A("CNN", 2)
         return
 :*:rnn::      ;    
-        E(2, "RNN") 
+        HS_A("RNN", 2)
         return
 :*:www::      ;     
-        E(3, "www") 
+        HS_A("WWW", 3)
+        return
+:*:ar::      ;   
+        HS_A("AR", 2) 
+        return
+:*:vr::      ;   
+        HS_A("VR", 2) 
+        return
+:*:mr::      ;   
+        HS_A("MR", 2) 
+        return
+:*:toc::      ;   
+        HS_A("TOC", 1) 
+        return
+:*:sip::      ;   
+        HS_A("SIP", 3) 
+        return
+:*:lstm::      ;   
+        HS_A("LSTM", 3) 
+        return
+:*:gru::      ;     
+        HS_A("GRU", 2) 
+        return
+:*:nlp::      ;     
+        HS_A("NLP", 2) 
         return
 :*:foreach::      ;     
-        E(6, "foreach") 
+        HS_A("foreach", 6) 
         return
 :*:param::      ;     
-        E(4, "param") 
+        HS_A("param", 4) 
         return
 :*:rx::      ;     
-        E(2, "Rx") 
+        HS_A("Rx", 2) 
         return
 :*:vue::      ;    
-        E(1, "VUE") 
+        HS_A("VUE", 1) 
         return
 :*:am::      ;    
-        E(1, "AM") 
+        HS_A("AM", 1) 
         return
 :*:cnn::      ;    
-        E(2, "CNN") 
+        HS_A("CNN", 2) 
         return
 :*:rnn::      ;    
-        E(2, "RNN") 
+        HS_A("RNN", 2) 
         return
 :*:mvp::      ;    
-        E(2, "MVP") 
+        HS_A("MVP", 2) 
         return
 :*:apache::      ;     
-        E(2, "apache") 
+        HS_A("apache", 2) 
         return
 :*:iot::      ;     
-        E(3, "IoT") 
+        HS_A("IoT", 3) 
         return
 :*:debugger::      ;     
-        E(8, "debugger") 
+        HS_A("debugger", 8) 
         return
 :*:seq::      ;     
-        E(3, "SEQ") 
+        HS_A("SEQ", 3) 
         return
 :*:nvr::      ;     
-        E(3, "NVR") 
+        HS_A("NVR", 3) 
         return
 :*:pnu::      ;     
-        E(3, "PNU") 
+        HS_A("PNU", 3) 
         return
 :*:proj::      ;     
-        E(3, "proj") 
+        HS_A("proj", 3) 
         return
 :*:epsg::      ;     
-        E(1, "EPSG") 
+        HS_A("EPSG", 1) 
         return
 :*:/kg::      ;     
-        E(3, "kg") 
+        HS_A("kg", 3) 
         return
 :*:/cm::      ;     
-        E(2, "cm") 
+        HS_A("cm", 2) 
         return
 :*:pdf::      ;     
-        E(3, "PDF") 
+        HS_A("PDF", 3) 
         return
 :*:ptz::      ;     
-        E(3, "PTZ") 
+        HS_A("PTZ", 3) 
         return
 :*:mdt::      ;     
-        E(3, "MDT") 
+        HS_A("MDT", 3) 
         return
 :*:orm::      ;     
-        E(3, "ORM") 
+        HS_A("ORM", 3) 
         return
 :*:json::      ;     
-        E(3, "JSON") 
+        HS_A("JSON", 3) 
         return
 :*:cybos::      ;     
-        E(4, "CYBOS") 
+        HS_A("CYBOS", 4) 
         return
 :*:.py::      ;     ㄴㅅㄱ
         E() 
@@ -116,7 +149,7 @@
         E() 
         return
 :*:gc::      ;     ㄴㅅㄱ
-        E(2, "GC") 
+        HS_A("GC", 2) 
         return
 :*:python::      ;     
         E() 
@@ -125,43 +158,43 @@
         E() 
         return
 :*:osd::      ;     
-        E(3, "OSD") 
+        HS_A("OSD", 3) 
         return
 :*:activex::      ;     
-        E(7, "ActiveX") 
+        HS_A("ActiveX", 7) 
         return
 :*:dmz::      ;    
-        E(1, "DMZ") 
+        HS_A("DMZ", 1) 
         return
 :*:ppt::      ;    
-        E(3, "PPT") 
+        HS_A("PPT", 3) 
         return
 :*:qgis::      ;    
-        E(2, "QGIS") 
+        HS_A("QGIS", 2) 
         return
 :*:erd::      ;    
-        E(3, "ERD") 
+        HS_A("ERD", 3) 
         return
 :*:erp::      ;    
-        E(3, "ERP") 
+        HS_A("ERP", 3) 
         return
 :*:pk::      ;    
-        E(2, "PK") 
+        HS_A("PK", 2) 
         return
 :*:gtx::      ;    
-        E(3, "GTX") 
+        HS_A("GTX", 3) 
         return
 :*:svn::      ;    
-        E(3, "SVN") 
+        HS_A("SVN", 3) 
         return
 :*:rss::      ;    
-        E(3, "RSS") 
+        HS_A("RSS", 3) 
         return
 :*:jai::      ;    
-        E(2, "JAI") 
+        HS_A("JAI", 2) 
         return
 :*:mvc::      ;  
-        E(3, "MVC") 
+        HS_A("MVC", 3) 
         return
 :*:Config::      ;  
         E(4) 
@@ -170,16 +203,16 @@
         E(4) 
         return
 :*:dc::      ;  
-        E(2, "DC") 
+        HS_A("DC", 2) 
         return
 :*:gdi::      ;  
-        E(2, "GDI") 
+        HS_A("GDI", 2) 
         return
 :*:todo::      ;  
-        E(2, "todo") 
+        HS_A("todo", 2) 
         return
 :*:vms::      ;  
-        E(1, "VMS") 
+        HS_A("VMS", 1) 
         return
 :*:png::      ;  
         E() 
@@ -191,109 +224,109 @@
         E(4) 
         return
 :*:dll::      ;  
-        E(2, "dll") 
+        HS_A("dll", 2) 
         return
 :*:Video::      ;  
-        E(2, "Video") 
+        HS_A("Video", 2) 
         return
 :*:video::      ;  
-        E(2, "video") 
+        HS_A("video", 2) 
         return
 :*:rgb::      ;  
-        E(2, "RGB") 
+        HS_A("RGB", 2) 
         return
 :*:ipv4::      ;  
-        E(4, "IPv4")
+        HS_A("IPv4", 4)
         return
 :*:ipv6::      ;  
-        E(4, "IPv6")
+        HS_A("IPv6", 4)
         return
 :*:usn::      ; 
-        E(3, "USN")
+        HS_A("USN", 3)
         return
 :*:rfid::      ; ?��?��
-        E(2, "RFID")
+        HS_A("RFID", 2)
         return
 :*:vworld::      ; 
-        E(3, "V-World")
+        HS_A("V-World", 3)
         return
 :*:sdk::      ;
-        E(2, "SDK")
+        HS_A("SDK", 2)
         return
 :*:rtsp::      ;
-        E(2, "RTSP")
+        HS_A("RTSP", 2)
         return
 :*:row::      ;
-        E(1, "row")
+        HS_A("row", 1)
         return
 :*:rownum::      ;  
-        E(6, "rownum")
+        HS_A("rownum", 6)
         return
 :*:now::      ;
-        E(3, "now")
+        HS_A("now", 3)
         return
 :*:geometry::      ;
-        E(6, "Geometry")
+        HS_A("Geometry", 6)
         return
 :*:srid::       ;
-        E(2, "SRID")
+        HS_A("SRID", 2)
         return
 :*:conf::       ;
-        E(4, "conf")
+        HS_A("conf", 4)
         return
 :*:oid::       ;
-        E(3, "oid")
+        HS_A("oid", 3)
         return
 :*:c/s::       ; 2016.04.14   
-        E(3, "C/S")
+        HS_A("C/S", 3)
         return
 :*:mvcc::       ; 2016.04.14   
-        E(4, "MVCC")
+        HS_A("MVCC", 4)
         return
 :*:acid::       ; 2016.04.14  
-        E(4, "ACID")
+        HS_A("ACID", 4)
         return
 :*:ansi::       ; 2016.04.14  
-        E(2, "ANSI")
+        HS_A("ANSI", 2)
         return
 :*:superuser::       ; 2016.04.14  
-        E(9, "SUPERUSER")
+        HS_A("SUPERUSER", 9)
         return
 :*:database::       ; 2016.04.14  
-        E(8, "DATABASE")
+        HS_A("DATABASE", 8)
         return
 :*:postgresql::       ; 2016.04.14  
-        E(9, "PostgreSQL")
+        HS_A("PostgreSQL", 9)
         return
 :*:postgis::       ; 2016.04.14  
-        E(5, "PostGIS")
+        HS_A("PostGIS", 5)
         return
 :*:ogc::       ; 2016.04.14  
-        E(3, "OGC")
+        HS_A("OGC", 3)
         return
 :*:opengis::       ; 2016.04.14  
-        E(5, "OpenGIS")
+        HS_A("OpenGIS", 5)
         return
 ::gps::       ;   
-        E(1, "GPS")
+        HS_A("GPS", 1)
         return
 :*:a-gnss::       ;     ?��-?��?�� 
-        E(4, "A-GNSS")
+        HS_A("A-GNSS", 4)
         return
 :*:gnss::       ;     ?��?�� 
-        E(2, "GNSS")
+        HS_A("GNSS", 2)
         return
 :*:dgps::       ;     
-        E(2, "DGPS")
+        HS_A("DGPS", 2)
         return
 :*:cctv::       ;     
-        E(4, "CCTV")
+        HS_A("CCTV", 4)
         return
 :*:def::       ;     
-        E(3, "def")
+        HS_A("def", 3)
         return
 :*:and ::       ;     
-        E(2, "and ")
+        HS_A("and ", 2)
         return
 :*:not::       ;     
         E()
@@ -302,56 +335,53 @@
         E()
         return
 :?*:mm::       ;     
-        E(2, "mm")
+        HS_A("mm", 2)
         return
 :*:tobe::       ;     
-        E(3, "TO-BE")
+        HS_A("TO-BE", 3)
         return
 :*:asis::       ;     
-        E(4, "AS-IS")
+        HS_A("AS-IS", 4)
         return
 :*:lx::       ;     2016.03.15
-        E(2, "LX")
+        HS_A("LX", 2)
         return
 :*:kras::       ;     2016.03.15
-        E(4, "KRAS")
+        HS_A("KRAS", 4)
         return
 :*:xls::       ;     2016.03.04
-        E(1, "xls")
-        return
-:*:com::       ;     2016.03.04
-        E(2, "COM")
+        HS_A("xls", 1)
         return
 :*:hts::       ;     2016.03.04
-        E(3, "HTS")
+        HS_A("HTS", 3)
         return
 :*:.js::       ;     
-        E(3, ".js")
+        HS_A(".js", 3)
         return
 :*:hwww::       ;     
-        E(4, "http://www.")
+        HS_A("http://www.", 4)
         Send {vk15sc138}    
         return
 :*:md::       ;     
-        E(2, "md")
+        HS_A("md", 2)
         return
 :*:mltm::       ;     
-        E(2, "MLTM")
+        HS_A("MLTM", 2)
         return
 :*:nat::       ;     
-        E(3, "NAT")
+        HS_A("NAT", 3)
         return
 ::wpa::       ;     
-        E(1, "WPA")
+        HS_A("WPA", 1)
         return
 :*:wep::       ;     
-        E(3, "WEP")
+        HS_A("WEP", 3)
         return
 :*:acl::       ;     
-        E(3, "ACL")
+        HS_A("ACL", 3)
         return
 :*:smtp::       ;     
-        E(2, "SMTP")
+        HS_A("SMTP", 2)
         return
 :*:sess::       ;     
         E()
@@ -363,19 +393,19 @@
         E()
         return
 :*:otp::       ;     
-        E(2, "OTP")
+        HS_A("OTP", 2)
         return
 :*:ic::       ;     
-        E(2, "IC")
+        HS_A("IC", 2)
         return
 :*:iis::       ;     
-        E(3, "IIS")
+        HS_A("IIS", 3)
         return
 :*:owasp::       ;     
-        E(4, "OWASP")
+        HS_A("OWASP", 4)
         return
 :*:sql::       ;     
-        E(2,"SQL")
+        HS_A("SQL", 2)
         return
 :*:ocs::       ;     
         E(3)
@@ -384,55 +414,55 @@
         E(3)
         return
 ::alt::       ;    
-        E(1, "Alt ")
+        HS_A("Alt ", 1)
         return
 :*:Alt::       ;    
-        E(1, "Alt")
+        HS_A("Alt", 1)
         return
 :*:ctrl::       ;   
-        E(3, "Ctrl")
+        HS_A("Ctrl", 3)
         return
 :*:Ctrl::       ;   
-        E(3, "Ctrl")
+        HS_A("Ctrl", 3)
         return
 :*:ejb::       ;    
-        E(2, "EJB")
+        HS_A("EJB", 2)
         return
 :*:uddi::       ;    
-        E(3, "UDDI")
+        HS_A("UDDI", 3)
         return
 ::soa::       ;    
-        E(1, "SOA")
+        HS_A("SOA", 1)
         return
 :*:wfs::       ;    
-        E(3, "WFS")
+        HS_A("WFS", 3)
         return
 :*:wms::       ;    
-        E(1, "WMS")
+        HS_A("WMS", 1)
         return
 :*:kml::       ;    
-        E(2, "KML")  
+        HS_A("KML", 2)  
         return
 ::gml::       ;    
-        E(1, "GML")  
+        HS_A("GML", 1)  
         return
 :*:arcgis::       ;    
-        E(4, "ArcGIS")  
+        HS_A("ArcGIS", 4)  
         return
 :*:esri::       ;    
-        E(3, "ESRI")  
+        HS_A("ESRI", 3)  
         return
 :*:e-::       ; 
-        E(2, "E-")  
+        HS_A("E-", 2)  
         return
 :*:c/::       ; 
-        E(2, "C/")  
+        HS_A("C/", 2)  
         return
 :*:jsp::       ; 
-        E(2, "JSP")  
+        HS_A("JSP", 2)  
         return
 :*:nan::       ; 
-        E(2, "NaN")  
+        HS_A("NaN", 2)  
         return
 :*:eval::       ; 
         E(3)  
@@ -441,7 +471,7 @@
         E(1)  
         return
 :*:ajax::       ; 
-        E(2, "AJAX")  
+        HS_A("AJAX", 2)  
         return
 :*:var::       ; 
         E(3)  
@@ -477,7 +507,7 @@
         E(3)  
         return
 :*:ux::       ; 
-        E(2, "UX")  
+        HS_A("UX", 2)  
         return
 :*:vs::       ; 
         E(2)  
@@ -501,25 +531,25 @@
         E(7)  
         return
 :*:thisarg::       ; 
-        E(7,"thisArg")  
+        HS_A("thisArg", 7)  
         return
 :*:prototype::       ; 
         E(8)  
         return
 :*:dom::       ; 
-        E(2, "DOM")  
+        HS_A("DOM", 2)  
         return
 :*:DOM::       ; 
         E(2)  
         return
 :*:yahoo::       ;  ?��뫠ㅐ
-        E(5, "Yahoo")  
+        HS_A("Yahoo", 5)  
         return
 :*:Yahoo::       ;  ?��뫠ㅐ
         E(5)  
         return
 :*:yui::       ;  ?��?��?��
-        E(3, "YUI")  
+        HS_A("YUI", 3)  
         return
 :*:YUI::       ;  ?��?��?��
         E(3)  
@@ -531,7 +561,7 @@
         E(3)  
         return
 :*:html::       ;   
-        E(2, "HTML")  
+        HS_A("HTML", 2)  
         return
 :*:init::       ;   
         E(4)  
@@ -540,79 +570,79 @@
         E(7)  
         return
 :*:servlet::       ;   
-        E(5,"servlet")  
+        HS_A("servlet", 5)  
         return
 :*:web-inf::       ;   
-        E(7,"WEB-INF")  
+        HS_A("WEB-INF", 7)  
         return
 :*:field::       ;   
         E(2)  
         return
 :*:jvm::       ;   
-        E(2, "JVM")  
+        HS_A("JVM", 2)  
         return
 :*:jni::       ;   
-        E(3, "JNI")  
+        HS_A("JNI", 3)  
         return
 :*:timeout::       ;   
-        E(7, "timeout")  
+        HS_A("timeout", 7)  
         return
 :*:Timeout::       ;   
-        E(7, "Timeout")  
+        HS_A("Timeout", 7)  
         return
 :*:os::       ;   
-        E(2, "OS")  
+        HS_A("OS", 2)  
         return
 :*:naver::       ;   
-        E(5, "NAVER")  
+        HS_A("NAVER", 5)  
         return
 :*:agile::       ;   
-        E(4, "Agile")  
+        HS_A("Agile", 4)  
         return
 :*:kanban::       ;     
-        E(4, "KANBAN")  
+        HS_A("KANBAN", 4)  
         return
 :*:pert::       ;     
-        E(4, "PERT")  
+        HS_A("PERT", 4)  
         return
 :*:cpm::       ;     
-        E(2, "CPM")  
+        HS_A("CPM", 2)  
         return
 :*:scrum::       ;     
-        E(4, "SCRUM")  
+        HS_A("SCRUM", 4)  
         return
 :*:pm::       ;     
-        E(2, "PM")  
+        HS_A("PM", 2)  
         return
 :*:pmo::       ;     
-        E(3, "PMO")  
+        HS_A("PMO", 3)  
         return
 :*:ieee::       ;     using after IE hotstring by dynamic
-        E(4, "IEEE")  
+        HS_A("IEEE", 4)  
         return
 :*:javascript::       ;    
-        E(9, "Javascript")  
+        HS_A("Javascript", 9)  
         return
 :*:Javascript::       ;    
-        E(9, "Javascript")  
+        HS_A("Javascript", 9)  
         return
 :*:ie::       ;     using after IE hotstring by dynamic
-        E(2, "IE")  
+        HS_A("IE", 2)  
         return
 :*:unix::       ;    
-        E(4, "UNIX")  
+        HS_A("UNIX", 4)  
         return
 :*:swat::       ;    
-        E(4, "SWAT")  
+        HS_A("SWAT", 4)  
         return
 :*:eam::       ;    
-        E(3, "EAM")  
+        HS_A("EAM", 3)  
         return
 :*:rbac::       ;    
-        E(2, "RBAC")  
+        HS_A("RBAC", 2)  
         return
 :*:drdos::      ;    
-        E(3, "DRDoS")  
+        HS_A("DRDoS", 3)  
         return
 
 :*:frame::      ;    
@@ -628,13 +658,13 @@
         E(4)  
         return
 :*:l2::      ;  
-        E(2,"L2")  
+        HS_A("L2", 2)  
         return
 :*:l3::      ;  
-        E(2,"L3")  
+        HS_A("L3", 2)  
         return
 :*:l4::      ;  
-        E(2,"L4")  
+        HS_A("L4", 2)  
         return
 :*:bps::      ;  
         E(3)  
@@ -652,7 +682,7 @@
         E(4)  
         return
 :*:rfc::      ;  
-        E(3, "RFC")  
+        HS_A("RFC", 3)  
         return
 :*:GET::      ;  
         E(3)  
@@ -661,13 +691,13 @@
         E(4)  
         return
 :*:fin::      ;  
-        E(2, "FIN")  
+        HS_A("FIN", 2)  
         return
 :*:rst::      ;  
-        E(3, "RST")  
+        HS_A("RST", 3)  
         return
 :*:url::      ;  
-        E(2, "URL")  
+        HS_A("URL", 2)  
         return
 :*:packets::      ;  
         E(7)  
@@ -676,10 +706,10 @@
         E(7)  
         return
 :*:pps::      ;  
-        E(3, "PPS")  
+        HS_A("PPS", 3)  
         return
 :*:p2p::      ;  
-        E(3, "P2P")  
+        HS_A("P2P", 3)  
         return
 :*:attacker::      ;  
         E(8)  
@@ -688,16 +718,16 @@
         E(8)  
         return
 :*:ddos::      ;  
-        E(2, "DDoS")  
+        HS_A("DDoS", 2)  
         return
 :*:icmp::      ;  
-        E(4, "ICMP")  
+        HS_A("ICMP", 4)  
         return
 :*:syn::      ;  
-        E(2, "SYN")  
+        HS_A("SYN", 2)  
         return
 :*:ack::      ;  
-        E(3, "ACK")  
+        HS_A("ACK", 3)  
         return
 :*:Dos::      ;  
         E(1)  
@@ -706,10 +736,10 @@
         E(1)  
         return
 :*:vdi::      ;  
-        E(2, "VDI")  
+        HS_A("VDI", 2)  
         return
 :*:ism::       ;  
-        E(3, "ISM")  
+        HS_A("ISM", 3)  
         return
 ::and::      ;  
         E(1)  
@@ -730,44 +760,44 @@
         E(3)  
         return
 :*:pdca::      ; 
-        E(4, "PDCA")  
+        HS_A("PDCA", 4)  
         return
 :*:iec::      ; 
-        E(3, "IEC")  
+        HS_A("IEC", 3)  
         return
 :*:isms::      ; 
-        E(4, "ISMS")  
+        HS_A("ISMS", 4)  
         return
 :*:bsi::      ; 
-        E(3, "BSI")  
+        HS_A("BSI", 3)  
         return
 :*:bs::      ; 
-        E(2, "BS")  
+        HS_A("BS", 2)  
         return
 :*:iso::      ; 
-        E(3, "ISO")  
+        HS_A("ISO", 3)  
         return
 :*:frr::      ; 
-        E(2, "FRR")  
+        HS_A("FRR", 2)  
         return
 :*:far::      ;  
-        E(2, "FAR")  
+        HS_A("FAR", 2)  
         return
 :*:cer::      ;  
-        E(3, "CER")  
+        HS_A("CER", 3)  
         return
 :*:DNA::      ; 
         E(1)  
         return
 :*:npki::      ; 
-        E(3, "NPKI")  
+        HS_A("NPKI", 3)  
         return
 :*:gpki::      ; 
-        E(3, "GPKI")  
+        HS_A("GPKI", 3)  
         return
 
 :*:scvp::      ; 
-        E(3, "SCVP")  
+        HS_A("SCVP", 3)  
         return
 :*:protocol::      ; 
         E(5)  
@@ -783,22 +813,22 @@
         E(6)  
         return
 :*:ocsp::      ; 
-        E(3, "OCSP")  
+        HS_A("OCSP", 3)  
         return
 :*:ra::      ; 
-        E(2, "RA")  
+        HS_A("RA", 2)  
         return
 :*:crl::      ; 
-        E(2, "CRL")  
+        HS_A("CRL", 2)  
         return
 :*:pki::      ; 
-        E(3, "PKI")  
+        HS_A("PKI", 3)  
         return
 :*:ldap::      ; 
-        E(3, "LDAP")  
+        HS_A("LDAP", 3)  
         return
 :*:ips::      ; 
-        E(3, "IPS")  
+        HS_A("IPS", 3)  
         return
 :*:router::      ; 
         E(6)  
@@ -813,7 +843,7 @@
         E(3)  
         return
 :*:nms::      ; 
-        E(3, "NMS")  
+        HS_A("NMS", 3)  
         return
 
 :*:risk::      ; 
@@ -836,10 +866,10 @@
         E(7)  
         return
 :*:ids::      ; 
-        E(3, "IDS")  
+        HS_A("IDS", 3)  
         return
 :*:esm::      ;  Enterprise Security Management
-        E(2, "ESM")  
+        HS_A("ESM", 2)  
         return
 :*:telnet::      ; 
         E(5)  
@@ -848,22 +878,22 @@
         E(2)  
         return
 :*:osi::      ; 
-        E(3, "OSI")  
+        HS_A("OSI", 3)  
         return
 :*:tcp::      ; 
-        E(2, "TCP")  
+        HS_A("TCP", 2)  
         return
 :*:udp::      ; 
-        E(2, "UDP")  
+        HS_A("UDP", 2)  
         return
 :*:rsa::      ; 
-        E(3, "RSA")  
+        HS_A("RSA", 3)  
         return
 :*:ssl::      ; 
-        E(2, "SSL")  
+        HS_A("SSL", 2)  
         return
 :*:css::      ; 
-        E(3, "CSS")  
+        HS_A("CSS", 3)  
         return
 :*:shp::      ; 
         E(2)  
@@ -872,7 +902,7 @@
         E(6)  
         return
 :*:string::      ; 
-        E(5, "String")  
+        HS_A("String", 5)  
         return
 :*:int::      ; 
         E(3)  
@@ -884,13 +914,13 @@
         E(8)  
         return
 ::di::      ; 
-        E(1, "DI")  
+        HS_A("DI", 1)  
         return
 :*:beans::      ; 
         E(5)  
         return
 :*:ioc::      ; 
-        E(3, "IoC")  
+        HS_A("IoC", 3)  
         return
 :*:clean::      ; 
         E(2)  
@@ -899,7 +929,7 @@
         E(2)  
         return
 :*:junit::      ; 
-        E(5, "jUnit")  
+        HS_A("jUnit", 5)  
         return
 :*:goal::      ; 
         E(2)  
@@ -926,28 +956,28 @@
         E(2)  
         return
 :*:gis::      ; 
-        E(1, "GIS")  
+        HS_A("GIS", 1)  
         return
 :*:klis::      ; 
-        E(4, "KLIS")  
+        HS_A("KLIS", 4)  
         return
 ::x::      ; 
-        E(1, "X")  
+        HS_A("X", 1)  
         return
 ::o::      ; 
-        E(1, "O")  
+        HS_A("O", 1)  
         return
 :*:usb::      ; 
-        E(3, "USB")  
+        HS_A("USB", 3)  
         return
 :*:apk::      ; 
-        E(2, "APK")  
+        HS_A("APK", 2)  
         return
 :*:ahk::      ; 
-        E(1, "AHK")  
+        HS_A("AHK", 1)  
         return
 :*:ec2::      ; 
-        E(3, "EC2")  
+        HS_A("EC2", 3)  
         return
 :*:communications::      ; 
         E(14)  
@@ -956,13 +986,13 @@
         E(14)  
         return
 :*:s3::      ; 
-        E(2, "S3")  
+        HS_A("S3", 2)  
         return
 :*:si::      ; 
-        E(1, "SI")  
+        HS_A("SI", 1)  
         return
 :*:ict::      ; 
-        E(3, "ICT")  
+        HS_A("ICT", 3)  
         return
 :*:multi::      ; 
         E(4)  
@@ -971,10 +1001,10 @@
         E(4)  
         return
 ::sla::      ; 
-        E(1, "SLA")  
+        HS_A("SLA", 1)  
         return
 ::soa::      ; 
-        E(1, "SOA")  
+        HS_A("SOA", 1)  
         return
 :*:hadoop::      ; 
         E(6)  
@@ -983,7 +1013,7 @@
         E(6)  
         return
 :*:i/o::      ; 
-        E(3, "I/O")  
+        HS_A("I/O", 3)  
         return
 :*:hypervisor::      ; 
         E(8)  
@@ -1010,10 +1040,10 @@
         E(10)  
         return
 :*:facebook::      ; 
-        E(8, "Facebook")  
+        HS_A("Facebook", 8)  
         return
 :*:ria::      ; 
-        E(1, "RIA")  
+        HS_A("RIA", 1)  
         return
 :?*:book::      ; 
         E(4)  
@@ -1025,30 +1055,30 @@
         E(2)  
         return
 :*:http::      ; 
-        E(3, "HTTP")  
+        HS_A("HTTP", 3)  
         return
 :*:http://::      ; 
         E(7)  
         return
 
 :*:https::      ; 
-        E(5, "https")  
+        HS_A("https", 5)  
         return
 
 :*:rest::      ; 
-        E(4, "REST")  
+        HS_A("REST", 4)  
         return
 :*:soap::      ; 
-        E(2, "SOAP")  
+        HS_A("SOAP", 2)  
         return
 :*:ip::      ; 
-        E(2, "IP")  
+        HS_A("IP", 2)  
         return
 :*:IT::      ; 
         E(2)  
         return
 :*:it::      ; 
-        E(2, "IT")  
+        HS_A("IT", 2)  
         return
 :*:comput::      ; 
         E(6)  
@@ -1057,13 +1087,13 @@
         E(6)  
         return
 :*:cio::      ; 
-        E(2, "CIO")  
+        HS_A("CIO", 2)  
         return
 :*:cfo::      ; 
-        E(2, "CFO")  
+        HS_A("CFO", 2)  
         return
 :*:ceo::      ; 
-        E(2, "CEO")  
+        HS_A("CEO", 2)  
         return
 :*:Down::      ; 
         E(2)  
@@ -1075,25 +1105,25 @@
         E(2)  
         return
 :*:ard::      ; 
-        E(3, "ARD")  
+        HS_A("ARD", 3)  
         return
 :*:saam::      ; Software Architecture Analysis Method
-        E(3, "SAAM")  
+        HS_A("SAAM", 3)  
         return
 :*:atam::      ; Architecture Tradeoff Analysis Method
-        E(3, "ATAM")  
+        HS_A("ATAM", 3)  
         return
 :*:cbam::      ; Cost Benefit Analysis Method    
-        E(2, "CBAM")  
+        HS_A("CBAM", 2)  
         return
 :*:arid::      ; Architecture Review for Intermediate Design
-        E(2, "ARID")  
+        HS_A("ARID", 2)  
         return
 :*:based::      ; 
         E(5)  
         return
 :*:bmt::      ; 
-        E(3, "BMT")  
+        HS_A("BMT", 3)  
         return
 :*:Code::      ; 
         E(2)  
@@ -1102,7 +1132,7 @@
         E(2)  
         return
 :*:cbd::      ; 
-        E(1, "CBD")  
+        HS_A("CBD", 1)  
 		return
 :*:view::      ; 
         E(2)  
@@ -1111,7 +1141,7 @@
         E(2)  
         return
 :*:etc::      ; 
-        E(3, "ETC")  
+        HS_A("ETC", 3)  
         return
 :*:Scheduled::      ; 
         E(9)  
@@ -1120,16 +1150,16 @@
         E(9)  
         return
 :*:spi::      ; ????????????   Schedule Performance Index
-        E(2, "SPI")  
+        HS_A("SPI", 2)  
         return
 :*:cpi::      ;  ???? ???????? Cost Performance Index
-        E(2, "CPI")  
+        HS_A("CPI", 2)  
         return
 :*:sv::      ;  Scheduled Variance ????????
-        E(2, "SV")  
+        HS_A("SV", 2)  
         return
 :*:cv::      ;  Cost Variance ????????
-        E(2, "CV")  
+        HS_A("CV", 2)  
         return
 :*:cost::      ;
         E(2)  
@@ -1141,16 +1171,16 @@
         E(2)  
         return
 :*:pv::        ;  Planned Value
-        E(2, "PV")  
+        HS_A("PV", 2)  
         return
 :*:ev::        ;   Earned Value
-        E(2, "EV")  
+        HS_A("EV", 2)  
         return
 :*:ac::        ;   Actual Cost  AC
-        E(2, "AC")  
+        HS_A("AC", 2)  
         return
 :*:bac::       ;  Budget At Completion  
-        E(3, "BAC")  
+        HS_A("BAC", 3)  
         return
 :*:earned::        ; 
         E(6)  
@@ -1159,49 +1189,49 @@
         E(6)  
         return
 :*:evm::        ; 
-        E(3, "EVM")  
+        HS_A("EVM", 3)  
         return
 ::2d::        ; 
-        E(2, "2D")  
+        HS_A("2D", 2)  
         return
 :*:oem::        ; 
-        E(3, "OEM")  
+        HS_A("OEM", 3)  
         return
 :*:ide::        ; 
-        E(3, "IDE")  
+        HS_A("IDE", 3)  
         return
 :*:visual studio::        ; visual stud????
-        E(13, "Visual Studio")  
+        HS_A("Visual Studio", 13)  
         return
 :*:java::        ; 
-        E(4, "Java")  
+        HS_A("Java", 4)  
         return
 :?*:.cpp::        ; 
-        E(3, ".cpp")  
+        HS_A(".cpp", 3)  
         return
 :?*:``cpp::        ; 
-        E(3, "``cpp")  
+        HS_A("``cpp", 3)  
         return
 :*:cpp::        ; 
-        E(2, "C++")  
+        HS_A("C++", 2)  
         return
 :*:C++::        ; 
         E(3)  
         return
 :*:CPP::        ; 
-        E(2, "C++")  
+        HS_A("C++", 2)  
         return
 ::sns::        ; 
-        E(1, "SNS")  
+        HS_A("SNS", 1)  
         return
 :*:SNS::        ; 
         E(1)  
         return
 :*:fw::        ; 
-        E(2, "F/W")  
+        HS_A("F/W", 2)  
         return
 :*:f/w::        ; 
-        E(3, "F/W")  
+        HS_A("F/W", 3)  
         return
 :*:middleware::        ; 
         E(10)  
@@ -1216,70 +1246,70 @@
         E(6)  
         return
 :*:eic::        ; 
-        E(1, "EIC")  
+        HS_A("EIC", 1)  
         return
 :*:oha::        ; 
-        E(3, "OHA")  
+        HS_A("OHA", 3)  
         return
 :*:ver::        ; 
         E(3)  
         return
 :*:microsoft::        ; 
-        E(6, "Microsoft")  
+        HS_A("Microsoft", 6)  
         return
 :*:TASK::        ; 
-        E(4, "TASK")  
+        HS_A("TASK", 4)  
         return
 :*:limo::        ; 
-        E(4, "LiMo")  
+        HS_A("LiMo", 4)  
         return
 :*:window mobile::        ; 
-        E(13, "Window Mobile")  
+        HS_A("Window Mobile", 13)  
         return
 :*:windows mobile::        ; 
-        E(14, "Windows Mobile")  
+        HS_A("Windows Mobile", 14)  
         return
 :*:rtos::        ; 
-        E(2, "RTOS")  
+        HS_A("RTOS", 2)  
         return
 :*:gpos::        ; 
-        E(3, "GPOS")  
+        HS_A("GPOS", 3)  
         return
 :*:tv::        ; 
-        E(2, "TV")  
+        HS_A("TV", 2)  
         return
 :*:ocap::        ; 
-        E(3, "OCAP")  
+        HS_A("OCAP", 3)  
         return
 :*:tta::        ;  
-        E(3, "TTA")  
+        HS_A("TTA", 3)  
         return
 :*:ca::        ;  
-        E(2, "CA")  
+        HS_A("CA", 2)  
         return
 :*:atsc::        ;  at????
-        E(4, "ATSC")  
+        HS_A("ATSC", 4)  
         return
 :*:cas::        ; 
-        E(3, "CAS")  
+        HS_A("CAS", 3)  
         return
 :*:Metadata::        ; 
         E(8)  
         return
 :*:rel::        ; re??
-        E(3, "REL")  
+        HS_A("REL", 3)  
         return
 :*:e-book::        ; ??-book
-        E(6, "e-Book")  
+        HS_A("e-Book", 6)  
         return
 :*:oebf::        ; oe????
-        E(4, "OeBF")  
+        HS_A("OeBF", 4)  
         return
 :*:dhwg::        ; ???
-        E(2, "DHWG")  
+        HS_A("DHWG", 2)  
         return
 :*:isma::        ; 
-        E(4, "ISMA")  
+        HS_A("ISMA", 4)  
         return
 :*:rights::        ; 
         E(6)  
@@ -1300,28 +1330,28 @@
         E(2)  
         return
 :*:odrl::        ; 
-        E(3, "ODRL")  
+        HS_A("ODRL", 3)  
         return
 :*:xrml::        ; ????  
-        E(2, "XrML")  
+        HS_A("XrML", 2)  
         return
 :*:Indecs::        ;
         E(6)  
         return
 :*:doi::        ;      
-        E(2, "DOI")  
+        HS_A("DOI", 2)  
         return
 :*:mpeg::        ; ??????
-        E(4, "MPEG")  
+        HS_A("MPEG", 4)  
         return
 :*:oma::        ;
-        E(3, "OMA")  
+        HS_A("OMA", 3)  
         return
 :*:drm::        ;
-        E(2, "DRM")  
+        HS_A("DRM", 2)  
         return
 :*:srm::        ; 
-        E(2, "SRM")  
+        HS_A("SRM", 2)  
         return
 :*:cycle::        ;
         E(2)  
@@ -1330,7 +1360,7 @@
         E(2)  
         return
 ::db::        ;
-        E(1, "DB")  
+        HS_A("DB", 1)  
         return
 ::DB::        ;
         E(1)  
@@ -1354,10 +1384,10 @@
         E(1)  
         return
 :*:pi::        ;; 
-        E(2, "PI")  
+        HS_A("PI", 2)  
         return
 :*:bpr::        ;;  ???????? Business process reengineering
-        E(3, "BPR")  
+        HS_A("BPR", 3)  
         return
 :*:BPR::        ;; 
         E(3)  
@@ -1375,13 +1405,13 @@
         E(2)  
         return
 :*:UNDO::        ;; 
-        E(3,"UNDO")  
+        HS_A("UNDO", 3)  
         return
 :*:redo::        ;; 
         E(3)  
         return
 :*:REDO::        ;; 
-        E(3,"REDO")  
+        HS_A("REDO", 3)  
         return
 :*:check::        ;; ???
         E(2)  
@@ -1390,7 +1420,7 @@
         E(2)  
         return
 :*:dbms::        ;; 
-        E(3, "DBMS")  
+        HS_A("DBMS", 3)  
          return
 :*:DBMS::        ;; 
         E(3)  
@@ -1408,202 +1438,202 @@
         E(2)  
          return
 :*:ram::        ;; 
-        E(2,"RAM")  
+        HS_A("RAM", 2)  
          return
 :*:pmi::		;; Project Management Institute 
-	E(3,"PMI")	
+	HS_A("PMI", 3)	
          return
 :*:wbs::		;; Work Breakdown Structure
-	E(1,"WBS")
+	HS_A("WBS", 1)
 	return
 :*:wac::		;; Wholesale App Community
-	E(3,"WAC")
+	HS_A("WAC", 3)
 	return
 :*:ms::		;;
-	E(2, "MS")
+	HS_A("MS", 2)
 	return
 :*:docs::		;;
-	E(2,"Docs")
+	HS_A("Docs", 2)
 	return
 :*:maps::		;;
-	E(4, "Maps")
+	HS_A("Maps", 4)
 	return
 :*:linux::		;;
-	E(5, "Linux")
+	HS_A("Linux", 5)
 	return
 :*:windows::		;;
-	E(7, "Windows")
+	HS_A("Windows", 7)
 	return
 :*:symbian::		;;
-	E(5, "Symbian")
+	HS_A("Symbian", 5)
 	return
 :*:wipi::		;;
-	E(3, "WIPI")
+	HS_A("WIPI", 3)
 	return
 :*:mac::		;;
-	E(3, "MAC")
+	HS_A("MAC", 3)
 	return
 :*:osx::		;;
-	E(3, "OSX")
+	HS_A("OSX", 3)
 	return
 :*:n/a::		;; Not Available
-	E(3, "N/A")
+	HS_A("N/A", 3)
 	return
 :*:sdk::		;;
-	E(2, "SDK")
+	HS_A("SDK", 2)
 	return
 :*:ui::		;;
-	E(2, "UI")
+	HS_A("UI", 2)
 	return
 :*:xcode::		;;
-	E(3, "Xcode")
+	HS_A("Xcode", 3)
 	return
 ::skt::		;;
-	E(1, "SKT")
+	HS_A("SKT", 1)
 	return
 :*:ktf::		;;
-	E(3, "KTF")
+	HS_A("KTF", 3)
 	return
 :*:nokia::		;;
-	E(5, "Nokia")
+	HS_A("Nokia", 5)
 	return
 :*:lg::		;;
-	E(2, "LG")
+	HS_A("LG", 2)
 	return
 :*:google::		;;
-	E(4, "Google")
+	HS_A("Google", 4)
 	return
 :*:Google::     ;;
     E(4)
     return
 :*:verizon::		;;
-	E(5, "Verizon")
+	HS_A("Verizon", 5)
 	return
 :*:atnt::		;;
-	E(4, "AT&T")
+	HS_A("AT&T", 4)
 	return
 :*:wifi::		;; 
-	E(2, "Wifi")
+	HS_A("Wifi", 2)
 	return
 :*:ogf::		;; Open Grid Forum 
-	E(3, "OGF")
+	HS_A("OGF", 3)
 	return
 :*:occ::		;; Open Cloud Consortium
-	E(3, "OCC")
+	HS_A("OCC", 3)
 	return
 :*:cpu::		;; 
-	E(2, "CPU")
+	HS_A("CPU", 2)
 	return
 :*:sbc::		;; Server Based Computing
-	E(1, "SBC")
+	HS_A("SBC", 1)
 	return
 :*:saas::		;; Software as a Service
-	E(4, "SaaS")
+	HS_A("SaaS", 4)
 	return
 :*:paas::		;; 
-	E(4, "PaaS")
+	HS_A("PaaS", 4)
 	return
 :*:iaas::		;; 
-	E(4, "IaaS")
+	HS_A("IaaS", 4)
 	return
 :*:xaas::		;; 
-	E(4, "XaaS")
+	HS_A("XaaS", 4)
 	return
 :*:aaas::		;; 
-	E(4, "AaaS")
+	HS_A("AaaS", 4)
 	return
 :*:baas::		;; 
-	E(4, "BaaS")
+	HS_A("BaaS", 4)
 	return
 :*:daas::		;; 
-	E(4, "DaaS")
+	HS_A("DaaS", 4)
 	return
 :*:faas::		;; 
-	E(4, "FaaS")
+	HS_A("FaaS", 4)
 	return
 :*:haas::		;; 
-	E(4, "HaaS")
+	HS_A("HaaS", 4)
 	return
 :*:idaas::		;; 
-	E(5, "IDaaS")
+	HS_A("IDaaS", 5)
 	return
 :*:caas::		;; 
-	E(4, "CaaS")
+	HS_A("CaaS", 4)
 	return
 :*:idc::		;; Internet Data Center
-	E(3, "IDC")
+	HS_A("IDC", 3)
 	return
 :*:ea::		;; 
-	E(2, "EA")
+	HS_A("EA", 2)
 	return
 :*:isp::		;; 
-	E(3, "ISP")
+	HS_A("ISP", 3)
 	return
 :*:';sd::		;; 
-	E(3, "SD")
+	HS_A("SD", 3)
 	return
 :*:';db::		;;
-	E(2, "DB")
+	HS_A("DB", 2)
 	return
 :*:';op::		;; 
-	E(3, "OP")
+	HS_A("OP", 3)
 	return
 :*:';ma::		;; 
-	E(3, "MA")
+	HS_A("MA", 3)
 	return
 :*:bsc::		;; BalancedScorecard
-	E(3, "BSC")
+	HS_A("BSC", 3)
 	return
 :*:mpls::	
-	E(4, "MPLS")
+	HS_A("MPLS", 4)
 	return
 :*:vpn::	
-	E(2, "VPN")
+	HS_A("VPN", 2)
 	return
 ::3d::	
-	E(2, "3D")
+	HS_A("3D", 2)
 	return
 :*:3G::	
-	E(2, "3G")
+	HS_A("3G", 2)
 	return
 :*:api::
-	E(2, "API")
+	HS_A("API", 2)
 	return
 :*:pda::
-	E(3, "PDA")
+	HS_A("PDA", 3)
 	return
 :*:pc::
-	E(2, "PC")
+	HS_A("PC", 2)
 	return
 :*:iptv::
-	E(4, "IPTV")
+	HS_A("IPTV", 4)
 	return
 :*:gui::
-	E(2, "GUI")
+	HS_A("GUI", 2)
 	return
 :?*:.xml::
-    E(2, ".xml")
+    HS_A(".xml", 2)
     return
 :*:xml::
-	E(1, "XML")
+	HS_A("XML", 1)
 	return
 :*:sax::
-	E(3, "SAX")
+	HS_A("SAX", 3)
 	return
 :*:hw::        ; 
-    E(2, "HW")  
+    HS_A("HW", 2)  
     return
 :*:h/w::        ; 
-    E(3, "H/W")  
+    HS_A("H/W", 3)  
     return
 :*:n/w::        ; 
-    E(3, "N/W")  
+    HS_A("N/W", 3)  
     return
 :*:s/w::
-	E(3, "S/W")
+	HS_A("S/W", 3)
 	return	
 :*:sw::
-	E(1, "SW")
+	HS_A("SW", 1)
 	return
 
 :*:interface::
@@ -1625,25 +1655,25 @@
 	E(3)
 	return
 :*:dmaic::
-	E(2, "DMAIC")
+	HS_A("DMAIC", 2)
 	return
 :*:dmadv::
-	E(3, "DMADV")
+	HS_A("DMADV", 3)
 	return
 :*:dfss::
-	E(4, "DFSS")
+	HS_A("DFSS", 4)
 	return
 ::rnd::
-	E(1, "R&D")
+	HS_A("R&D", 1)
 	return
 :*:ctq::
-    E(3, "CTQ")
+    HS_A("CTQ", 3)
     return
 :*:android::
-    E(4, "Android")
+    HS_A("Android", 4)
     return
 :*:iphone::
-    E(5, "iPhone")
+    HS_A("iPhone", 5)
     return
 :*:itunes::
     E(6)
@@ -1651,159 +1681,159 @@
 
 /*
 :*:'a::
-    E(2, "a")
+    HS_A("a", 2)
     return
 :*:'b::
-    E(2, "b")
+    HS_A("b", 2)
     return
 :*:'c::
-    E(2, "c")
+    HS_A("c", 2)
     return
 :*:'d::
-    E(2, "d")
+    HS_A("d", 2)
     return
 :*:'e::
-    E(2, "e")
+    HS_A("e", 2)
     return
 :*:'f::
-    E(2, "f")
+    HS_A("f", 2)
     return
 :*:'g::
-    E(2, "g")
+    HS_A("g", 2)
     return
 :*:'h::
-    E(2, "h")
+    HS_A("h", 2)
     return
 :*:'i::
-    E(2, "i")
+    HS_A("i", 2)
     return
 :*:'j::
-    E(2, "j")
+    HS_A("j", 2)
     return
 :*:'k::
-    E(2, "k")
+    HS_A("k", 2)
     return
 :*:'l::
-    E(2, "l")
+    HS_A("l", 2)
     return
 :*:'m::
-    E(2, "m")
+    HS_A("m", 2)
     return
 :*:'o::
-    E(2, "o")
+    HS_A("o", 2)
     return
 :*:'p::
-    E(2, "p")
+    HS_A("p", 2)
     return
 :*:'q::
-    E(2, "q")
+    HS_A("q", 2)
     return
 :*:'r::
-    E(2, "r")
+    HS_A("r", 2)
     return
 :*:'s::
-    E(2, "s")
+    HS_A("s", 2)
     return
 :*:'t::
-    E(2, "t")
+    HS_A("t", 2)
     return
 :*:'u::
-    E(2, "u")
+    HS_A("u", 2)
     return
 :*:'v::
-    E(2, "v")
+    HS_A("v", 2)
     return
 :*:'w::
-    E(2, "w")
+    HS_A("w", 2)
     return
 :*:'x::
-    E(2, "x")
+    HS_A("x", 2)
     return
 :*:'y::
-    E(2, "y")
+    HS_A("y", 2)
     return
 :*:'z::
-    E(2, "z")
+    HS_A("z", 2)
     return
  */
 
 :*:`;a::
-    E(2, "A")
+    HS_A("A", 2)
     return
 :*:`;b::
-    E(2, "B")
+    HS_A("B", 2)
     return
 :*:`;c::
-    E(2, "C")
+    HS_A("C", 2)
     return
 :*:`;d::
-    E(2, "D")
+    HS_A("D", 2)
     return
 :*:`;e::
-    E(2, "E")
+    HS_A("E", 2)
     return
 :*:`;f::
-    E(2, "F")
+    HS_A("F", 2)
     return
 :*:`;g::
-    E(2, "G")
+    HS_A("G", 2)
     return
 :*:`;h::
-    E(2, "H")
+    HS_A("H", 2)
     return
 :*:`;i::
-    E(2, "I")
+    HS_A("I", 2)
     return
 :*:`;j::
-    E(2, "J")
+    HS_A("J", 2)
     return
 :*:`;k::
-    E(2, "K")
+    HS_A("K", 2)
     return
 :*:`;l::
-    E(2, "L")
+    HS_A("L", 2)
     return
 :*:`;m::
-    E(2, "M")
+    HS_A("M", 2)
     return
 :*:`;n::
-    E(2, "N")
+    HS_A("N", 2)
     return
 :*:`;o::
-    E(2, "O")
+    HS_A("O", 2)
     return
 :*:`;p::
-    E(2, "P")
+    HS_A("P", 2)
     return
 :*:`;q::
-    E(2, "Q")
+    HS_A("Q", 2)
     return
 :*:`;r::
-    E(2, "R")
+    HS_A("R", 2)
     return
 :*:`;s::
-    E(2, "S")
+    HS_A("S", 2)
     return
 :*:`;t::
-    E(2, "T")
+    HS_A("T", 2)
     return
 :*:`;u::
-    E(2, "U")
+    HS_A("U", 2)
     return
 :*:`;v::
-    E(2, "V")
+    HS_A("V", 2)
     return
 :*:`;w::
-    E(2, "W")
+    HS_A("W", 2)
     return
 :*:`;x::
-    E(2, "X")
+    HS_A("X", 2)
     return
 :*:`;y::
-    E(2, "Y")
+    HS_A("Y", 2)
     return
 :*:`;z::
-    E(2, "Z")
+    HS_A("Z", 2)
     return
 
 
@@ -1884,6 +1914,39 @@ isKorean()
     		return true
     	}
 	return false
+}
+
+
+;; Hotstring All, either korean or english status
+HS_A(english :="", del_kor := "", del_eng := "")
+{    
+    StringGetPos, startPos, A_ThisHotkey, :, l2		; Left Second
+
+    if !english {
+        english := SubStr(A_ThisHotkey, startPos+2)        
+    }
+
+    if !del_eng {                    
+        hotkey := SubStr(A_ThisHotkey, startPos+2)    
+        del_eng := StrLen(hotkey)
+    }
+
+    korean := isKorean()
+    if korean {
+        Send {BS %del_kor%}
+    } else {
+        Send {BS %del_eng%}
+    }
+
+    if korean {
+        Send {vk15sc138}
+    }
+
+    SendRaw %english%
+
+    if korean {
+        Send {vk15sc138}
+    }               
 }
 
 ;;E(english, del_kor)
