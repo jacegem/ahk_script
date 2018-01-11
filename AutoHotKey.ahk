@@ -24,27 +24,22 @@ ComObjError(false)
 #include .\common\functions.ahk
 
 ; Util
-#include .\util\util_vars.ahk
-
+#include .\common\util_vars.ahk
+#include .\common\Absolutely_Kor_Eng.ahk
+#include .\common\Accelerated Scrolling 1.3.ahk
 ;; 2018.01.10 Dynamic HotString 사용 안함
 ; Dynamic HotString
 ;#include .\hotstring\dynamic_hotstring.ahk
 ;#include .\util\Hotstring.ahk
 
-; Scrolling
-#include .\util\Absolutely_Kor_Eng.ahk
-#include .\util\Accelerated Scrolling 1.3.ahk
-
-;  한글에서 정상적으로 작동하지 않으므로, 아래 내용은 제외하도록 처리합니다. 
-;#ifWinNotActive ahk_exe Hwp.exe
-    ; HotString
-    #include .\hotstring\english_hotstring.ahk
-    #include .\hotstring\english_dictionary.ahk
-    #include .\hotstring\korean_hotstring.ahk
-    #include .\hotstring\symbol_hotstring.ahk
-    #include .\hotstring\auto_correct.ahk
-    #include .\hotstring\eng_to_kor.ahk
-;#ifWinActive
+; HotString
+#include .\hotstring\hotstring_function.ahk
+#include .\hotstring\english_hotstring.ahk
+#include .\hotstring\english_dictionary.ahk
+#include .\hotstring\korean_hotstring.ahk
+#include .\hotstring\symbol_hotstring.ahk
+#include .\hotstring\auto_correct.ahk
+#include .\hotstring\eng_to_kor.ahk
 
 ; Change Key
 #Include .\change_key\shift_key.ahk
@@ -75,7 +70,6 @@ ComObjError(false)
 #include .\application\notepad++.ahk
 #include .\application\evernote.ahk
 #include .\application\chrome.ahk
-;#include .\application\ahk_class SWT_Window0.ahk
 #include .\application\power_point.ahk
 #include .\application\word.ahk
 #include .\application\firefox.ahk
