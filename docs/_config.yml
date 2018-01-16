@@ -41,7 +41,7 @@ avatar: assets/images/avatar.jpg
 
 # You'll want to customize url and baseurl for your own site:
 baseurl: "/ahk_script" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "http://jacegem.github.io" # the base hostname & protocol for your site
 
 # Social settings
 facebook_url:
