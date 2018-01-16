@@ -16,7 +16,9 @@ GitHub에서 스크립트를 다운로드 받아서, 루트 폴더의 autohotkey
 
 ### EXE 다운로드
 
-release에서 최신버전을 다운로드 받아서, 실행합니다.
+![](https://goo.gl/pG9UNY)
+
+[release](https://github.com/jacegem/ahk_script/releases)에서 최신버전을 다운로드 받아서 실행합니다.
 
 실행되면 트레이에 아이콘이 추가된 것을 확인할 수 있습니다.
 
