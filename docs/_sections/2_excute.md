@@ -1,7 +1,7 @@
 ---
 title: 실행
 icon: fa-check
-order: 5
+order: 2
 ---
 
 ### 스크립트 다운로드

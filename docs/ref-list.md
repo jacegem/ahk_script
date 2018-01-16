@@ -6,7 +6,7 @@ icon: fa-book
 order: 3
 ---
 
-1. https://github.com/chrisbobbe/jekyll-theme-prologue
+1. 테마: <https://github.com/chrisbobbe/jekyll-theme-prologue>
 
 --
 
