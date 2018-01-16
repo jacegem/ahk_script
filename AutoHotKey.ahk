@@ -27,12 +27,10 @@ ComObjError(false)
 #include .\common\util_vars.ahk
 #include .\common\Absolutely_Kor_Eng.ahk
 #include .\common\Accelerated Scrolling 1.3.ahk
-;; 2018.01.10 Dynamic HotString 사용 안함
-; Dynamic HotString
-;#include .\hotstring\dynamic_hotstring.ahk
-;#include .\util\Hotstring.ahk
+#include .\common\Hotstring.ahk
 
 ; HotString
+#include .\hotstring\dynamic_hotstring.ahk
 #include .\hotstring\hotstring_function.ahk
 #include .\hotstring\english_hotstring.ahk
 #include .\hotstring\english_dictionary.ahk
@@ -120,4 +118,3 @@ $ScrollLock::Suspend
    . "`nAHK Path: " . A_AhkPath
 ExitApp
 */
-

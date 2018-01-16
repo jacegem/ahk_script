@@ -1,146 +1,163 @@
-;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;  
-
 #Hotstring, B0 C
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+:*:dpm::      ;  
+        HS_AE("DPM")
+        return
+:*:cosmo::      ;  
+        HS_AE("COSMO")
+        return
+:*:fhg::      ;  
+        HS_AE("FHG")
+        return
+:*:kaist::      ;  
+        HS_AE("KAIST")
+        return
+:*:sto::      ;  
+        HS_EE("STO")
+        return
 :*:udg::      ;  
-        HS_AE("UDG", 3)
+        HS_KE("UDG", 3)
+        return
+:*:udg::      ;  
+        HS_KE("UDG", 3)
         return
 :*:dg::      ;  
-        HS_AE("DG", 2)
+        HS_KE("DG", 2)
         return
 :*:wp::      ;  
-        HS_EE("WP", 1)
+        HS_EE("WP", 2)
         return
 :*:korea::      ;  
-        HS_AE("Korea", 5)
+        HS_KE("Korea", 5)
         return
 :*:eu::      ;   
-        HS_AE("EU", 1)
+        HS_KE("EU", 1)
+        return
+:*:ai ::      ;   
+        HS_EE("AI ")
         return
 :*:ai::      ;   
-        HS_AE("AI", 2)
+        HS_KE("AI", 2)
         return
 :*:aims::      ;     
         HS_AE("AIMS", 4)
         return
 :*:lora::      ;   
-        HS_AE("LoRA", 4)
+        HS_KE("LoRA", 4)
         return
 :*:wifi::      ;   
-        HS_AE("WiFi", 3)
+        HS_KE("WiFi", 3)
         return
 :*:lte::      ;   
-        HS_AE("LTE", 3)
+        HS_KE("LTE", 3)
         return
 :*:iot::      ;   
         HS_AE("IoT", 3)
         return
 :*:cnn::      ;
-        HS_AE("CNN", 2)
+        HS_KE("CNN", 2)
         return
 :*:rnn::      ;    
-        HS_AE("RNN", 2)
+        HS_KE("RNN", 2)
         return
 :*:www::      ;     
-        HS_AE("WWW", 3)
+        HS_KE("WWW", 3)
         return
 :*:ar::      ;   
-        HS_AE("AR", 2) 
+        HS_KE("AR", 2) 
         return
 :*:vr::      ;   
-        HS_AE("VR", 2) 
+        HS_KE("VR", 2) 
         return
 :*:mr::      ;   
-        HS_AE("MR", 2) 
+        HS_KE("MR", 2) 
         return
 :*:toc::      ;   
-        HS_AE("TOC", 1) 
+        HS_KE("TOC", 1) 
         return
 :*:sip::      ;   
-        HS_AE("SIP", 3) 
+        HS_KE("SIP", 3) 
         return
 :*:lstm::      ;   
-        HS_AE("LSTM", 3) 
+        HS_KE("LSTM", 3) 
         return
 :*:gru::      ;     
-        HS_AE("GRU", 2) 
+        HS_KE("GRU", 2) 
         return
 :*:nlp::      ;     
-        HS_AE("NLP", 2) 
+        HS_KE("NLP", 2) 
         return
 :*:foreach::      ;     
-        HS_AE("foreach", 6) 
+        HS_KE("foreach", 6) 
         return
 :*:param::      ;     
-        HS_AE("param", 4) 
+        HS_KE("param", 4) 
         return
 :*:rx::      ;     
-        HS_AE("Rx", 2) 
+        HS_KE("Rx", 2) 
         return
 :*:vue::      ;    
-        HS_AE("VUE", 1) 
+        HS_KE("VUE", 1) 
         return
 :*:am::      ;    
-        HS_AE("AM", 1) 
+        HS_KE("AM", 1) 
         return
 :*:cnn::      ;    
-        HS_AE("CNN", 2) 
+        HS_KE("CNN", 2) 
         return
 :*:rnn::      ;    
-        HS_AE("RNN", 2) 
+        HS_KE("RNN", 2) 
         return
 :*:mvp::      ;    
-        HS_AE("MVP", 2) 
+        HS_KE("MVP", 2) 
         return
 :*:apache::      ;     
-        HS_AE("apache", 2) 
+        HS_KE("apache", 2) 
         return
 :*:iot::      ;     
-        HS_AE("IoT", 3) 
+        HS_KE("IoT", 3) 
         return
 :*:debugger::      ;     
-        HS_AE("debugger", 8) 
+        HS_KE("debugger", 8) 
         return
 :*:seq::      ;     
-        HS_AE("SEQ", 3) 
+        HS_KE("SEQ", 3) 
         return
 :*:nvr::      ;     
-        HS_AE("NVR", 3) 
+        HS_KE("NVR", 3) 
         return
 :*:pnu::      ;     
-        HS_AE("PNU", 3) 
+        HS_KE("PNU", 3) 
         return
 :*:proj::      ;     
-        HS_AE("proj", 3) 
+        HS_KE("proj", 3) 
         return
 :*:epsg::      ;     
-        HS_AE("EPSG", 1) 
+        HS_KE("EPSG", 1) 
         return
 :*:/kg::      ;     
-        HS_AE("kg", 3) 
+        HS_KE("kg", 3) 
         return
 :*:/cm::      ;     
-        HS_AE("cm", 2) 
+        HS_KE("cm", 2) 
         return
 :*:pdf::      ;     
-        HS_AE("PDF", 3) 
+        HS_KE("PDF", 3) 
         return
 :*:ptz::      ;     
-        HS_AE("PTZ", 3) 
+        HS_KE("PTZ", 3) 
         return
 :*:mdt::      ;     
-        HS_AE("MDT", 3) 
+        HS_KE("MDT", 3) 
         return
 :*:orm::      ;     
-        HS_AE("ORM", 3) 
+        HS_KE("ORM", 3) 
         return
 :*:json::      ;     
-        HS_AE("JSON", 3) 
+        HS_KE("JSON", 3) 
         return
 :*:cybos::      ;     
-        HS_AE("CYBOS", 4) 
+        HS_KE("CYBOS", 4) 
         return
 :*:.py::      ;     ㄴㅅㄱ
         HS_KE(3) 
@@ -158,248 +175,248 @@
         HS_KE() 
         return
 :*:osd::      ;     
-        HS_AE("OSD", 3) 
+        HS_KE("OSD", 3) 
         return
 :*:activex::      ;     
-        HS_AE("ActiveX", 7) 
+        HS_KE("ActiveX", 7) 
         return
 :*:dmz::      ;    
-        HS_AE("DMZ", 1) 
+        HS_KE("DMZ", 1) 
         return
 :*:ppt::      ;    
-        HS_AE("PPT", 3) 
+        HS_KE("PPT", 3) 
         return
 :*:qgis::      ;    
-        HS_AE("QGIS", 2) 
+        HS_KE("QGIS", 2) 
         return
 :*:erd::      ;    
-        HS_AE("ERD", 3) 
+        HS_KE("ERD", 3) 
         return
 :*:erp::      ;    
-        HS_AE("ERP", 3) 
+        HS_KE("ERP", 3) 
         return
 :*:pk::      ;    
-        HS_AE("PK", 2) 
+        HS_KE("PK", 2) 
         return
 :*:gtx::      ;    
-        HS_AE("GTX", 3) 
+        HS_KE("GTX", 3) 
         return
 :*:svn::      ;    
-        HS_AE("SVN", 3) 
+        HS_KE("SVN", 3) 
         return
 :*:rss::      ;    
-        HS_AE("RSS", 3) 
+        HS_KE("RSS", 3) 
         return
 :*:jai::      ;    
-        HS_AE("JAI", 2) 
+        HS_KE("JAI", 2) 
         return
 :*:mvc::      ;  
-        HS_AE("MVC", 3) 
+        HS_KE("MVC", 3) 
         return
 :*:dc::      ;  
-        HS_AE("DC", 2) 
+        HS_KE("DC", 2) 
         return
 :*:gdi::      ;  
-        HS_AE("GDI", 2) 
+        HS_KE("GDI", 2) 
         return
 :*:todo::      ;  
-        HS_AE("todo", 2) 
+        HS_KE("todo", 2) 
         return
 :*:vms::      ;  
-        HS_AE("VMS", 1) 
+        HS_KE("VMS", 1) 
         return
 :*:png::      ;  
-        HS_AE() 
+        HS_KE() 
         return
 :*:svg::      ;  
-        HS_AE() 
+        HS_KE() 
         return
 :*:tags::      ;  
         HS_EE(4) 
         return
 :*:dll::      ;  
-        HS_AE("dll", 2) 
+        HS_KE("dll", 2) 
         return
 :*:Video::      ;  
-        HS_AE("Video", 2) 
+        HS_KE("Video", 2) 
         return
 :*:video::      ;  
-        HS_AE("video", 2) 
+        HS_KE("video", 2) 
         return
 :*:rgb::      ;  
-        HS_AE("RGB", 2) 
+        HS_KE("RGB", 2) 
         return
 :*:ipv4::      ;  
-        HS_AE("IPv4", 4)
+        HS_KE("IPv4", 4)
         return
 :*:ipv6::      ;  
-        HS_AE("IPv6", 4)
+        HS_KE("IPv6", 4)
         return
 :*:usn::      ; 
-        HS_AE("USN", 3)
+        HS_KE("USN", 3)
         return
 :*:rfid::      ; ?��?��
-        HS_AE("RFID", 2)
+        HS_KE("RFID", 2)
         return
 :*:vworld::      ; 
-        HS_AE("V-World", 3)
+        HS_KE("V-World", 3)
         return
 :*:sdk::      ;
-        HS_AE("SDK", 2)
+        HS_KE("SDK", 2)
         return
 :*:rtsp::      ;
-        HS_AE("RTSP", 2)
+        HS_KE("RTSP", 2)
         return
 :*:row::      ;
-        HS_AE("row", 1)
+        HS_KE("row", 1)
         return
 :*:rownum::      ;  
-        HS_AE("rownum", 6)
+        HS_KE("rownum", 6)
         return
 :*:now::      ;
-        HS_AE("now", 3)
+        HS_KE("now", 3)
         return
 :*:geometry::      ;
-        HS_AE("Geometry", 6)
+        HS_KE("Geometry", 6)
         return
 :*:srid::       ;
-        HS_AE("SRID", 2)
+        HS_KE("SRID", 2)
         return
 :*:conf::       ;
-        HS_AE("conf", 4)
+        HS_KE("conf", 4)
         return
 :*:oid::       ;
-        HS_AE("oid", 3)
+        HS_KE("oid", 3)
         return
 :*:c/s::       ; 2016.04.14   
-        HS_AE("C/S", 3)
+        HS_KE("C/S", 3)
         return
 :*:mvcc::       ; 2016.04.14   
-        HS_AE("MVCC", 4)
+        HS_KE("MVCC", 4)
         return
 :*:acid::       ; 2016.04.14  
-        HS_AE("ACID", 4)
+        HS_KE("ACID", 4)
         return
 :*:ansi::       ; 2016.04.14  
-        HS_AE("ANSI", 2)
+        HS_KE("ANSI", 2)
         return
 :*:superuser::       ; 2016.04.14  
-        HS_AE("SUPERUSER", 9)
+        HS_KE("SUPERUSER", 9)
         return
 :*:database::       ; 2016.04.14  
-        HS_AE("DATABASE", 8)
+        HS_KE("DATABASE", 8)
         return
 :*:postgresql::       ; 2016.04.14  
-        HS_AE("PostgreSQL", 9)
+        HS_KE("PostgreSQL", 9)
         return
 :*:postgis::       ; 2016.04.14  
-        HS_AE("PostGIS", 5)
+        HS_KE("PostGIS", 5)
         return
 :*:ogc::       ; 2016.04.14  
-        HS_AE("OGC", 3)
+        HS_KE("OGC", 3)
         return
 :*:opengis::       ; 2016.04.14  
-        HS_AE("OpenGIS", 5)
+        HS_KE("OpenGIS", 5)
         return
 ::gps::       ;   
-        HS_AE("GPS", 1)
+        HS_KE("GPS", 1)
         return
 :*:a-gnss::       ;     ?��-?��?�� 
-        HS_AE("A-GNSS", 4)
+        HS_KE("A-GNSS", 4)
         return
 :*:gnss::       ;     ?��?�� 
-        HS_AE("GNSS", 2)
+        HS_KE("GNSS", 2)
         return
 :*:dgps::       ;     
-        HS_AE("DGPS", 2)
+        HS_KE("DGPS", 2)
         return
 :*:cctv::       ;     
-        HS_AE("CCTV", 4)
+        HS_KE("CCTV", 4)
         return
 :*:def::       ;     
-        HS_AE("def", 3)
+        HS_KE("def", 3)
         return
 :*:and ::       ;     
-        HS_AE("and ", 2)
+        HS_KE("and ", 2)
         return
 :*:not::       ;     
-        HS_AE()
+        HS_KE("not", 3)
         return
 :*:jykwon::       ;     
-        HS_AE()
+        HS_KE("jykwon", 5)
         return
 :?*:mm::       ;     
-        HS_AE("mm", 2)
+        HS_KE("mm", 2)
         return
 :*:tobe::       ;     
-        HS_AE("TO-BE", 3)
+        HS_KE("TO-BE", 3)
         return
 :*:asis::       ;     
-        HS_AE("AS-IS", 4)
+        HS_KE("AS-IS", 4)
         return
 :*:lx::       ;     2016.03.15
-        HS_AE("LX", 2)
+        HS_KE("LX", 2)
         return
 :*:kras::       ;     2016.03.15
-        HS_AE("KRAS", 4)
+        HS_KE("KRAS", 4)
         return
 :*:xls::       ;     2016.03.04
-        HS_AE("xls", 1)
+        HS_KE("xls", 1)
         return
 :*:hts::       ;     2016.03.04
-        HS_AE("HTS", 3)
+        HS_KE("HTS", 3)
         return
 :*:.js::       ;     
-        HS_AE(".js", 3)
+        HS_KE(".js", 3)
         return
 :*:hwww::       ;     
-        HS_AE("http://www.", 4)
+        HS_KE("http://www.", 4)
         Send {vk15sc138}    
         return
 :*:md::       ;     
-        HS_AE("md", 2)
+        HS_KE("md", 2)
         return
 :*:mltm::       ;     
-        HS_AE("MLTM", 2)
+        HS_KE("MLTM", 2)
         return
 :*:nat::       ;     
-        HS_AE("NAT", 3)
+        HS_KE("NAT", 3)
         return
 ::wpa::       ;     
-        HS_AE("WPA", 1)
+        HS_KE("WPA", 1)
         return
 :*:wep::       ;     
-        HS_AE("WEP", 3)
+        HS_KE("WEP", 3)
         return
 :*:acl::       ;     
-        HS_AE("ACL", 3)
+        HS_KE("ACL", 3)
         return
 :*:smtp::       ;     
-        HS_AE("SMTP", 2)
+        HS_KE("SMTP", 2)
         return
 :*:sess::       ;     
-        HS_AE()
+        HS_KE()
         return
 :*:messages::       ;     
-        HS_AE()
+        HS_KE()
         return
 :*:redirects::       ;     
-        HS_AE()
+        HS_KE()
         return
 :*:otp::       ;     
-        HS_AE("OTP", 2)
+        HS_KE("OTP", 2)
         return
 :*:ic::       ;     
-        HS_AE("IC", 2)
+        HS_KE("IC", 2)
         return
 :*:iis::       ;     
-        HS_AE("IIS", 3)
+        HS_KE("IIS", 3)
         return
 :*:owasp::       ;     
-        HS_AE("OWASP", 4)
+        HS_KE("OWASP", 4)
         return
 :*:sql::       ;     
-        HS_AE("SQL", 2)
+        HS_KE("SQL", 2)
         return
 :*:ocs::       ;     
         HS_EE(3)
@@ -408,64 +425,64 @@
         HS_EE(3)
         return
 ::alt::       ;    
-        HS_AE("Alt ", 1)
+        HS_KE("Alt ", 1)
         return
 :*:Alt::       ;    
-        HS_AE("Alt", 1)
+        HS_KE("Alt", 1)
         return
 :*:ctrl::       ;   
-        HS_AE("Ctrl", 3)
+        HS_KE("Ctrl", 3)
         return
 :*:Ctrl::       ;   
-        HS_AE("Ctrl", 3)
+        HS_KE("Ctrl", 3)
         return
 :*:ejb::       ;    
-        HS_AE("EJB", 2)
+        HS_KE("EJB", 2)
         return
 :*:uddi::       ;    
-        HS_AE("UDDI", 3)
+        HS_KE("UDDI", 3)
         return
 ::soa::       ;    
-        HS_AE("SOA", 1)
+        HS_KE("SOA", 1)
         return
 :*:wfs::       ;    
-        HS_AE("WFS", 3)
+        HS_KE("WFS", 3)
         return
 :*:wms::       ;    
-        HS_AE("WMS", 1)
+        HS_KE("WMS", 1)
         return
 :*:kml::       ;    
-        HS_AE("KML", 2)  
+        HS_KE("KML", 2)  
         return
 ::gml::       ;    
-        HS_AE("GML", 1)  
+        HS_KE("GML", 1)  
         return
 :*:arcgis::       ;    
-        HS_AE("ArcGIS", 4)  
+        HS_KE("ArcGIS", 4)  
         return
 :*:esri::       ;    
-        HS_AE("ESRI", 3)  
+        HS_KE("ESRI", 3)  
         return
 :*:e-::       ; 
-        HS_AE("E-", 2)  
+        HS_KE("E-", 2)  
         return
 :*:c/::       ; 
-        HS_AE("C/", 2)  
+        HS_KE("C/", 2)  
         return
 :*:jsp::       ; 
-        HS_AE("JSP", 2)  
+        HS_KE("JSP", 2)  
         return
 :*:nan::       ; 
-        HS_AE("NaN", 2)  
+        HS_KE("NaN", 2)  
         return
 :*:eval::       ; 
-        HS_EE(3)  
+        HS_KE(3)  
         return
 :*:for::       ; 
-        HS_EE(1)  
+        HS_KE(1)  
         return
 :*:ajax::       ; 
-        HS_AE("AJAX", 2)  
+        HS_KE("AJAX", 2)  
         return
 :*:var::       ; 
         HS_KE(3)  
@@ -501,7 +518,7 @@
         HS_KE(3)  
         return
 :*:ux::       ; 
-        HS_AE("UX", 2)  
+        HS_KE("UX", 2)  
         return
 :*:vs::       ; 
         HS_KE(2)  
@@ -525,25 +542,25 @@
         HS_KE(7)  
         return
 :*:thisarg::       ; 
-        HS_AE("thisArg", 7)  
+        HS_KE("thisArg", 7)  
         return
 :*:prototype::       ; 
         HS_KE(8)  
         return
 :*:dom::       ; 
-        HS_AE("DOM", 2)  
+        HS_KE("DOM", 2)  
         return
 :*:DOM::       ; 
         HS_KE(2)  
         return
 :*:yahoo::       ;  ?��뫠ㅐ
-        HS_AE("Yahoo", 5)  
+        HS_KE("Yahoo", 5)  
         return
 :*:Yahoo::       ;  ?��뫠ㅐ
         HS_KE(5)  
         return
 :*:yui::       ;  ?��?��?��
-        HS_AE("YUI", 3)  
+        HS_KE("YUI", 3)  
         return
 :*:YUI::       ;  ?��?��?��
         HS_KE(3)  
@@ -555,7 +572,7 @@
         HS_KE(3)  
         return
 :*:html::       ;   
-        HS_AE("HTML", 2)  
+        HS_KE("HTML", 2)  
         return
 :*:init::       ;   
         HS_KE(4)  
@@ -564,79 +581,79 @@
         HS_KE(7)  
         return
 :*:servlet::       ;   
-        HS_AE("servlet", 5)  
+        HS_KE("servlet", 5)  
         return
 :*:web-inf::       ;   
-        HS_AE("WEB-INF", 7)  
+        HS_KE("WEB-INF", 7)  
         return
 :*:field::       ;   
         HS_KE(2)  
         return
 :*:jvm::       ;   
-        HS_AE("JVM", 2)  
+        HS_KE("JVM", 2)  
         return
 :*:jni::       ;   
-        HS_AE("JNI", 3)  
+        HS_KE("JNI", 3)  
         return
 :*:timeout::       ;   
-        HS_AE("timeout", 7)  
+        HS_KE("timeout", 7)  
         return
 :*:Timeout::       ;   
-        HS_AE("Timeout", 7)  
+        HS_KE("Timeout", 7)  
         return
 :*:os::       ;   
-        HS_AE("OS", 2)  
+        HS_KE("OS", 2)  
         return
 :*:naver::       ;   
-        HS_AE("NAVER", 5)  
+        HS_KE("NAVER", 5)  
         return
 :*:agile::       ;   
-        HS_AE("Agile", 4)  
+        HS_KE("Agile", 4)  
         return
 :*:kanban::       ;     
-        HS_AE("KANBAN", 4)  
+        HS_KE("KANBAN", 4)  
         return
 :*:pert::       ;     
-        HS_AE("PERT", 4)  
+        HS_KE("PERT", 4)  
         return
 :*:cpm::       ;     
-        HS_AE("CPM", 2)  
+        HS_KE("CPM", 2)  
         return
 :*:scrum::       ;     
-        HS_AE("SCRUM", 4)  
+        HS_KE("SCRUM", 4)  
         return
 :*:pm::       ;     
-        HS_AE("PM", 2)  
+        HS_KE("PM", 2)  
         return
 :*:pmo::       ;     
-        HS_AE("PMO", 3)  
+        HS_KE("PMO", 3)  
         return
 :*:ieee::       ;     using after IE hotstring by dynamic
-        HS_AE("IEEE", 4)  
+        HS_KE("IEEE", 4)  
         return
 :*:javascript::       ;    
-        HS_AE("Javascript", 9)  
+        HS_KE("Javascript", 9)  
         return
 :*:Javascript::       ;    
-        HS_AE("Javascript", 9)  
+        HS_KE("Javascript", 9)  
         return
 :*:ie::       ;     using after IE hotstring by dynamic
-        HS_AE("IE", 2)  
+        HS_KE("IE", 2)  
         return
 :*:unix::       ;    
-        HS_AE("UNIX", 4)  
+        HS_KE("UNIX", 4)  
         return
 :*:swat::       ;    
-        HS_AE("SWAT", 4)  
+        HS_KE("SWAT", 4)  
         return
 :*:eam::       ;    
-        HS_AE("EAM", 3)  
+        HS_KE("EAM", 3)  
         return
 :*:rbac::       ;    
-        HS_AE("RBAC", 2)  
+        HS_KE("RBAC", 2)  
         return
 :*:drdos::      ;    
-        HS_AE("DRDoS", 3)  
+        HS_KE("DRDoS", 3)  
         return
 
 :*:frame::      ;    
@@ -652,13 +669,13 @@
         HS_KE(4)  
         return
 :*:l2::      ;  
-        HS_AE("L2", 2)  
+        HS_KE("L2", 2)  
         return
 :*:l3::      ;  
-        HS_AE("L3", 2)  
+        HS_KE("L3", 2)  
         return
 :*:l4::      ;  
-        HS_AE("L4", 2)  
+        HS_KE("L4", 2)  
         return
 :*:bps::      ;  
         HS_KE(3)  
@@ -676,7 +693,7 @@
         HS_KE(4)  
         return
 :*:rfc::      ;  
-        HS_AE("RFC", 3)  
+        HS_KE("RFC", 3)  
         return
 :*:GET::      ;  
         HS_KE(3)  
@@ -685,13 +702,13 @@
         HS_KE(4)  
         return
 :*:fin::      ;  
-        HS_AE("FIN", 2)  
+        HS_KE("FIN", 2)  
         return
 :*:rst::      ;  
-        HS_AE("RST", 3)  
+        HS_KE("RST", 3)  
         return
 :*:url::      ;  
-        HS_AE("URL", 2)  
+        HS_KE("URL", 2)  
         return
 :*:packets::      ;  
         HS_KE(7)  
@@ -700,10 +717,10 @@
         HS_KE(7)  
         return
 :*:pps::      ;  
-        HS_AE("PPS", 3)  
+        HS_KE("PPS", 3)  
         return
 :*:p2p::      ;  
-        HS_AE("P2P", 3)  
+        HS_KE("P2P", 3)  
         return
 :*:attacker::      ;  
         HS_KE(8)  
@@ -712,16 +729,16 @@
         HS_KE(8)  
         return
 :*:ddos::      ;  
-        HS_AE("DDoS", 2)  
+        HS_KE("DDoS", 2)  
         return
 :*:icmp::      ;  
-        HS_AE("ICMP", 4)  
+        HS_KE("ICMP", 4)  
         return
 :*:syn::      ;  
-        HS_AE("SYN", 2)  
+        HS_KE("SYN", 2)  
         return
 :*:ack::      ;  
-        HS_AE("ACK", 3)  
+        HS_KE("ACK", 3)  
         return
 :*:Dos::      ;  
         HS_KE(1)  
@@ -730,10 +747,10 @@
         HS_KE(1)  
         return
 :*:vdi::      ;  
-        HS_AE("VDI", 2)  
+        HS_KE("VDI", 2)  
         return
 :*:ism::       ;  
-        HS_AE("ISM", 3)  
+        HS_KE("ISM", 3)  
         return
 ::and::      ;  
         HS_KE(1)  
@@ -754,44 +771,44 @@
         HS_KE(3)  
         return
 :*:pdca::      ; 
-        HS_AE("PDCA", 4)  
+        HS_KE("PDCA", 4)  
         return
 :*:iec::      ; 
-        HS_AE("IEC", 3)  
+        HS_KE("IEC", 3)  
         return
 :*:isms::      ; 
-        HS_AE("ISMS", 4)  
+        HS_KE("ISMS", 4)  
         return
 :*:bsi::      ; 
-        HS_AE("BSI", 3)  
+        HS_KE("BSI", 3)  
         return
 :*:bs::      ; 
-        HS_AE("BS", 2)  
+        HS_KE("BS", 2)  
         return
 :*:iso::      ; 
-        HS_AE("ISO", 3)  
+        HS_KE("ISO", 3)  
         return
 :*:frr::      ; 
-        HS_AE("FRR", 2)  
+        HS_KE("FRR", 2)  
         return
 :*:far::      ;  
-        HS_AE("FAR", 2)  
+        HS_KE("FAR", 2)  
         return
 :*:cer::      ;  
-        HS_AE("CER", 3)  
+        HS_KE("CER", 3)  
         return
 :*:DNA::      ; 
         HS_KE(1)  
         return
 :*:npki::      ; 
-        HS_AE("NPKI", 3)  
+        HS_KE("NPKI", 3)  
         return
 :*:gpki::      ; 
-        HS_AE("GPKI", 3)  
+        HS_KE("GPKI", 3)  
         return
 
 :*:scvp::      ; 
-        HS_AE("SCVP", 3)  
+        HS_KE("SCVP", 3)  
         return
 :*:protocol::      ; 
         HS_KE(5)  
@@ -807,22 +824,22 @@
         HS_KE(6)  
         return
 :*:ocsp::      ; 
-        HS_AE("OCSP", 3)  
+        HS_KE("OCSP", 3)  
         return
 :*:ra::      ; 
-        HS_AE("RA", 2)  
+        HS_KE("RA", 2)  
         return
 :*:crl::      ; 
-        HS_AE("CRL", 2)  
+        HS_KE("CRL", 2)  
         return
 :*:pki::      ; 
-        HS_AE("PKI", 3)  
+        HS_KE("PKI", 3)  
         return
 :*:ldap::      ; 
-        HS_AE("LDAP", 3)  
+        HS_KE("LDAP", 3)  
         return
 :*:ips::      ; 
-        HS_AE("IPS", 3)  
+        HS_KE("IPS", 3)  
         return
 :*:router::      ; 
         HS_KE(6)  
@@ -837,7 +854,7 @@
         HS_KE(3)  
         return
 :*:nms::      ; 
-        HS_AE("NMS", 3)  
+        HS_KE("NMS", 3)  
         return
 
 :*:risk::      ; 
@@ -860,10 +877,10 @@
         HS_KE(7)  
         return
 :*:ids::      ; 
-        HS_AE("IDS", 3)  
+        HS_KE("IDS", 3)  
         return
 :*:esm::      ;  Enterprise Security Management
-        HS_AE("ESM", 2)  
+        HS_KE("ESM", 2)  
         return
 :*:telnet::      ; 
         HS_KE(5)  
@@ -872,22 +889,22 @@
         HS_KE(2)  
         return
 :*:osi::      ; 
-        HS_AE("OSI", 3)  
+        HS_KE("OSI", 3)  
         return
 :*:tcp::      ; 
-        HS_AE("TCP", 2)  
+        HS_KE("TCP", 2)  
         return
 :*:udp::      ; 
-        HS_AE("UDP", 2)  
+        HS_KE("UDP", 2)  
         return
 :*:rsa::      ; 
-        HS_AE("RSA", 3)  
+        HS_KE("RSA", 3)  
         return
 :*:ssl::      ; 
-        HS_AE("SSL", 2)  
+        HS_KE("SSL", 2)  
         return
 :*:css::      ; 
-        HS_AE("CSS", 3)  
+        HS_KE("CSS", 3)  
         return
 :*:shp::      ; 
         HS_KE(2)  
@@ -896,7 +913,7 @@
         HS_KE(6)  
         return
 :*:string::      ; 
-        HS_AE("String", 5)  
+        HS_KE("String", 5)  
         return
 :*:int::      ; 
         HS_KE(3)  
@@ -908,13 +925,13 @@
         HS_KE(8)  
         return
 ::di::      ; 
-        HS_AE("DI", 1)  
+        HS_KE("DI", 1)  
         return
 :*:beans::      ; 
         HS_KE(5)  
         return
 :*:ioc::      ; 
-        HS_AE("IoC", 3)  
+        HS_KE("IoC", 3)  
         return
 :*:clean::      ; 
         HS_KE(2)  
@@ -923,7 +940,7 @@
         HS_KE(2)  
         return
 :*:junit::      ; 
-        HS_AE("jUnit", 5)  
+        HS_KE("jUnit", 5)  
         return
 :*:goal::      ; 
         HS_KE(2)  
@@ -950,28 +967,28 @@
         HS_KE(2)  
         return
 :*:gis::      ; 
-        HS_AE("GIS", 1)  
+        HS_KE("GIS", 1)  
         return
 :*:klis::      ; 
-        HS_AE("KLIS", 4)  
+        HS_KE("KLIS", 4)  
         return
 ::x::      ; 
-        HS_AE("X", 1)  
+        HS_KE("X", 1)  
         return
 ::o::      ; 
-        HS_AE("O", 1)  
+        HS_KE("O", 1)  
         return
 :*:usb::      ; 
-        HS_AE("USB", 3)  
+        HS_KE("USB", 3)  
         return
 :*:apk::      ; 
-        HS_AE("APK", 2)  
+        HS_KE("APK", 2)  
         return
 :*:ahk::      ; 
-        HS_AE("AHK", 1)  
+        HS_KE("AHK", 1)  
         return
 :*:ec2::      ; 
-        HS_AE("EC2", 3)  
+        HS_KE("EC2", 3)  
         return
 :*:communications::      ; 
         HS_KE(14)  
@@ -980,13 +997,13 @@
         HS_KE(14)  
         return
 :*:s3::      ; 
-        HS_AE("S3", 2)  
+        HS_KE("S3", 2)  
         return
 :*:si::      ; 
-        HS_AE("SI", 1)  
+        HS_KE("SI", 1)  
         return
 :*:ict::      ; 
-        HS_AE("ICT", 3)  
+        HS_KE("ICT", 3)  
         return
 :*:multi::      ; 
         HS_KE(4)  
@@ -995,10 +1012,10 @@
         HS_KE(4)  
         return
 ::sla::      ; 
-        HS_AE("SLA", 1)  
+        HS_KE("SLA", 1)  
         return
 ::soa::      ; 
-        HS_AE("SOA", 1)  
+        HS_KE("SOA", 1)  
         return
 :*:hadoop::      ; 
         HS_KE(6)  
@@ -1007,7 +1024,7 @@
         HS_KE(6)  
         return
 :*:i/o::      ; 
-        HS_AE("I/O", 3)  
+        HS_KE("I/O", 3)  
         return
 :*:hypervisor::      ; 
         HS_KE(8)  
@@ -1034,10 +1051,10 @@
         HS_KE(10)  
         return
 :*:facebook::      ; 
-        HS_AE("Facebook", 8)  
+        HS_KE("Facebook", 8)  
         return
 :*:ria::      ; 
-        HS_AE("RIA", 1)  
+        HS_KE("RIA", 1)  
         return
 :?*:book::      ; 
         HS_KE(4)  
@@ -1049,30 +1066,28 @@
         HS_KE(2)  
         return
 :*:http::      ; 
-        HS_AE("HTTP", 3)  
+        HS_KE("HTTP", 3)  
         return
 :*:http://::      ; 
         HS_KE(7)  
         return
-
 :*:https::      ; 
-        HS_AE("https", 5)  
+        HS_KE("https", 5)  
         return
-
 :*:rest::      ; 
-        HS_AE("REST", 4)  
+        HS_KE("REST", 4)  
         return
 :*:soap::      ; 
-        HS_AE("SOAP", 2)  
+        HS_KE("SOAP", 2)  
         return
 :*:ip::      ; 
-        HS_AE("IP", 2)  
+        HS_KE("IP", 2)  
         return
 :*:IT::      ; 
         HS_KE(2)  
         return
 :*:it::      ; 
-        HS_AE("IT", 2)  
+        HS_KE("IT", 2)  
         return
 :*:comput::      ; 
         HS_KE(6)  
@@ -1081,13 +1096,13 @@
         HS_KE(6)  
         return
 :*:cio::      ; 
-        HS_AE("CIO", 2)  
+        HS_KE("CIO", 2)  
         return
 :*:cfo::      ; 
-        HS_AE("CFO", 2)  
+        HS_KE("CFO", 2)  
         return
 :*:ceo::      ; 
-        HS_AE("CEO", 2)  
+        HS_KE("CEO", 2)  
         return
 :*:Down::      ; 
         HS_KE(2)  
@@ -1099,25 +1114,25 @@
         HS_KE(2)  
         return
 :*:ard::      ; 
-        HS_AE("ARD", 3)  
+        HS_KE("ARD", 3)  
         return
 :*:saam::      ; Software Architecture Analysis Method
-        HS_AE("SAAM", 3)  
+        HS_KE("SAAM", 3)  
         return
 :*:atam::      ; Architecture Tradeoff Analysis Method
-        HS_AE("ATAM", 3)  
+        HS_KE("ATAM", 3)  
         return
 :*:cbam::      ; Cost Benefit Analysis Method    
-        HS_AE("CBAM", 2)  
+        HS_KE("CBAM", 2)  
         return
 :*:arid::      ; Architecture Review for Intermediate Design
-        HS_AE("ARID", 2)  
+        HS_KE("ARID", 2)  
         return
 :*:based::      ; 
         HS_KE(5)  
         return
 :*:bmt::      ; 
-        HS_AE("BMT", 3)  
+        HS_KE("BMT", 3)  
         return
 :*:Code::      ; 
         HS_KE(2)  
@@ -1126,7 +1141,7 @@
         HS_KE(2)  
         return
 :*:cbd::      ; 
-        HS_AE("CBD", 1)  
+        HS_KE("CBD", 1)  
 		return
 :*:view::      ; 
         HS_KE(2)  
@@ -1135,7 +1150,7 @@
         HS_KE(2)  
         return
 :*:etc::      ; 
-        HS_AE("ETC", 3)  
+        HS_KE("ETC", 3)  
         return
 :*:Scheduled::      ; 
         HS_KE(9)  
@@ -1144,16 +1159,16 @@
         HS_KE(9)  
         return
 :*:spi::      ; ????????????   Schedule Performance Index
-        HS_AE("SPI", 2)  
+        HS_KE("SPI", 2)  
         return
 :*:cpi::      ;  ???? ???????? Cost Performance Index
-        HS_AE("CPI", 2)  
+        HS_KE("CPI", 2)  
         return
 :*:sv::      ;  Scheduled Variance ????????
-        HS_AE("SV", 2)  
+        HS_KE("SV", 2)  
         return
 :*:cv::      ;  Cost Variance ????????
-        HS_AE("CV", 2)  
+        HS_KE("CV", 2)  
         return
 :*:cost::      ;
         HS_KE(2)  
@@ -1165,7 +1180,7 @@
         HS_KE(2)  
         return
 :*:pv::        ;  Planned Value
-        HS_AE("PV", 2)  
+        HS_KE("PV", 2)  
         return
 :*:ev::        ;   Earned Value
         HS_KE("EV", 2)  
@@ -1174,7 +1189,7 @@
         HS_KE("AC", 2)  
         return
 :*:bac::       ;  Budget At Completion  
-        HS_AE("BAC", 3)  
+        HS_KE("BAC", 3)  
         return
 :*:earned::        ; 
         HS_KE(6)  
@@ -1183,49 +1198,55 @@
         HS_KE(6)  
         return
 :*:evm::        ; 
-        HS_AE("EVM", 3)  
+        HS_KE("EVM", 3)  
         return
 ::2d::        ; 
-        HS_AE("2D", 2)  
+        HS_KE("2D", 2)  
         return
 :*:oem::        ; 
-        HS_AE("OEM", 3)  
+        HS_KE("OEM", 3)  
         return
 :*:ide::        ; 
-        HS_AE("IDE", 3)  
+        HS_KE("IDE", 3)  
+        return
+:*:idea::        ; 
+        HS_KE("idea", 4)  
+        return
+:*:iden::        ; 
+        HS_KE("iden", 4)  
         return
 :*:visual studio::        ; visual stud????
-        HS_AE("Visual Studio", 13)  
+        HS_KE("Visual Studio", 13)  
         return
 :*:java::        ; 
-        HS_AE("Java", 4)  
+        HS_KE("Java", 4)  
         return
 :?*:.cpp::        ; 
-        HS_AE(".cpp", 3)  
+        HS_KE(".cpp", 3)  
         return
 :?*:``cpp::        ; 
-        HS_AE("``cpp", 3)  
+        HS_KE("``cpp", 3)  
         return
 :*:cpp::        ; 
-        HS_AE("C++", 2)  
+        HS_KE("C++", 2)  
         return
 :*:C++::        ; 
         HS_KE(3)  
         return
 :*:CPP::        ; 
-        HS_AE("C++", 2)  
+        HS_KE("C++", 2)  
         return
 ::sns::        ; 
-        HS_AE("SNS", 1)  
+        HS_KE("SNS", 1)  
         return
 :*:SNS::        ; 
         HS_KE(1)  
         return
 :*:fw::        ; 
-        HS_AE("F/W", 2)  
+        HS_KE("F/W", 2)  
         return
 :*:f/w::        ; 
-        HS_AE("F/W", 3)  
+        HS_KE("F/W", 3)  
         return
 :*:middleware::        ; 
         HS_KE(10)  
@@ -1240,70 +1261,70 @@
         HS_KE(6)  
         return
 :*:eic::        ; 
-        HS_AE("EIC", 1)  
+        HS_KE("EIC", 1)  
         return
 :*:oha::        ; 
-        HS_AE("OHA", 3)  
+        HS_KE("OHA", 3)  
         return
 :*:ver::        ; 
         HS_KE(3)  
         return
 :*:microsoft::        ; 
-        HS_AE("Microsoft", 6)  
+        HS_KE("Microsoft", 6)  
         return
 :*:TASK::        ; 
-        HS_AE("TASK", 4)  
+        HS_KE("TASK", 4)  
         return
 :*:limo::        ; 
-        HS_AE("LiMo", 4)  
+        HS_KE("LiMo", 4)  
         return
 :*:window mobile::        ; 
-        HS_AE("Window Mobile", 13)  
+        HS_KE("Window Mobile", 13)  
         return
 :*:windows mobile::        ; 
-        HS_AE("Windows Mobile", 14)  
+        HS_KE("Windows Mobile", 14)  
         return
 :*:rtos::        ; 
-        HS_AE("RTOS", 2)  
+        HS_KE("RTOS", 2)  
         return
 :*:gpos::        ; 
-        HS_AE("GPOS", 3)  
+        HS_KE("GPOS", 3)  
         return
 :*:tv::        ; 
-        HS_AE("TV", 2)  
+        HS_KE("TV", 2)  
         return
 :*:ocap::        ; 
-        HS_AE("OCAP", 3)  
+        HS_KE("OCAP", 3)  
         return
 :*:tta::        ;  
-        HS_AE("TTA", 3)  
+        HS_KE("TTA", 3)  
         return
 ; :*:ca::        ;  
 ;         HS_EE("CA", 2)  
 ;         return
 :*:atsc::        ;  at????
-        HS_AE("ATSC", 4)  
+        HS_KE("ATSC", 4)  
         return
 :*:cas::        ; 
-        HS_AE("CAS", 3)  
+        HS_KE("CAS", 3)  
         return
 :*:Metadata::        ; 
         HS_KE(8)  
         return
 ; :*:rel::        ; re??
-;         HS_AE("REL", 3)  
+;         HS_KE("REL", 3)  
 ;         return
 :*:e-book::        ; ??-book
-        HS_AE("e-Book", 6)  
+        HS_KE("e-Book", 6)  
         return
 :*:oebf::        ; oe????
-        HS_AE("OeBF", 4)  
+        HS_KE("OeBF", 4)  
         return
 :*:dhwg::        ; ???
-        HS_AE("DHWG", 2)  
+        HS_KE("DHWG", 2)  
         return
 :*:isma::        ; 
-        HS_AE("ISMA", 4)  
+        HS_KE("ISMA", 4)  
         return
 :*:rights::        ; 
         HS_KE(6)  
@@ -1324,28 +1345,28 @@
         HS_KE(2)  
         return
 :*:odrl::        ; 
-        HS_AE("ODRL", 3)  
+        HS_KE("ODRL", 3)  
         return
 :*:xrml::        ; ????  
-        HS_AE("XrML", 2)  
+        HS_KE("XrML", 2)  
         return
 :*:Indecs::        ;
         HS_KE(6)  
         return
 :*:doi::        ;      
-        HS_AE("DOI", 2)  
+        HS_KE("DOI", 2)  
         return
 :*:mpeg::        ; ??????
-        HS_AE("MPEG", 4)  
+        HS_KE("MPEG", 4)  
         return
 :*:oma::        ;
-        HS_AE("OMA", 3)  
+        HS_KE("OMA", 3)  
         return
 :*:drm::        ;
-        HS_AE("DRM", 2)  
+        HS_KE("DRM", 2)  
         return
 :*:srm::        ; 
-        HS_AE("SRM", 2)  
+        HS_KE("SRM", 2)  
         return
 :*:cycle::        ;
         HS_KE(2)  
@@ -1354,7 +1375,7 @@
         HS_KE(2)  
         return
 ::db::        ;
-        HS_AE("DB", 1)  
+        HS_KE("DB", 1)  
         return
 ::DB::        ;
         HS_KE(1)  
@@ -1378,10 +1399,10 @@
         HS_KE(1)  
         return
 :*:pi::        ;; 
-        HS_AE("PI", 2)  
+        HS_KE("PI", 2)  
         return
 :*:bpr::        ;;  ???????? Business process reengineering
-        HS_AE("BPR", 3)  
+        HS_KE("BPR", 3)  
         return
 :*:BPR::        ;; 
         HS_KE(3)  
@@ -1399,13 +1420,13 @@
         HS_KE(2)  
         return
 :*:UNDO::        ;; 
-        HS_AE("UNDO", 3)  
+        HS_KE("UNDO", 3)  
         return
 :*:redo::        ;; 
         HS_KE(3)  
         return
 :*:REDO::        ;; 
-        HS_AE("REDO", 3)  
+        HS_KE("REDO", 3)  
         return
 :*:check::        ;; ???
         HS_KE(2)  
@@ -1414,7 +1435,7 @@
         HS_KE(2)  
         return
 :*:dbms::        ;; 
-        HS_AE("DBMS", 3)  
+        HS_KE("DBMS", 3)  
          return
 :*:DBMS::        ;; 
         HS_KE(3)  
@@ -1432,202 +1453,202 @@
         HS_KE(2)  
          return
 :*:ram::        ;; 
-        HS_AE("RAM", 2)  
+        HS_KE("RAM", 2)  
          return
 :*:pmi::		;; Project Management Institute 
-	HS_AE("PMI", 3)	
+	HS_KE("PMI", 3)	
          return
 :*:wbs::		;; Work Breakdown Structure
-	HS_AE("WBS", 1)
+	HS_KE("WBS", 1)
 	return
 :*:wac::		;; Wholesale App Community
-	HS_AE("WAC", 3)
+	HS_KE("WAC", 3)
 	return
 :*:ms::		;;
-	HS_AE("MS", 2)
+	HS_KE("MS", 2)
 	return
 :*:docs::		;;
-	HS_AE("Docs", 2)
+	HS_KE("Docs", 2)
 	return
 :*:maps::		;;
-	HS_AE("Maps", 4)
+	HS_KE("Maps", 4)
 	return
 :*:linux::		;;
-	HS_AE("Linux", 5)
+	HS_KE("Linux", 5)
 	return
 :*:windows::		;;
-	HS_AE("Windows", 7)
+	HS_KE("Windows", 7)
 	return
 :*:symbian::		;;
-	HS_AE("Symbian", 5)
+	HS_KE("Symbian", 5)
 	return
 :*:wipi::		;;
-	HS_AE("WIPI", 3)
+	HS_KE("WIPI", 3)
 	return
 :*:mac::		;;
-	HS_AE("MAC", 3)
+	HS_KE("MAC", 3)
 	return
 :*:osx::		;;
-	HS_AE("OSX", 3)
+	HS_KE("OSX", 3)
 	return
 :*:n/a::		;; Not Available
-	HS_AE("N/A", 3)
+	HS_KE("N/A", 3)
 	return
 :*:sdk::		;;
-	HS_AE("SDK", 2)
+	HS_KE("SDK", 2)
 	return
 :*:ui::		;;
-	HS_AE("UI", 2)
+	HS_KE("UI", 2)
 	return
 :*:xcode::		;;
-	HS_AE("Xcode", 3)
+	HS_KE("Xcode", 3)
 	return
 ::skt::		;;
-	HS_AE("SKT", 1)
+	HS_KE("SKT", 1)
 	return
 :*:ktf::		;;
-	HS_AE("KTF", 3)
+	HS_KE("KTF", 3)
 	return
 :*:nokia::		;;
-	HS_AE("Nokia", 5)
+	HS_KE("Nokia", 5)
 	return
 :*:lg::		;;
-	HS_AE("LG", 2)
+	HS_KE("LG", 2)
 	return
 :*:google::		;;
-	HS_AE("Google", 4)
+	HS_KE("Google", 4)
 	return
 :*:Google::     ;;
     HS_KE(4)
     return
 :*:verizon::		;;
-	HS_AE("Verizon", 5)
+	HS_KE("Verizon", 5)
 	return
 :*:atnt::		;;
-	HS_AE("AT&T", 4)
+	HS_KE("AT&T", 4)
 	return
 :*:wifi::		;; 
-	HS_AE("Wifi", 2)
+	HS_KE("Wifi", 2)
 	return
 :*:ogf::		;; Open Grid Forum 
-	HS_AE("OGF", 3)
+	HS_KE("OGF", 3)
 	return
 :*:occ::		;; Open Cloud Consortium
-	HS_AE("OCC", 3)
+	HS_KE("OCC", 3)
 	return
 :*:cpu::		;; 
-	HS_AE("CPU", 2)
+	HS_KE("CPU", 2)
 	return
 :*:sbc::		;; Server Based Computing
-	HS_AE("SBC", 1)
+	HS_KE("SBC", 1)
 	return
 :*:saas::		;; Software as a Service
-	HS_AE("SaaS", 4)
+	HS_KE("SaaS", 4)
 	return
 :*:paas::		;; 
-	HS_AE("PaaS", 4)
+	HS_KE("PaaS", 4)
 	return
 :*:iaas::		;; 
-	HS_AE("IaaS", 4)
+	HS_KE("IaaS", 4)
 	return
 :*:xaas::		;; 
-	HS_AE("XaaS", 4)
+	HS_KE("XaaS", 4)
 	return
 :*:aaas::		;; 
-	HS_AE("AaaS", 4)
+	HS_KE("AaaS", 4)
 	return
 :*:baas::		;; 
-	HS_AE("BaaS", 4)
+	HS_KE("BaaS", 4)
 	return
 :*:daas::		;; 
-	HS_AE("DaaS", 4)
+	HS_KE("DaaS", 4)
 	return
 :*:faas::		;; 
-	HS_AE("FaaS", 4)
+	HS_KE("FaaS", 4)
 	return
 :*:haas::		;; 
-	HS_AE("HaaS", 4)
+	HS_KE("HaaS", 4)
 	return
 :*:idaas::		;; 
-	HS_AE("IDaaS", 5)
+	HS_KE("IDaaS", 5)
 	return
 :*:caas::		;; 
-	HS_AE("CaaS", 4)
+	HS_KE("CaaS", 4)
 	return
 :*:idc::		;; Internet Data Center
-	HS_AE("IDC", 3)
+	HS_KE("IDC", 3)
 	return
 :*:ea::		;; 
-	HS_AE("EA", 2)
+	HS_KE("EA", 2)
 	return
 :*:isp::		;; 
-	HS_AE("ISP", 3)
+	HS_KE("ISP", 3)
 	return
 :*:';sd::		;; 
-	HS_AE("SD", 3)
+	HS_KE("SD", 3)
 	return
 :*:';db::		;;
-	HS_AE("DB", 2)
+	HS_KE("DB", 2)
 	return
 :*:';op::		;; 
-	HS_AE("OP", 3)
+	HS_KE("OP", 3)
 	return
 :*:';ma::		;; 
-	HS_AE("MA", 3)
+	HS_KE("MA", 3)
 	return
 :*:bsc::		;; BalancedScorecard
-	HS_AE("BSC", 3)
+	HS_KE("BSC", 3)
 	return
 :*:mpls::	
-	HS_AE("MPLS", 4)
+	HS_KE("MPLS", 4)
 	return
 :*:vpn::	
-	HS_AE("VPN", 2)
+	HS_KE("VPN", 2)
 	return
 ::3d::	
-	HS_AE("3D", 2)
+	HS_KE("3D", 2)
 	return
 :*:3G::	
-	HS_AE("3G", 2)
+	HS_KE("3G", 2)
 	return
 :*:api::
-	HS_AE("API", 2)
+	HS_KE("API", 2)
 	return
 :*:pda::
-	HS_AE("PDA", 3)
+	HS_KE("PDA", 3)
 	return
 :*:pc::
-	HS_AE("PC", 2)
+	HS_KE("PC", 2)
 	return
 :*:iptv::
-	HS_AE("IPTV", 4)
+	HS_KE("IPTV", 4)
 	return
 :*:gui::
-	HS_AE("GUI", 2)
+	HS_KE("GUI", 2)
 	return
 :?*:.xml::
-    HS_AE(".xml", 2)
+    HS_KE(".xml", 2)
     return
 :*:xml::
-	HS_AE("XML", 1)
+	HS_KE("XML", 1)
 	return
 :*:sax::
-	HS_AE("SAX", 3)
+	HS_KE("SAX", 3)
 	return
 :*:hw::        ; 
-    HS_AE("HW", 2)  
+    HS_KE("HW", 2)  
     return
 :*:h/w::        ; 
-    HS_AE("H/W", 3)  
+    HS_KE("H/W", 3)  
     return
 :*:n/w::        ; 
-    HS_AE("N/W", 3)  
+    HS_KE("N/W", 3)  
     return
 :*:s/w::
-	HS_AE("S/W", 3)
+	HS_KE("S/W", 3)
 	return	
 :*:sw::
-	HS_AE("SW", 1)
+	HS_KE("SW", 1)
 	return
 
 :*:interface::
@@ -1649,227 +1670,184 @@
 	HS_KE(3)
 	return
 :*:dmaic::
-	HS_AE("DMAIC", 2)
+	HS_KE("DMAIC", 2)
 	return
 :*:dmadv::
-	HS_AE("DMADV", 3)
+	HS_KE("DMADV", 3)
 	return
 :*:dfss::
-	HS_AE("DFSS", 4)
+	HS_KE("DFSS", 4)
 	return
 ::rnd::
-	HS_AE("R&D", 1)
+	HS_KE("R&D", 1)
 	return
 :*:ctq::
-    HS_AE("CTQ", 3)
+    HS_KE("CTQ", 3)
     return
 :*:android::
-    HS_AE("Android", 4)
+    HS_KE("Android", 4)
     return
 :*:iphone::
-    HS_AE("iPhone", 5)
+    HS_KE("iPhone", 5)
     return
 :*:itunes::
     HS_KE(6)
     return
 
-/*
+
+
+;;;;;;; 알파벳 입력
 :*:'a::
-    HS_AE("a", 2)
+    HS_KE("a", 2)
     return
 :*:'b::
-    HS_AE("b", 2)
+    HS_KE("b", 2)
     return
 :*:'c::
-    HS_AE("c", 2)
+    HS_KE("c", 2)
     return
 :*:'d::
-    HS_AE("d", 2)
+    HS_KE("d", 2)
     return
 :*:'e::
-    HS_AE("e", 2)
+    HS_KE("e", 2)
     return
 :*:'f::
-    HS_AE("f", 2)
+    HS_KE("f", 2)
     return
 :*:'g::
-    HS_AE("g", 2)
+    HS_KE("g", 2)
     return
 :*:'h::
-    HS_AE("h", 2)
+    HS_KE("h", 2)
     return
 :*:'i::
-    HS_AE("i", 2)
+    HS_KE("i", 2)
     return
 :*:'j::
-    HS_AE("j", 2)
+    HS_KE("j", 2)
     return
 :*:'k::
-    HS_AE("k", 2)
+    HS_KE("k", 2)
     return
 :*:'l::
-    HS_AE("l", 2)
+    HS_KE("l", 2)
     return
 :*:'m::
-    HS_AE("m", 2)
+    HS_KE("m", 2)
     return
 :*:'o::
-    HS_AE("o", 2)
+    HS_KE("o", 2)
     return
 :*:'p::
-    HS_AE("p", 2)
+    HS_KE("p", 2)
     return
 :*:'q::
-    HS_AE("q", 2)
+    HS_KE("q", 2)
     return
 :*:'r::
-    HS_AE("r", 2)
+    HS_KE("r", 2)
     return
 :*:'s::
-    HS_AE("s", 2)
+    HS_KE("s", 2)
     return
 :*:'t::
-    HS_AE("t", 2)
+    HS_KE("t", 2)
     return
 :*:'u::
-    HS_AE("u", 2)
+    HS_KE("u", 2)
     return
 :*:'v::
-    HS_AE("v", 2)
+    HS_KE("v", 2)
     return
 :*:'w::
-    HS_AE("w", 2)
+    HS_KE("w", 2)
     return
 :*:'x::
-    HS_AE("x", 2)
+    HS_KE("x", 2)
     return
 :*:'y::
-    HS_AE("y", 2)
+    HS_KE("y", 2)
     return
 :*:'z::
-    HS_AE("z", 2)
+    HS_KE("z", 2)
     return
- */
 
 :*:`;a::
-    HS_AE("A", 2)
+    HS_KE("A", 2)
     return
 :*:`;b::
-    HS_AE("B", 2)
+    HS_KE("B", 2)
     return
 :*:`;c::
-    HS_AE("C", 2)
+    HS_KE("C", 2)
     return
 :*:`;d::
-    HS_AE("D", 2)
+    HS_KE("D", 2)
     return
 :*:`;e::
-    HS_AE("E", 2)
+    HS_KE("E", 2)
     return
 :*:`;f::
-    HS_AE("F", 2)
+    HS_KE("F", 2)
     return
 :*:`;g::
-    HS_AE("G", 2)
+    HS_KE("G", 2)
     return
 :*:`;h::
-    HS_AE("H", 2)
+    HS_KE("H", 2)
     return
 :*:`;i::
-    HS_AE("I", 2)
+    HS_KE("I", 2)
     return
 :*:`;j::
-    HS_AE("J", 2)
+    HS_KE("J", 2)
     return
 :*:`;k::
-    HS_AE("K", 2)
+    HS_KE("K", 2)
     return
 :*:`;l::
-    HS_AE("L", 2)
+    HS_KE("L", 2)
     return
 :*:`;m::
-    HS_AE("M", 2)
+    HS_KE("M", 2)
     return
 :*:`;n::
-    HS_AE("N", 2)
+    HS_KE("N", 2)
     return
 :*:`;o::
-    HS_AE("O", 2)
+    HS_KE("O", 2)
     return
 :*:`;p::
-    HS_AE("P", 2)
+    HS_KE("P", 2)
     return
 :*:`;q::
-    HS_AE("Q", 2)
+    HS_KE("Q", 2)
     return
 :*:`;r::
-    HS_AE("R", 2)
+    HS_KE("R", 2)
     return
 :*:`;s::
-    HS_AE("S", 2)
+    HS_KE("S", 2)
     return
 :*:`;t::
-    HS_AE("T", 2)
+    HS_KE("T", 2)
     return
 :*:`;u::
-    HS_AE("U", 2)
+    HS_KE("U", 2)
     return
 :*:`;v::
-    HS_AE("V", 2)
+    HS_KE("V", 2)
     return
 :*:`;w::
-    HS_AE("W", 2)
+    HS_KE("W", 2)
     return
 :*:`;x::
-    HS_AE("X", 2)
+    HS_KE("X", 2)
     return
 :*:`;y::
-    HS_AE("Y", 2)
+    HS_KE("Y", 2)
     return
 :*:`;z::
-    HS_AE("Z", 2)
+    HS_KE("Z", 2)
     return
-
-
-    
-
-
-#Hotstring, B
-::trhows::throws
-
-
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;; A??O??ic CN?????i AuE?
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-#Hotstring, B0
-
-#if, !(WinActive("ahk_exe iexplore.exe") or WinActive("ahk_exe Hwp.exe") or WinActive("ahk_exe ApplicationFrameHost.exe"))
-
-:?:dms::     ;; ?? ??��
-:?:fksms::        ;; ?? ????
-:?:sms::        ;; ?? ????
-:?:fmf::        ;; ?? ë¥?
-:?:dmf::        ;; ?? ????
-:?:dl::     ;; ??  ??
-:?:dhk::        ;; ?? ??��
-:?:rhk::        ;; ?? ê³?
-:?:dml::        ;; ?? ???
-:?:dp::     ;; ?? ?
-:?:dmfh::   ;; ???? ?¼ë?
-:?:dprp::   ;; ???? ?ê²Œ
-:?:dptj::       ;; ???? ??œ
-:?:fh::     ;; ?? ë¡œ
-:?:qnxj::     ;; ��??��
-:?:qhek::     ;; 보다
-:?:ckarh::     ;; 참고
-:?:emfdml::     ;; ?��?��
-:?:emd::     ;; ?��
-        HS_EK()
-        return
-;; 겹치?�� ?��문이 ?��?��?��, ?��?�� fork
-;;:?:rk::     ;; ??  ê°?��
-
-#if
-
