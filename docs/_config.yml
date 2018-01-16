@@ -49,9 +49,10 @@ github_url: "https://github.com/jacegem/ahk_script"
 googleplus_url:
 instagram_url:
 linkedin_url:
-pinterest_url: 
+pinterest_url:
 slack_url:
 twitter_url:
+blog_url: "https://jacegem.github.io/blog/"
 
 # Google Analytics Tracking ID goes here:
 google_analytics:
