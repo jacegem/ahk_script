@@ -4,9 +4,12 @@ icon: fa-check
 order: 2
 ---
 
+`스크립트`를 실행하거나 `exe` 파일을 실행하여 스크립트를 사용할 수 있습니다.
+
 ### 스크립트 다운로드
 
-GitHub에서 스크립트를 다운로드 받아서, 루트 폴더의 autohotkey.ahk 파일을 실행합니다. 실행하기 위해서는 autohotkey가 설치되어 있어야 합니다.
+GitHub에서 스크립트를 다운로드 받아서 루트 폴더의 autohotkey.ahk 파일을 실행합니다.
+실행하기 위해서는 autohotkey가 설치되어 있어야 합니다.
 
 만약 설치되어 있지 않다면, [홈페이지](https://autohotkey.com/)에서 다운로드 받아서 설치합니다.
 
