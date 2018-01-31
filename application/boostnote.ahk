@@ -42,11 +42,28 @@ F8::      ;
 	ClipSaved =   ; Free the memory in case the clipboard was very large.
 	return
 
-
+:*:===::
+    ; 영문으로 변경
+    result := SetEnglish()
+    SendInput `
+(
+---
+title:
+date: %A_YYYY%.%A_MM%.%A_DD%
+tags:[]
+categories:    
+---
+)
+    SetRestore(result)
+    Send {up 4}
+    Send {End}
+    Send {Space}
+    return
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; REVEAL JS 사용을 위한 HOTSTRING
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-:*:---::
+
+:*:``--::
 	Send ---->
 	Send {ENTER}
 	return
@@ -155,7 +172,7 @@ moveCursor(tag)
 :?: aa:: &&
 
 
-:*:===::=====================================================================
+:*:====::=====================================================================
 #IfWinActive
 
 

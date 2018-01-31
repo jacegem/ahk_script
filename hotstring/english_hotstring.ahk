@@ -1,5 +1,17 @@
 #Hotstring, B0 C
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+:*:.js::      ;  
+        HS_KE(".js", 3)
+        return
+:*:const::      ;  
+        HS_KE("const", 5)
+        return
+:*:props::      ;  
+        HS_AE("props", 5)
+        return
+:*:cms::      ;  
+        HS_AE("CMS", 1)
+        return
 :*:dpm::      ;  
         HS_AE("DPM")
         return
@@ -12,9 +24,9 @@
 :*:kaist::      ;  
         HS_AE("KAIST")
         return
-:*:sto::      ;  
-        HS_EE("STO")
-        return
+; :*:sto::      ;  
+;         HS_EE("STO")
+;         return
 :*:udg::      ;  
         HS_KE("UDG", 3)
         return
@@ -164,9 +176,6 @@
         return
 :*:str::      ;     ㄴㅅㄱ
         HS_KE(3) 
-        return
-:*:gc::      ;     ㄴㅅㄱ
-        HS_EE("GC", 2) 
         return
 :*:python::      ;     
         HS_KE(4) 

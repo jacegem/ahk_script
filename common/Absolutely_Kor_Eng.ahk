@@ -34,7 +34,6 @@ Set_Absolutely_Korean()
 }
 
 
-
 ^vk15sc1F2::Set_Absolutely_English2()                    ; I want Ctrl-[Eng/Han] key to be "Absolutely English" mode key. I hate toggling :(
 
 Set_Absolutely_English2()
@@ -60,4 +59,22 @@ Set_Absolutely_English(param = "")
     {
         Send, {vk15sc138}       ; Turn IME into English mode.
     }    
+}
+
+SetEnglish()
+{
+    ret := IME_CHECK("A")
+    if %ret% <> 0               ; 1 means IME is in Hangul(Korean) mode now.
+    {
+        Send, {vk15sc138}       ; Turn IME into English mode.
+    }
+    return ret
+}
+
+SetRestore(ret)
+{
+    if ret <> 0
+    {
+        Send, {vk15sc138}
+    }
 }
