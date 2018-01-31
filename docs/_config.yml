@@ -38,7 +38,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 author: jace
 email: jacegem@gmail.com
 #avatar: assets/images/avatar.jpg
-avatar: https://avatars3.githubusercontent.com/u/16539041?s=400&u=c7f678f7f30f76f9338c8cf25718ee55f1653fe1&v=4
+avatar: https://avatars2.githubusercontent.com/u/16539041?s=460&v=4
 
 # You'll want to customize url and baseurl for your own site:
 baseurl: "/ahk_script" # the subpath of your site, e.g. /blog
