@@ -117,6 +117,7 @@ capslock & h::
 capslock & `;::
 	GetKeyState, state, Alt
 	if (state = "D") {
+    Send {AltUp}
 		MouseClick, right
 	}else{
 		Send {Blind}{end}

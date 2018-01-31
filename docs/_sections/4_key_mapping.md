@@ -52,21 +52,21 @@ ScrollLock(스크롤락)키를 통해서 해당 스크립트를 멈추고, 다�
 
 #### 마우스 키로 변경
 
-capslock & delete::MouseClick, right
-capslock & end::MouseClick, left
-CapsLock & \::Send {|}
-CapsLock & Esc::Run, taskmgr,, 
-capslock & '::Send {Blind}{WheelUp}
-capslock & /::Send {Blind}{WheelDown}
-capslock & PgUp::Send {Blind}{WheelUp 1}
-capslock & PgDn::Send {Blind}{WheelDown 1}
-capslock & `;::	GetKeyState, state, Alt  MouseClick, right
-capslock & h::	GetKeyState, state, Alt MouseClick, left
+| 입력 키       | 변경 키 |
+| ------------ | ----- |
+| capslock + delete | 마우스 우클릭 | 
+| capslock + end | 마우스 좌클릭 | 
+| capslock + ' | 마우스 휠업 | 
+| capslock + / | 마우스 휠다운 | 
+| capslock + PgUp | 마우스 휠업 | 
+| capslock + PgDn | 마우스 휠다운 | 
+
 
 #### 다른 키로 변경
 
 | 입력 키 | 변경 키 |
 | -----  |----     |  
+| CapsLock + Esc | 작업관리자 실행 | 
 | capslock + q | backspace |
 | capslock + w | Win + TAB |
 | capslock + e | {delete} |
@@ -74,36 +74,47 @@ capslock & h::	GetKeyState, state, Alt MouseClick, left
 | capslock + p | AppsKey |
 | Capslock + y | Capslock 키 활성화 |
 | Capslock | Capslock 키 비활성화 |
+| capslock + ; | end |
+| capslock + h | home | 
 
-capslock & `;:: 	Send {Blind}{end}
-capslock & h:: Send {Blind}{home}
-
-
-
-
-### Alt Key
-
-### Window Key
-
-### Apps Key
-
-
-
-### Function Key
 
 ### 한자 키
 
+크롬브라우저 등에서 탭 이동시에 사용하기 위한 키 매핑입니다. 한자키는 오른손으로 누르고 번호키는 왼손으로 눌러서 탭을 이동할 수 있습니다. 
+
+| 입력 키 | 변경 키 |
+| -----  |----     |  
+| 한자 + 1 | ctrl + 1 |
+| 한자 + 2 | ctrl + 2 |
+| 한자 + 3 | ctrl + 3 |
+| 한자 + 4 | ctrl + 4 |
+| 한자 + 5 | ctrl + 5 |
+| 한자 + 6 | ctrl + 6 |
+| 한자 + 7 | ctrl + 7 |
+| 한자 + 8 | ctrl + 8 |
+| 한자 + 9 | ctrl + 9 |
+| 한자 + 0 | ctrl + 0 |
+
+
 ### 마우스 버튼
 
-### Shift Key
+마우스에서 손을 떼지 않고 작업하기 위한 키매핑입니다. 
+
+| 입력 키 | 변경 키 |
+| -----  |----     |  
+| 마우스 좌클릭 + 1 | ctrl + alt + LEFT |
+| 마우스 좌클릭 + 2 | ctrl + alt  RIGHT |
+| 마우스 좌클릭 + f | ctrl + alt + PgUp |
+| 마우스 좌클릭 + c | ctrl + c |
+| 마우스 좌클릭 + v | ctrl + v |
+| 마우스 좌클릭 + m | ctrl + m |
+| 마우스 좌클릭 + d | ctrl + d |
+| 마우스 좌클릭 + r | ENTER |
+| 마우스 좌클릭 + q | backspace |
+| 마우스 좌클릭 + e | DELETE |
 
 
 
-
-
-## HotString
-
-## Appilcation
 
 
 
