@@ -17,6 +17,28 @@ return
 	RunActivateOrSwitch(path)
 	return
 
+;; http://www.disavian.net/finding-program-files-64bit-autohotkey/
+ProgFiles32()
+{
+    EnvGet, ProgFiles32, ProgramFiles(x86)
+    if ProgFiles32 = ; Probably not on a 64-bit system.
+        EnvGet, ProgFiles32, ProgramFiles
+    Return %ProgFiles32%
+}
+
+ProgFiles64()
+{
+    EnvGet, ProgFiles64, ProgramW6432
+    Return %ProgFiles64%
+}
+
+
+#e::
+  ProgFiles := ProgFiles64()
+  path = %ProgFiles%\Double Commander\doublecmd.exe  
+  RunActivateOrSwitch(path)
+	return
+
 ; run EverNote
 ; #n::
 ; 	;  path = "%ENV_PROGRAMFILES_X86%\Evernote\Evernote\Evernote.exe"
