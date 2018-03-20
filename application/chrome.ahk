@@ -1,6 +1,9 @@
 #ifWinActive ahk_exe chrome.exe
 ;<<Hot String>>
 
+; Paper 에서 comment 단축키
+!m::Send ^!m
+
 CapsLock & r::	
 	clipSaved := Clipboard
 	text := "http://121.160.17.170/redmine/projects/istd_issue"
@@ -39,42 +42,42 @@ F6::Send ^c
 F7::MsgBox, 'F7'
 ;F7::Send {Volume_Down 5}  ; Raise the master volume by 1 interval (typically 5%).
 ;F8::Send {Volume_Up 5}  ; Lower the master volume by 3 intervals.
-F8::      ;	
-	ClipSaved := ClipboardAll   ; Save the entire clipboard to a variable of your choice.
-	; ... here make temporary use of the clipboard, such as for pasting Unicode text via Transform Unicode ...
-	clipboard = ; Empty the clipboard
-	Send, ^c
-	ClipWait, 2
-	if (!ErrorLevel || clipboard)
-	{	
-		state := isKorean()
-		if state 
-		{
-			Send {vk15sc138}  
-		}
+; F8::      ;	
+; 	ClipSaved := ClipboardAll   ; Save the entire clipboard to a variable of your choice.
+; 	; ... here make temporary use of the clipboard, such as for pasting Unicode text via Transform Unicode ...
+; 	clipboard = ; Empty the clipboard
+; 	Send, ^c
+; 	ClipWait, 2
+; 	if (!ErrorLevel || clipboard)
+; 	{	
+; 		state := isKorean()
+; 		if state 
+; 		{
+; 			Send {vk15sc138}  
+; 		}
 
-		Send {* 2}		
-		Send %clipboard% 		
-		Send {* 2}
-		;len := StrLen(clipboard)
-		;MsgBox, clipboard = %clipboard%, %len%		
-		if state 
-		{
-			Send {vk15sc138}  
-		}
-	}else{
-		Send *
-	}
+; 		Send {* 2}		
+; 		Send %clipboard% 		
+; 		Send {* 2}
+; 		;len := StrLen(clipboard)
+; 		;MsgBox, clipboard = %clipboard%, %len%		
+; 		if state 
+; 		{
+; 			Send {vk15sc138}  
+; 		}
+; 	}else{
+; 		Send *
+; 	}
 	
-	Clipboard := ClipSaved   ; Restore the original clipboard. Note the use of Clipboard (not ClipboardAll).
-	ClipSaved =   ; Free the memory in case the clipboard was very large.
-	return
+; 	Clipboard := ClipSaved   ; Restore the original clipboard. Note the use of Clipboard (not ClipboardAll).
+; 	ClipSaved =   ; Free the memory in case the clipboard was very large.
+; 	return
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; REVEAL JS 사용을 위한 HOTSTRING
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-:*:---::
+:*:----::
 	Send ---->
 	Send {ENTER}
 	return

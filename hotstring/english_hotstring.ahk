@@ -1,5 +1,14 @@
 #Hotstring, B0 C
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+:*:sgd::      ;  
+        HS_KE("SGD", 2)
+        return
+:*:max::      ;  
+        HS_KE("max", 3)
+        return
+:*:.jsp::      ;  
+        HS_KE(".jsp", 4)
+        return
 :*:.js::      ;  
         HS_KE(".js", 3)
         return
@@ -1615,7 +1624,7 @@
 	HS_KE("VPN", 2)
 	return
 ::3d::	
-	HS_KE("3D", 2)
+	HS_AE("3D", 2, 3)
 	return
 :*:3G::	
 	HS_KE("3G", 2)
@@ -1706,81 +1715,81 @@
 
 
 ;;;;;;; 알파벳 입력
-:*:'a::
-    HS_KE("a", 2)
-    return
-:*:'b::
-    HS_KE("b", 2)
-    return
-:*:'c::
-    HS_KE("c", 2)
-    return
-:*:'d::
-    HS_KE("d", 2)
-    return
-:*:'e::
-    HS_KE("e", 2)
-    return
-:*:'f::
-    HS_KE("f", 2)
-    return
-:*:'g::
-    HS_KE("g", 2)
-    return
-:*:'h::
-    HS_KE("h", 2)
-    return
-:*:'i::
-    HS_KE("i", 2)
-    return
-:*:'j::
-    HS_KE("j", 2)
-    return
-:*:'k::
-    HS_KE("k", 2)
-    return
-:*:'l::
-    HS_KE("l", 2)
-    return
-:*:'m::
-    HS_KE("m", 2)
-    return
-:*:'o::
-    HS_KE("o", 2)
-    return
-:*:'p::
-    HS_KE("p", 2)
-    return
-:*:'q::
-    HS_KE("q", 2)
-    return
-:*:'r::
-    HS_KE("r", 2)
-    return
-:*:'s::
-    HS_KE("s", 2)
-    return
-:*:'t::
-    HS_KE("t", 2)
-    return
-:*:'u::
-    HS_KE("u", 2)
-    return
-:*:'v::
-    HS_KE("v", 2)
-    return
-:*:'w::
-    HS_KE("w", 2)
-    return
-:*:'x::
-    HS_KE("x", 2)
-    return
-:*:'y::
-    HS_KE("y", 2)
-    return
-:*:'z::
-    HS_KE("z", 2)
-    return
+; :*:'a::
+;     HS_KE("a", 2)
+;     return
+; :*:'b::
+;     HS_KE("b", 2)
+;     return
+; :*:'c::
+;     HS_KE("c", 2)
+;     return
+; :*:'d::
+;     HS_KE("d", 2)
+;     return
+; :*:'e::
+;     HS_KE("e", 2)
+;     return
+; :*:'f::
+;     HS_KE("f", 2)
+;     return
+; :*:'g::
+;     HS_KE("g", 2)
+;     return
+; :*:'h::
+;     HS_KE("h", 2)
+;     return
+; :*:'i::
+;     HS_KE("i", 2)
+;     return
+; :*:'j::
+;     HS_KE("j", 2)
+;     return
+; :*:'k::
+;     HS_KE("k", 2)
+;     return
+; :*:'l::
+;     HS_KE("l", 2)
+;     return
+; :*:'m::
+;     HS_KE("m", 2)
+;     return
+; :*:'o::
+;     HS_KE("o", 2)
+;     return
+; :*:'p::
+;     HS_KE("p", 2)
+;     return
+; :*:'q::
+;     HS_KE("q", 2)
+;     return
+; :*:'r::
+;     HS_KE("r", 2)
+;     return
+; :*:'s::
+;     HS_KE("s", 2)
+;     return
+; :*:'t::
+;     HS_KE("t", 2)
+;     return
+; :*:'u::
+;     HS_KE("u", 2)
+;     return
+; :*:'v::
+;     HS_KE("v", 2)
+;     return
+; :*:'w::
+;     HS_KE("w", 2)
+;     return
+; :*:'x::
+;     HS_KE("x", 2)
+;     return
+; :*:'y::
+;     HS_KE("y", 2)
+;     return
+; :*:'z::
+;     HS_KE("z", 2)
+;     return
 
 :*:`;a::
     HS_KE("A", 2)

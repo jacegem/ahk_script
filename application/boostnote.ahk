@@ -1,5 +1,13 @@
 #ifWinActive ahk_exe Boostnote.exe
 
+
+
+
+
+^s::Send ^e
++^s::Send ^s
+
+
 ;; 새로운 노트 만들기
 F1::	
 	Send ^n
@@ -59,6 +67,7 @@ categories:
     Send {End}
     Send {Space}
     return
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; REVEAL JS 사용을 위한 HOTSTRING
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -170,6 +179,23 @@ moveCursor(tag)
 :?: ge:: >=
 :?: oo:: ||
 :?: aa:: &&
+
+#Hotstring R B0
+:*:o]::      ; 
+  HS_AE("o]", 2)  
+  Send {Del 2}
+  Send {Right}
+  return
+:*:xx::      ; 
+  HS_AE("x", 2)  
+  Send {Del 1}
+  Send {Right}
+  return
+:*:-[::      ; 
+  HS_AE("- [ ]", 2)    
+  Send {Space}
+  return
+
 
 
 :*:====::=====================================================================

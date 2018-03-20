@@ -1,6 +1,7 @@
 
 ;F1::Send #{LEFT}
 ;F2::Send #{RIGHT}
+F3::Send #{TAB}
   
 
 ;Lalt & i::Send {INSERT}

@@ -260,9 +260,9 @@ return
 :*:rnarn::		; 굼구 → 꿈꾸
 	HS_KK("RnaRn", 2)		
 	return	
-:*:rnau::		;구며 → 꾸며
-	HS_KK("Rnau", 2)		
-	return	
+; :*:rnau::		;구며 → 꾸며
+; 	HS_KK("Rnau", 2)		
+; 	return	
 :?*:rhksrp::		;관게 → 관계
 	HS_KK("rhksrP", 2)		
 	return	
@@ -427,8 +427,8 @@ return
 :*:ehsms::		;도는 → 또는
 	HS_KK("Ehsms",2)		
 	return	
-::eh::		;도 → 또
-	HS_KK("Eh ",2)		
+:: eh::		;도 → 또
+	HS_KK(" Eh ",3)		
 	return	
 :*:ehgks::		;도한 → 또한
 	HS_KK("Ehgks",2)		
@@ -778,8 +778,8 @@ return
 :?*:dute::      	; 엿ㄷ → 였ㄷ
 	HS_KK("duTe",2)	
 	return
-::dp::   		; 에 → 예
-	HS_KK("dP ", 1+1)
+; ::dp::   		; 에 → 예
+; 	HS_KK("dP ", 1+1)
 	return	
 :*:dp,::   		; 에, → 예,
 	HS_KK("dP,", 2)
@@ -1147,7 +1147,7 @@ return
 
 
 
-#if, !(WinActive("ahk_exe iexplore.exe") or WinActive("ahk_exe Hwp.exe") or WinActive("ahk_exe ApplicationFrameHost.exe"))
+#if, !(WinActive("ahk_exe iexplore.exe") or WinActive("ahk_exe Hwp.exe") or WinActive("ahk_exe ApplicationFrameHost.exe") or WinActive("ahk_exe Quip.exe"))
 
 :?:dms::     ;; ?? ??��
 :?:fksms::        ;; ?? ????

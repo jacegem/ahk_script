@@ -4,7 +4,7 @@ SetTitleMatchMode, RegEx
 
 ;<<Short Cut>>
 
-^Enter::Send !{ENTER}
+;^Enter::Send !{ENTER}
 ^Space::Send !{ENTER}
 +Space::Send ^{Space}
 
@@ -116,13 +116,13 @@ if (fnOn = true) {
 } 
 return
 
-$F3::
-if (fnOn = true) {
- 	Send {Blind}{Down}
-} else { 
- 	Send {Blind}{F3}
-} 
-return
+;$F3::
+;if (fnOn = true) {
+; 	Send {Blind}{Down}
+;} else { 
+; 	Send {Blind}{F3}
+;} 
+;return
 
 $F4::
 ; 클립보드에 있는 내용이 ID
