@@ -1,9 +1,4 @@
-;CapsLock::
 SetCapslockState, Alwaysoff
-;return
-
-
-
 CapsLock::SetCapslockState, AlwaysOff
 
 CapsLock & Space::send, {vk15sc138}
@@ -118,8 +113,6 @@ capslock & .::
 		;MouseClick, right
 	return
 
-
-
 capslock & h::
 	GetKeyState, state, Alt
 	if (state = "D") {
@@ -156,7 +149,15 @@ capslock & PgDn::Send {Blind}{WheelDown 1}
 capslock & a::Send ^a
 capslock & b::Send ^b
 capslock & q::Send {Blind}{backspace}
-capslock & s::Send ^s
+capslock & s::
+  if (state != "D") {
+		show_shell_command()
+	}	else {
+    Send ^s
+  }
+  return
+
+
 capslock & d::Send ^d
 capslock & f::Send ^f
 capslock & g::Send ^g
@@ -164,8 +165,6 @@ capslock & w::Send #{TAB}
 capslock & e::Send {Blind}{delete}
 capslock & r::Send {Blind}{Enter}
 capslock & p::Send {AppsKey}
-
-;capslock & t::Send ^t
 capslock & t::
 	EnvGet, dropbox, dropbox
 	Run %dropbox%\Programs\Windows\Portable\totalcmd\totalcmd.exe
@@ -209,14 +208,7 @@ capslock & end::MouseClick, left
 CapsLock & \::Send {|}
 CapsLock & Esc::Run, taskmgr,, 
 
-
 Capslock & y::SetCapsLockState, AlwaysOn
-
-; Window Lock
-;+^CapsLock::Run, rundll32.exe user32.dll`, LockWorkStation ,,,
-;#CapsLock::Run, rundll32.exe user32.dll`, LockWorkStation ,,,
-
-
 
 Capslock & F10::
 	MouseClick, Left
@@ -225,3 +217,19 @@ Capslock & F10::
 	Send {DELETE}
 	Send {Enter}
 	return
+
+
+
+show_shell_command(){
+  ; http://www.winhelponline.com/blog/shell-commands-to-access-the-special-folders/
+  ; shell command 목록을 보여줍니다.  
+  gui, add, edit, w600  ; Add a fairly wide edit control at the top of the window.
+  gui, add, text, section, First Name:  ; Save this control's position and start a new section.
+  gui, add, text,, Last Name:
+  gui, add, edit, ys  ; Start a new column within this section.
+  gui, add, edit
+  gui, show
+  return 
+}
+
+

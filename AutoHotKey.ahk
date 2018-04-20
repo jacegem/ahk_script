@@ -95,27 +95,3 @@ ComObjError(false)
 
 ; make the scroll lock key (ScrLk) toggle all hotkeys.
 $ScrollLock::Suspend
-
-
-
-; Launch Total commander instead of explorer
-;#e::Run, TOTALCMD.EXE, %A_ScriptDir%\..\..\Programs\Windows\Portable\totalcmd,,
-; For Project
-;#include .\project\2013_ºÎµ¿»êÀÏ¿øÈ­.ahk
-
-
-;^SC15D:: ; Replace 159 with your key's value.
-;MsgBox, %A_ThisHotKey% was pressed.
-;return
-
-;;#w::Run, FreeCommander.exe, C:\Program Files (x86)\FreeCommander XE,,
-;<^<!l::Run, rundll32.exe user32.dll`, LockWorkStation ,,,
-
-
-
-/*MsgBox, % "OS Type: " . A_OSType . "`nOS Version: " . A_OSVersion . "`nPointer Size: " . A_PtrSize
-   . "`nAdmin: " . (If (A_IsAdmin == 1)?"Yes":"No") . "`n64 Bit OS: "
-   . (If (InStr(A_ProgramFiles, "x86") > 0)?"Yes":"No") . "`nAHK Version: " . A_AhkVersion
-   . "`nAHK Path: " . A_AhkPath
-ExitApp
-*/

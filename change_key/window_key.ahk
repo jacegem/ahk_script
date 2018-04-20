@@ -1,3 +1,4 @@
+
 ;^#m::Run, http://localhost/mt
 ^#d::Run, http://localhost/
 
@@ -7,9 +8,9 @@
 ;; AutoHotKey 'ܳd ԜàŰ
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 #a::
-Msgbox,4,, Do you really want to reload this script?
-ifMsgBox, Yes, Reload
-return
+  Msgbox,4,, Do you really want to reload this script?
+  ifMsgBox, Yes, Reload
+  return
 
 
 #c::
@@ -32,17 +33,17 @@ ProgFiles64()
     Return %ProgFiles64%
 }
 
-; #e::
-; #d::
-;   ProgFiles := ProgFiles64()
-;   path = %ProgFiles%\Double Commander\doublecmd.exe  
-;   RunActivateOrSwitch(path)
-; 	return
+#e::
+#d::
+  ProgFiles := ProgFiles64()
+  path = %ProgFiles%\Double Commander\doublecmd.exe  
+  RunActivateOrSwitch(path)
+	return
 
-; #f::
-;   path = %A_Temp%\..\fman\fman.exe
-;   RunActivateOrSwitch(path)
-; 	return
+#f::
+  path = %A_Temp%\..\fman\fman.exe
+  RunActivateOrSwitch(path)
+	return
 
 ; run EverNote
 ; #n::
@@ -86,7 +87,6 @@ runExplorer(url){
 	WB.Navigate(url)	
 	return
 }
-
 
 
 ;#2::Run \\192.168.200.220 				;; ōӝ؁ и/ƺԵ
