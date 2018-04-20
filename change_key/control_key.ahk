@@ -1,16 +1,12 @@
-
-
-
 ;  ^r::
 ;      path = "C:\Program Files (x86)\Evernote\Evernote\Evernote.exe"
 ;  	RunActivateOrSwitch(path)
 ;  	return
 
-
-+^r::
-	path = "C:\Program Files (x86)\Microsoft VS Code\Code.exe"
-	RunActivateOrSwitch(path)
-	return
+; +^r::
+; 	path = "C:\Program Files (x86)\Microsoft VS Code\Code.exe"
+; 	RunActivateOrSwitch(path)
+; 	return
 
 ^+v::    
     ClipWait 2
