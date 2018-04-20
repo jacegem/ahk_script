@@ -22,12 +22,9 @@
             exceptFirst := true
             continue
         } 
-        ;msgbox %spaceLen%
         if (spaceLen < lenMin) 
             lenMin := spaceLen                
     }
-
-    ;msgbox lenMin : %lenMin%
 
     result =
     loop, parse, clipboard, `n, `r

@@ -44,7 +44,7 @@ ComObjError(false)
 #Include .\change_key\control_key.ahk
 #include .\change_key\capslock_key.ahk
 #include .\change_key\alternate_mode.ahk
-; #include .\change_key\window_key.ahk
+#include .\change_key\window_key.ahk
 #include .\change_key\alt_key.ahk
 #include .\change_key\mouse_button.ahk
 #include .\change_key\hanja_key.ahk
