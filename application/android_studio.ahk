@@ -1,5 +1,4 @@
-SetTitleMatchMode, RegEx
-#ifWinActive ahk_class SunAwtFrame
+#ifWinActive ahk_exe studio64.exe
 ;<<Hot String>>
 
 ;<<Short Cut>>

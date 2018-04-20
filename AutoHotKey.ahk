@@ -85,6 +85,7 @@ ComObjError(false)
 #include .\application\cmd.ahk
 #include .\application\conemu.ahk
 #include .\application\atom.ahk
+#include .\application\webstorm.ahk
 
 
 

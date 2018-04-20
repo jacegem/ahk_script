@@ -4,18 +4,18 @@
 ; Paper 에서 comment 단축키
 !m::Send ^!m
 
-CapsLock & r::	
-	clipSaved := Clipboard
-	text := "http://121.160.17.170/redmine/projects/istd_issue"
-	Clipboard := text
-	ClipWait 2
-	Send ^l
-	Send ^v		
-	Sleep, 100
-	Send {Enter}
-	clipboard := clipSaved
-	clipSaved = 
-	return
+; CapsLock & r::	
+; 	clipSaved := Clipboard
+; 	text := "http://121.160.17.170/redmine/projects/istd_issue"
+; 	Clipboard := text
+; 	ClipWait 2
+; 	Send ^l
+; 	Send ^v		
+; 	Sleep, 100
+; 	Send {Enter}
+; 	clipboard := clipSaved
+; 	clipSaved = 
+; 	return
 
 ;<<Short Cut>>
 ;CapsLock & Space::Send ^{Space}

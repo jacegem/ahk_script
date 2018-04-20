@@ -173,15 +173,21 @@ return
 
 capslock & z::Send ^z
 capslock & x::Send ^x
-capslock & c::Send ^c
-capslock & v::Send ^v
+capslock & c::
+  Send ^c
+  ClipWait
+  return
+capslock & v::
+  Send ^v
+  ClipWait
+  return
 capslock & [::Send ^[
 capslock & ]::Send ^]
 
 
 capslock & 1::Send {F1}
 capslock & 2::Send {F2}
-capslock & 3::Send {F3}
+capslock & 3::Send +!l
 capslock & 4::Send {F4}
 capslock & 5::Send {F5}
 capslock & 6::Send {F6}

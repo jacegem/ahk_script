@@ -1,8 +1,9 @@
 SetTitleMatchMode, RegEx
 #ifWinActive ahk_exe Code.exe
 
-
+^`::Send +^``
 ^d::Send ^+k
+!^l::Send +!f ;; code formatting 
 $F4::Send {F12}
 ;^+f::Send !F
 
@@ -16,7 +17,6 @@ $F4::Send {F12}
 ;CapsLock & Space::Send ^{Space}
 CapsLock & [::Send !{Left}
 CapsLock & ]::Send !{Right}
-CapsLock & 3::Send ^/
 CapsLock & '::Send ^{Space}
 CapsLock & |::Send ^1	
 CapsLock & 1::Send ^1
@@ -24,7 +24,7 @@ CapsLock & 1::Send ^1
 +Space::Send ^{Space}
 
 
-:*:{::{
+; :*:{::{
 
 #Hotstring R B
 :*:re;::return;
@@ -123,6 +123,10 @@ return
     Send {Left}{Enter}
     Send {Up 4}
     Send {RIGHT 2}
+    return
+
+:*:=-::
+    Send `=`>
     return
 :*:-=::
     Send `=`> {{}

@@ -45,9 +45,9 @@
 :*:dg::      ;  
         HS_KE("DG", 2)
         return
-:*:wp::      ;  
-        HS_EE("WP", 2)
-        return
+; :*:wp::      ;  
+;         HS_EE("WP", 2)
+;         return
 :*:korea::      ;  
         HS_KE("Korea", 5)
         return
@@ -250,7 +250,7 @@
         HS_KE() 
         return
 :*:tags::      ;  
-        HS_EE(4) 
+        HS_KE() 
         return
 :*:dll::      ;  
         HS_KE("dll", 2) 

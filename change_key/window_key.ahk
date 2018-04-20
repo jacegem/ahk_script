@@ -100,8 +100,9 @@ runExplorer(url){
 
 ; run sublime text
 #b::
-	path = "C:\Users\d\AppData\Local\boost\app-0.8.11\Boostnote.exe"
-	RunActivateOrSwitch(path)	
+	; path = "C:\Users\d\AppData\Local\boost\app-0.8.11\Boostnote.exe"
+	; RunActivateOrSwitch(path)	
+  Send +!l
 return
 
 /*

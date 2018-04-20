@@ -17,32 +17,55 @@ F1::
 	SendEnglish(" TITLE")
 	Send +^{LEFT}
 	return
+F2::
+  ClipSaved := ClipboardAll   ; Save the entire clipboard to a variable of your choice.
+  clipboard = ; Empty the clipboard  
+  Send {HOME}
+  Send +{RIGHT 3}
+  Send ^c
+  ClipWait, 2  
+  if (clipboard != "- [") {
+    Clipboard := ClipSaved   ; Restore the original clipboard. Note the use of Clipboard (not ClipboardAll).
+	  ClipSaved =   ; Free the memory in case the clipboard was very large.
+    Send {HOME}
+    return
+  }
+  clipboard = ; Empty the clipboard 
+  Send {RIGHT}
+  Send +{RIGHT}
+  Send ^c
+  ClipWait, 2  
+  if (clipboard = "x")
+    Send {space}    
+  else
+    Set_Absolutely_English("x")
+
+  Clipboard := ClipSaved   ; Restore the original clipboard. Note the use of Clipboard (not ClipboardAll).
+	ClipSaved =   ; Free the memory in case the clipboard was very large.
+  return
+
 ;; 노트 휴지통으로 이동
 F4::Send ^{DEL}
-F8::      ;	
+^b::      ;	
 	ClipSaved := ClipboardAll   ; Save the entire clipboard to a variable of your choice.
 	; ... here make temporary use of the clipboard, such as for pasting Unicode text via Transform Unicode ...
 	clipboard = ; Empty the clipboard
 	Send, ^c
 	ClipWait, 2
-	if (!ErrorLevel || clipboard)
-	{	
+	if (!ErrorLevel || clipboard)	{	
 		state := isKorean()
-		if state 
-		{
-			Send {vk15sc138}  
-		}
-
+		if state { 
+      Send {vk15sc138} 
+    }
+		
 		Send {* 2}		
 		Send %clipboard% 		
 		Send {* 2}
-		;len := StrLen(clipboard)
-		;MsgBox, clipboard = %clipboard%, %len%		
-		if state 
-		{
+		
+		if state {
 			Send {vk15sc138}  
 		}
-	}else{
+	} else {
 		Send *
 	}
 	
@@ -50,23 +73,23 @@ F8::      ;
 	ClipSaved =   ; Free the memory in case the clipboard was very large.
 	return
 
-:*:===::
-    ; 영문으로 변경
-    result := SetEnglish()
-    SendInput `
-(
----
-title:
-date: %A_YYYY%.%A_MM%.%A_DD%
-tags:[]
-categories:    
----
-)
-    SetRestore(result)
-    Send {up 4}
-    Send {End}
-    Send {Space}
-    return
+; :*:===::
+;     ; 영문으로 변경
+;     result := SetEnglish()
+;     SendInput `
+; (
+; ---
+; title:
+; date: %A_YYYY%.%A_MM%.%A_DD%
+; tags:[]
+; categories:    
+; ---
+; )
+;     SetRestore(result)
+;     Send {up 4}
+;     Send {End}
+;     Send {Space}
+;     return
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; REVEAL JS 사용을 위한 HOTSTRING
