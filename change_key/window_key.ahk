@@ -32,17 +32,18 @@ ProgFiles64()
     Return %ProgFiles64%
 }
 
-#e::
-#d::
-  ProgFiles := ProgFiles64()
-  path = %ProgFiles%\Double Commander\doublecmd.exe  
-  RunActivateOrSwitch(path)
-	return
+; #e::
+; #d::
+;   ProgFiles := ProgFiles64()
+;   path = %ProgFiles%\Double Commander\doublecmd.exe  
+;   RunActivateOrSwitch(path)
+; 	return
 
-#f::
-  path = %A_Temp%\..\fman\fman.exe
-  RunActivateOrSwitch(path)
-	return
+; #f::
+;   path = %A_Temp%\..\fman\fman.exe
+;   RunActivateOrSwitch(path)
+; 	return
+
 ; run EverNote
 ; #n::
 ; 	;  path = "%ENV_PROGRAMFILES_X86%\Evernote\Evernote\Evernote.exe"
