@@ -96,8 +96,19 @@ F4::Send ^{DEL}
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 :*:``--::
-	Send ---->
-	Send {ENTER}
+  today = %A_YYYY%.%A_MM%.%A_DD%  
+  doc_info = 
+(
+---
+title: " "
+date: %today%
+tags: [ ]
+categories:
+  - Programming
+
+---
+)
+  SendEnglish(doc_info)
 	return
 :*:/bg::    
 	tag = bg-zoom slide slow ----

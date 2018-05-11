@@ -12,8 +12,12 @@
   ifMsgBox, Yes, Reload
   return
 
-
-#c::
+#c::	
+	if (!IsDevUser()) {
+    Send %A_ThisHotkey%
+		return
+  }
+	
 	path = "C:\Program Files (x86)\Microsoft VS Code\Code.exe"
 	RunActivateOrSwitch(path)
 	return
@@ -35,12 +39,22 @@ ProgFiles64()
 
 #e::
 #d::
+	if (!IsDevUser()) {
+    Send %A_ThisHotkey%
+		return
+  }
+		
   ProgFiles := ProgFiles64()
   path = %ProgFiles%\Double Commander\doublecmd.exe  
   RunActivateOrSwitch(path)
 	return
 
 #f::
+	if (!IsDevUser()) {
+    Send %A_ThisHotkey%
+		return
+  }
+	
   path = %A_Temp%\..\fman\fman.exe
   RunActivateOrSwitch(path)
 	return
@@ -65,18 +79,38 @@ ProgFiles64()
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; 2014.10.17 ׂ
 #`::
+	if (!IsDevUser()) {
+    Send %A_ThisHotkey%
+		return
+  }
 	EnvGet, dropbox, dropbox
 	Run %dropbox%\Script\AutoHotKey
 	return
+	
 #1::
+	if (!IsDevUser()) {
+    Send %A_ThisHotkey%
+		return
+  }
+
 	url = http://localhost:9898/web/stat/statView.do
 	runExplorer(url)
 	return
 #2::
+	if (!IsDevUser()) {
+    Send %A_ThisHotkey%
+		return
+  }
+
 	url = http://localhost:9898/mobile/login/LoginView.do
 	runExplorer(url)
 	return
 #3::
+	if (!IsDevUser()) {
+    Send %A_ThisHotkey%
+		return
+  }
+
 	url = http://localhost:10002/
 	runExplorer(url)
 	return

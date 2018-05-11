@@ -1,7 +1,21 @@
 #ifWinActive ahk_exe Typora.exe
 
 F6::Send ^k
-
+:*:``--::
+  today = %A_YYYY%.%A_MM%.%A_DD%  
+  doc_info = 
+(
+---
+title: " "
+date: %today%
+tags: [ ]
+categories:
+- Programming
+- 
+---
+)
+  SendEnglish(doc_info)
+	return
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; REVEAL JS 사용을 위한 HOTSTRING
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

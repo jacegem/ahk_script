@@ -5,18 +5,18 @@ CapsLock & Space::send, {vk15sc138}
 CapsLock & LButton::
   GetKeyState, state, Shift
 	if (state != "D") {
-		Send !^{LEFT}
+		Send #!^{LEFT}
 	}	else {
-    Send !^{LEFT}
+    Send #!^{LEFT}
   }
   return
 
 CapsLock & RButton::
   GetKeyState, state, Shift
   if (state != "D") {
-    Send !^{RIGHt}
+    Send #!^{RIGHt}
   }	else {
-    Send !^{RIGHt}
+    Send #!^{RIGHt}
   }
   return
 
@@ -123,21 +123,30 @@ capslock & h::
 	}
 	return 
 
+capslock & n::
+  GetKeyState, state, Alt
+	if (state = "D") {
+		Send {AltUp}
+		MouseClick, right
+	}else{
+		Send {Blind}{Wheelup}
+	}
+	return 
+
+
+
 capslock & `;::
 	GetKeyState, state, Alt
 	if (state = "D") {
     Send {AltUp}
-		MouseClick, right
+		MouseClick, WheelUp
 	}else{
 		Send {Blind}{end}
 	}
 	return 
 
 
-capslock & n::Send {Blind}{Wheelup}
-
-
-
+; capslock & n::Send {Blind}{Wheelup}
 ;capslock & n::Send {Blind}{WheelUp 1}
 ;capslock & m::Send {Blind}{WheelDown 1}
 capslock & '::Send {Blind}{WheelUp}
@@ -150,9 +159,9 @@ capslock & a::Send ^a
 capslock & b::Send ^b
 capslock & q::Send {Blind}{backspace}
 capslock & s::
-  if (state != "D") {
+  if (state = "D") {
 		show_shell_command()
-	}	else {
+	} else {
     Send ^s
   }
   return
@@ -210,13 +219,7 @@ CapsLock & Esc::Run, taskmgr,,
 
 Capslock & y::SetCapsLockState, AlwaysOn
 
-Capslock & F10::
-	MouseClick, Left
-	Send {HOME}
-	Send +{END}
-	Send {DELETE}
-	Send {Enter}
-	return
+Capslock & F12::	Send !^t	
 
 
 

@@ -87,3 +87,16 @@ DebugConsoleInitialize()
    WinActivate,Lightroom   ; Application specific; I need to make sure this application is running in the foreground. YMMV
    return
 }
+
+IsDevUser(){  
+  users := Object("d", "d")
+
+	For k, v in users {		
+    ; MsgBox, %A_UserName% %k% %v%
+		if (A_UserName == v){
+			return true
+		}
+	}
+
+  return false
+}

@@ -6,6 +6,7 @@ if (A_Is64bitOS = true){
 	P_SUBLIME = "C:\Program Files\Sublime Text 3\sublime_text.exe"	
 }
 
+
 /*
 if (A_ComputerName = "W-PC")
 {
