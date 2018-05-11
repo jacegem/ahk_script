@@ -59,5 +59,6 @@ blog_url: "https://jacegem.github.io/blog/"
 google_analytics:
 
 # The following settings are NECESSARY for the Prologue theme to run:
-theme: jekyll-theme-prologue
+# theme: jekyll-theme-prologue
+remote_theme: jekyll-theme-prologue
 collections: [sections]
