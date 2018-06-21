@@ -54,9 +54,8 @@ HS_KK(hot_str, del_kor){
     if isEnglish()
         return
 
-    Send {vk15sc138 2}   
+    Send {vk15sc138 2}    
     Send {BS %del_kor%}
-    ;Sleep 100
     Send %hot_str%
 }
 
