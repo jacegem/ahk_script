@@ -8,7 +8,7 @@ menu, tray, add
 menu, tray, add,Exit
 menu, tray, add
 Menu, MySubmenu, add,Ctrl+BackSpace!!
-Menu, MySubmenu, add,ÇÑ¿µº¯È¯_mbRYU
+Menu, MySubmenu, add,ï¿½Ñ¿ï¿½ï¿½ï¿½È¯_mbRYU
 Menu, tray, add,About, :MySubmenu
 gosub loadvar
 return
@@ -16,7 +16,7 @@ return
 Ctrl+BackSpace!!:
 return
 
-ÇÑ¿µº¯È¯_mbRYU:
+ï¿½Ñ¿ï¿½ï¿½ï¿½È¯_mbRYU:
 return
 
 About:
@@ -44,23 +44,23 @@ StringLen,length,SourceText
 lang:=
 loop,%length%
 {
-StringMid,chchr,SourceText,%A_Index%,1 
-chasc:=asc(chchr)
-if (65<=chasc) and (chasc<=90)
-{
-lang=english
-break
-}
-if (97<=chasc) and (chasc<=122)
-{
-lang=english
-break
-}
-if (129<=chasc) and (chasc<=200)
-{
-lang=korean
-break
-}
+  StringMid,chchr,SourceText,%A_Index%,1 
+  chasc:=asc(chchr)
+  if (65<=chasc) and (chasc<=90)
+  {
+    lang=english
+    break
+  }
+  if (97<=chasc) and (chasc<=122)
+  {
+    lang=english
+    break
+  }
+  if (129<=chasc) and (chasc<=200)
+  {
+    lang=korean
+    break
+  }
 }
 
 if lang=korean
@@ -79,39 +79,38 @@ send,^v
 return
 
 eng:
-Send {vk15scF2}
-Loop, Parse,SourceText
-sendraw,%A_LoopField% 
+  Send {vk15scF2}
+  Loop, Parse,SourceText
+    sendraw,%A_LoopField% 
 return
 
 kor:
+  count:=1
+  Send {vk15scF2}
+  po1:
 
-count:=1
-Send {vk15scF2}
-po1:
+  StringMid,check,SourceText,%count%,1
+  checkasc:=asc(check)
 
-StringMid,check,SourceText,%count%,1
-checkasc:=asc(check)
+  if (129<=checkasc) and (checkasc<=200)
+  {
+    StringMid,front,SourceText,%count%,1 
+    envadd,count,1
+    StringMid,end,SourceText,%count%,1 
+    envadd,count,1
+    frontasc:=asc(front)
+    endasc:=asc(end)
+    chrsend:=v%frontasc%_%endasc%
+    send,%chrsend%
+  }
+  else
+  {
+    envadd,count,1
+    sendraw,%check%
+  }
 
-if (129<=checkasc) and (checkasc<=200)
-{
-StringMid,front,SourceText,%count%,1 
-envadd,count,1
-StringMid,end,SourceText,%count%,1 
-envadd,count,1
-frontasc:=asc(front)
-endasc:=asc(end)
-chrsend:=v%frontasc%_%endasc%
-send,%chrsend%
-}
-else
-{
-envadd,count,1
-sendraw,%check%
-}
-
-if count<=%length%
-	goto po1
+  if count<=%length%
+    goto po1
 
 return
 
