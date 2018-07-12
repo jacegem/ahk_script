@@ -4,6 +4,8 @@ layout: default
 {%- assign _sections = site.sections | sort: 'order' -%} {%- include header.html scrolly_nav=_sections -%}
 <!-- Main -->
 <div id="main">
+  {%- include adsense-article.html -%}
+
   {%- if page.content != "" -%} 
     {%- include section.html title=page.title photo=page.cover-photo photo-alt=page.cover-photo-alt auto-header=page.auto-header content=page.content -%} 
   {%- endif -%}
