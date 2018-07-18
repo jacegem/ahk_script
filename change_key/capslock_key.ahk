@@ -1,5 +1,10 @@
 SetCapslockState, Alwaysoff
-CapsLock::SetCapslockState, AlwaysOff
+CapsLock::
+  SetCapslockState, AlwaysOff
+  if (fnOn) {
+    fnOn := False
+  }
+  return
 
 CapsLock & Space::send, {vk15sc138}
 CapsLock & LButton::
@@ -23,12 +28,12 @@ CapsLock & RButton::
 global xDiff := 0
 global yDiff := 0 
 
-moveMouse(x, y){
-	GetKeyState, state, Alt
-	if (state != "D") {
-		return False
-	}	    
-
+moveMouse(x, y){  
+  GetKeyState, state, Alt
+  if (state != "D") {
+    return False
+  }	    
+  
 	diff := 5
 	default := 10
 	timeOut := 500

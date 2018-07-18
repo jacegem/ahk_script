@@ -4,6 +4,35 @@ fnOn == false
 ~Capslock & TAB::fnOn:=!fnOn
 ;~Capslock::return
 
+move(x,y){
+  y := y * -1  
+  diff := 20
+	default := 10
+	timeOut := 500
+	speed := 0
+	
+	t := A_TimeSincePriorHotkey
+	if (A_PriorHotkey = A_ThisHotkey &&  t < timeOut){
+		xDiff += x * diff
+		yDiff += y * diff		
+	}else{
+		xDiff := 0
+		yDiff := 0 
+		if (x = 0)
+			yDiff := y * default			
+		if (y = 0)
+			xDiff := x * default			
+	}
+
+	if !xDiff		
+		xDiff := 0
+	if !yDiff		
+		yDiff := 0
+
+	MouseMove, %xDiff%, %yDiff% , %speed% , R	
+	return true
+}
+
 
 #If fnOn
 	;;; function keys
@@ -13,26 +42,58 @@ fnOn == false
 	F4::Send {Right}
 
 	;;; numbers
-	m::Send 0
-	j::Send 1
-	k::Send 2
-	l::Send 3
-	u::Send 4
-	i::Send 5
-	o::Send 6
+	; m::Send 0
+	; j::Send 1
+	; k::Send 2
+	; l::Send 3
+	; u::Send 4
+	; i::Send 5
+  ; o::Send 6
 
-	;;; cursor keys
-	s::Send {Left}
-	d::Send {Down}
-	f::Send {Right}
-	w::Send {DELETE}
-	q::Send {BS}
-	e::Send {UP}	
-	r::Send {Enter}
-	c::Send ^c
-	v::Send ^v
-	x::Send ^x
-	z::Send ^z
+  	;;; cursor keys
+	; s::Send {Left}
+	; d::Send {Down}
+	; f::Send {Right}
+	; w::Send {DELETE}
+	; q::Send {BS}
+	; e::Send {UP}	
+	; r::Send {Enter}
+	; c::Send ^c
+	; v::Send ^v
+	; x::Send ^x
+	; z::Send ^z
+
+  ; 신규 mapping
+  u::MouseClick, Left
+  o::MouseClick, Right
+  i::move(0,1)  
+  j::move(-1,0)
+  k::move(0,-1)  
+  l::move(1,0)  
+  m::Send {Blind}{WheelUp 3}
+	,::Send {Blind}{WheelDown 3}
+  .::MouseClick, Left
+  p::SendEvent {Click , , down}
+  ;::SendEvent {Click , , up}
+  
+  w::MouseClick, Left
+  r::MouseClick, Right
+  e::move(0,1)  
+  s::move(-1,0)
+  d::move(0,-1)  
+  f::move(1,0)  
+  x::Send {Blind}{WheelUp 3}
+	c::Send {Blind}{WheelDown 3}
+  v::MouseClick, Left
+  q::SendEvent {Click , , down}
+  a::SendEvent {Click , , up}
+  z::Send ^w
+
+  t::Send +^{TAB}
+  y::Send ^{TAB}
+  g::Send !{LEFT}
+  h::Send !{RIGHT}
+
 #If
 
 ;=========================
