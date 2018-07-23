@@ -3,6 +3,14 @@ fnOn == false
 
 ~Capslock & TAB::fnOn:=!fnOn
 ;~Capslock::return
+TAB::
+CapsLock::
+  SetCapslockState, AlwaysOff
+  if (fnOn) {
+    fnOn := False
+  }
+  return
+
 
 move(x,y){
   y := y * -1  

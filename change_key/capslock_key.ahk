@@ -1,10 +1,5 @@
 SetCapslockState, Alwaysoff
-CapsLock::
-  SetCapslockState, AlwaysOff
-  if (fnOn) {
-    fnOn := False
-  }
-  return
+
 
 CapsLock & Space::send, {vk15sc138}
 CapsLock & LButton::
