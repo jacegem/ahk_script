@@ -1,6 +1,7 @@
 SetTitleMatchMode, RegEx
 #ifWinActive ahk_exe Code.exe
 
+::ls::dir
 ^`::Send +^``
 ^d::Send ^+k
 !^l::Send +!f ;; code formatting 

@@ -50309,6 +50309,12 @@
 :*:Cittern::
 	HS_KE(4)
 	return
+:*:city::
+	HS_KE(2)
+	return
+:*:City::
+	HS_KE(2)
+	return
 :*:citycouncil::
 	HS_KE(7)
 	return

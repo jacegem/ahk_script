@@ -49,6 +49,17 @@ ProgFiles64()
   RunActivateOrSwitch(path)
 	return
 
+#v::
+  if (!IsDevUser()) {
+    Send %A_ThisHotkey%
+		return
+  }
+		
+  ProgFiles := ProgFiles64()
+  path = %A_StartMenuCommon%\Programs\Evernote\Evernote
+  RunActivateOrSwitch(path)
+	return
+
 #f::
 	if (!IsDevUser()) {
     Send %A_ThisHotkey%
