@@ -3,7 +3,7 @@ fnOn == false
 
 ~Capslock & TAB::fnOn:=!fnOn
 ;~Capslock::return
-; TAB::           
+; TAB::                   
 ;   Send {TAB}
 CapsLock::
   SetCapslockState, AlwaysOff
