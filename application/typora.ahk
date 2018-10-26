@@ -16,13 +16,15 @@ categories:
 )
   SendEnglish(doc_info)
 	return
+
+^l::Send +!5
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; REVEAL JS 사용을 위한 HOTSTRING
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-:*:--::
-	Send ---->
-	Send {ENTER}
-	return
+; :*:--::
+; 	Send ---->
+; 	Send {ENTER}
+; 	return
 :*:/bg::
 	Set_Absolutely_English("bg-zoom slide slow ----")		
 	return
@@ -85,9 +87,9 @@ categories:
 	Sleep, 100
 	Send {Delete}
 	return
-:*:\\::       ;	
-	Set_Absolutely_English("<br>")		
-    return
+; :*:\\::       ;	
+; 	Set_Absolutely_English("<br>")		
+;     return
 :*:``py::       ;		
 	deleteLine()	
 	Set_Absolutely_English("``````python")

@@ -22,7 +22,8 @@ ImmGetDefaultIMEWnd(hWnd_abs)
     return DllCall("imm32\ImmGetDefaultIMEWnd", Uint,hWnd_abs, Uint)
 }
 
-!vk15sc1F2::Set_Absolutely_Korean()                ; I want Alt-[Eng/Han] key to be "Absolutely Hangul(Korean)" mode key. I hate toggling :(
+;!vk15sc1F2::Set_Absolutely_Korean()                ; I want Alt-[Eng/Han] key to be "Absolutely Hangul(Korean)" mode key. I hate toggling :(
+!sc1F2::Set_Absolutely_Korean()                ; I want Alt-[Eng/Han] key to be "Absolutely Hangul(Korean)" mode key. I hate toggling :(
 
 Set_Absolutely_Korean()
 {
@@ -34,7 +35,8 @@ Set_Absolutely_Korean()
 }
 
 
-^vk15sc1F2::Set_Absolutely_English2()                    ; I want Ctrl-[Eng/Han] key to be "Absolutely English" mode key. I hate toggling :(
+;^vk15sc1F2::Set_Absolutely_English2()                    ; I want Ctrl-[Eng/Han] key to be "Absolutely English" mode key. I hate toggling :(
+sc1F2::Set_Absolutely_English2() 
 
 Set_Absolutely_English2()
 {

@@ -7,7 +7,8 @@
 	Run, rundll32.exe user32.dll`, LockWorkStation ,,,
 	;Send {SC15D UP}
 	return
-+VK19SC1F1::
+;+VK19SC1F1::
++SC1F1::
 	Run, rundll32.exe user32.dll`, LockWorkStation ,,,
 	;Send {VK19SC1F1 UP}
 	return

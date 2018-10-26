@@ -370,9 +370,9 @@ return
 :?*:ekfmsms::		;다르는 → 따르는
 	HS_KK("Ekfmsms",3)		
 	return
-:*:ektj::		; 다서 → 따서
-	HS_KK("Ektj",2)		
-	return
+; :*:ektj::		; 다서 → 따서
+; 	HS_KK("Ektj",2)		
+; 	return
 :*:ektjtwo::		; 다섯재 → 다섯째
 	HS_KK("ektjtWo",3)		
 	return
