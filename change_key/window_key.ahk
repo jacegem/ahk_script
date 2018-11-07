@@ -37,7 +37,7 @@ ProgFiles64()
     Return %ProgFiles64%
 }
 
-#e::
+; #e::
 #d::
 	if (!IsDevUser()) {
     Send %A_ThisHotkey%
