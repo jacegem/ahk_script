@@ -134,6 +134,73 @@ F7::MsgBox, 'F7'
 	return
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+:*:/tod::    
+    Set_Absolutely_English("<todo></todo>")
+    Send {Left 7}
+    return
+
+:*:/tmd::    
+    Set_Absolutely_English("<todo @jiyong></todo>")
+    Send {Left 7}
+    return
+
+:*:/tmt::
+    Date := A_Now
+    Date += 1, Days
+    FormatTime, nDate, %Date%, yyyy-MM-dd    
+    text = <todo @jiyong due:%nDate%></todo>
+    Set_Absolutely_English(text)
+    Send {Left 7}
+    return
+
+:*:/tmw::
+    Date := A_Now
+    Date += 7, Days
+    FormatTime, nDate, %Date%, yyyy-MM-dd    
+    text = <todo @jiyong due:%nDate%></todo>
+    Set_Absolutely_English(text)
+    Send {Left 7}
+    return
+
+:*:/tmm::
+    Date := A_Now
+    Date += 30, Days
+    FormatTime, nDate, %Date%, yyyy-MM-dd    
+    text = <todo @jiyong due:%nDate%></todo>
+    Set_Absolutely_English(text)
+    Send {Left 7}
+    return
+
+
+:*:/tot::
+    Date := A_Now
+    Date += 1, Days
+    FormatTime, nDate, %Date%, yyyy-MM-dd    
+    text = <todo due:%nDate%></todo>
+    Set_Absolutely_English(text)
+    Send {Left 7}
+    return
+
+:*:/tow::
+    Date := A_Now
+    Date += 7, Days
+    FormatTime, nDate, %Date%, yyyy-MM-dd    
+    text = <todo due:%nDate%></todo>
+    Set_Absolutely_English(text)
+    Send {Left 7}
+    return
+
+:*:/tom::
+    Date := A_Now
+    Date += 30, Days
+    FormatTime, nDate, %Date%, yyyy-MM-dd    
+    text = <todo due:%nDate%></todo>
+    Set_Absolutely_English(text)
+    Send {Left 7}
+    return
+
+
+
 
 ^F10::
 	Send |

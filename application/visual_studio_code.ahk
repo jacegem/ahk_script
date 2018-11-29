@@ -124,10 +124,13 @@ return
     Send {Left}{Enter}
     Send {Up 4}
     Send {RIGHT 2}
-    return
+    return  
+
 
 :*:=-::
-    Send `=`>
+    Send `= () `=`> {{}{}}
+    Send {Left} 
+    Send {Enter}
     return
 :*:-=::
     Send `=`> {{}

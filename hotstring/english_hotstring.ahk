@@ -57,11 +57,8 @@
 :*:eu::      ;   
   HS_KE("EU", 1)
   return
-:*:ai ::      ;   
-  HS_EE("AI ")
-  return
 :*:ai::      ;   
-  HS_KE("AI", 2)
+  HS_KE("AI", 1)
   return
 :*:aims::      ;     
   HS_AE("AIMS", 4)
