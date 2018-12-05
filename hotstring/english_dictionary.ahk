@@ -276290,9 +276290,9 @@
 :*:Toluol::
 	HS_KE(6)
 	return
-:*:tom::
-	HS_KE(2)
-	return
+; :*:tom::
+; 	HS_KE(2)
+; 	return
 :*:Tom::
 	HS_KE(2)
 	return

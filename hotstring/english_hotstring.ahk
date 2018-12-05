@@ -366,9 +366,9 @@
 :*:jykwon::       ;     
   HS_KE("jykwon", 5)
   return
-:?*:mm::       ;     
-  HS_KE("mm", 2)
-  return
+; :?*:mm::       ;     
+;   HS_KE("mm", 2)
+;   return
 :*:tobe::       ;     
   HS_KE("TO-BE", 3)
   return

@@ -148,7 +148,7 @@ F7::MsgBox, 'F7'
     Date := A_Now
     Date += 1, Days
     FormatTime, nDate, %Date%, yyyy-MM-dd    
-    text = <todo @jiyong due:%nDate%></todo>
+    text = - <todo @jiyong due:%nDate%></todo>
     Set_Absolutely_English(text)
     Send {Left 7}
     return
@@ -157,7 +157,7 @@ F7::MsgBox, 'F7'
     Date := A_Now
     Date += 7, Days
     FormatTime, nDate, %Date%, yyyy-MM-dd    
-    text = <todo @jiyong due:%nDate%></todo>
+    text = - <todo @jiyong due:%nDate%></todo>
     Set_Absolutely_English(text)
     Send {Left 7}
     return
@@ -166,7 +166,7 @@ F7::MsgBox, 'F7'
     Date := A_Now
     Date += 30, Days
     FormatTime, nDate, %Date%, yyyy-MM-dd    
-    text = <todo @jiyong due:%nDate%></todo>
+    text = - <todo @jiyong due:%nDate%></todo>
     Set_Absolutely_English(text)
     Send {Left 7}
     return
@@ -176,7 +176,7 @@ F7::MsgBox, 'F7'
     Date := A_Now
     Date += 1, Days
     FormatTime, nDate, %Date%, yyyy-MM-dd    
-    text = <todo due:%nDate%></todo>
+    text = - <todo due:%nDate%></todo>
     Set_Absolutely_English(text)
     Send {Left 7}
     return
@@ -185,7 +185,7 @@ F7::MsgBox, 'F7'
     Date := A_Now
     Date += 7, Days
     FormatTime, nDate, %Date%, yyyy-MM-dd    
-    text = <todo due:%nDate%></todo>
+    text = - <todo due:%nDate%></todo>
     Set_Absolutely_English(text)
     Send {Left 7}
     return
@@ -194,7 +194,7 @@ F7::MsgBox, 'F7'
     Date := A_Now
     Date += 30, Days
     FormatTime, nDate, %Date%, yyyy-MM-dd    
-    text = <todo due:%nDate%></todo>
+    text = - <todo due:%nDate%></todo>
     Set_Absolutely_English(text)
     Send {Left 7}
     return
