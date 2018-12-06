@@ -171,7 +171,6 @@ F7::MsgBox, 'F7'
     Send {Left 7}
     return
 
-
 :*:/tot::
     Date := A_Now
     Date += 1, Days
@@ -200,6 +199,60 @@ F7::MsgBox, 'F7'
     return
 
 
+:*:/wpb::
+    SendWrap("box")    
+    return
+
+:*:/wpi::
+    SendWrap("info")    
+    return
+
+:*:/wpt::
+    SendWrap("tip")    
+    return
+
+:*:/wpa::
+    SendWrap("alert")    
+    return
+
+:*:/wph::
+    SendWrap("help")    
+    return
+
+:*:/wpe::
+    SendWrap("em")    
+    return
+
+:*:/wpc::
+    SendWrap("clear")    
+    return
+
+:*:/wpl::
+    SendWrap("lo")    
+    return
+
+:*:/wpg::
+    text = 
+(
+<WRAP group>
+<WRAP half column>
+
+</WRAP>
+<WRAP half column>
+
+</WRAP>
+</WRAP>
+)
+    Set_Absolutely_English(text)
+    Send {Up 5}
+    return
+
+SendWrap(type){
+    text = <WRAP round %type%>`n`n</WRAP>
+    Set_Absolutely_English(text)
+    Send {Up}
+    return
+}
 
 
 ^F10::
