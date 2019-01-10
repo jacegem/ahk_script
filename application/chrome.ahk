@@ -77,10 +77,14 @@ F7::MsgBox, 'F7'
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; REVEAL JS 사용을 위한 HOTSTRING
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; :*:----::
-; 	Send ---->
-; 	Send {ENTER}
-; 	return
+::-=::
+	Send ---->
+	Send {ENTER}
+	return
+::-==::
+	Send ---->>
+	Send {ENTER}
+	return
 :*:/bg::
 	Set_Absolutely_English("bg-zoom slide slow ----")		
 	return

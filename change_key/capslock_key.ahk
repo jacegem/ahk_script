@@ -84,27 +84,43 @@ capslock & l::
 	
 
 capslock & u::
-	if (moveMouse(-1, -1)) {	     
-	}else
+  GetKeyState, state, Alt
+  if (state = "D") {
+		Send {AltUp}
+		MouseClick, left	
+	} else {
 		Send {Blind}{backspace}
+  }
 	return
 
 capslock & o::
-	if (moveMouse(1, -1)) {	     
-	}else
+  GetKeyState, state, Alt
+  if (state = "D") {
+		Send {AltUp}
+		MouseClick, Right	
+	} else {
 		Send {Blind}{delete}
+  }
 	return
 
 capslock & ,::
-	if (moveMouse(0, 1)) {		
-	}else	    
+  GetKeyState, state, Alt
+	if (state = "D") {
+    Send {AltUp}
+		MouseClick, WheelDown
+	} else {
 		Send {Blind}{PgDn}
+  }
 	return
 
 capslock & m::
-	if (moveMouse(-1,1)) {	     
-	}else
+  GetKeyState, state, Alt
+	if (state = "D") {
+    Send {AltUp}
+		MouseClick, WheelUp	
+	} else {
 		Send {Blind}{PgUp}
+  }
 	return
 
 capslock & .::
@@ -132,8 +148,6 @@ capslock & n::
 		Send {Blind}{Wheelup}
 	}
 	return 
-
-
 
 capslock & `;::
 	GetKeyState, state, Alt
